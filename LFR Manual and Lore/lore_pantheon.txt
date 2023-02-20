@@ -1,0 +1,99 @@
+lore_pantheon
+
+[PART 1: THE OLD GODS, AN INTRODUCTION]
+
+While the world of LFR is a host to innumerable religions, dwarven or otherwise, most civilizations generally trace their roots 
+back to the same set of original deities.  According to the most ancient of records, the world and spheres were forged by a set of beings 
+generally referred to as the "old gods."  Though the names of these gods and the stories associated with them vary greatly across cultures,
+there are enough similarities to indicate that their identities are fairly consistant, even across clan and race.
+
+
+[PART 2: ARMOK]
+
+Armok, of course, is the first and most well known of the old gods.  Being the most powerful, Armok created the world as it is.  But as the
+ages rolled by and the first ancestors of the modern dwarf started to walk the land, Armok grew tired of the petty affairs of the universe, 
+save for those involving bloodshed.  Eager to turn his full attention to this sphere, Armok delegated the other spheres to a contingent
+of other astral beings.  Some legends state that these other "old gods" were brought to the world on Armok's command, while others go so far
+as to claim that Armok himself created them for this purpose.  Whatever the case may be, it is generally accepted among most Dwarven cultures that
+Armok's transition from the all-powerful to the dominant god of blood was uncharacteristically smooth and without conflict.  Armok is the god of 
+blood, war, and death, by association.
+
+
+[PART 3: VISTHEL]
+
+To the goddess Visthel, Armok passed the mantle of mercy - his least favorite, and the one he was most eager to give away.  Visthel became the
+patron goddess of the weak and the helpless - those Armok cast aside.  The relation between Armok and Visthel is not hostile in the traditional
+sense of the word, but their blessings often tend to counteract each other's purposes.  In dwarven culture, Visthel is most often portrayed as 
+a pale, female dwarf, with eight white, feathered wings.
+
+
+[PART 4: VORUK]
+
+To the god Voruk, Armok passed the mantle of wealth.  It is Voruk who is the patron god of the crafters and bankers of the world, and it is
+by Voruk's whim that fortunes are made and lost.  Voruk's favorite metal is white gold, and he is most often portrayed upon a throne of this
+metal, adorned with jewels, trinkets, and gaudy baubles.  Voruk is called "Blyng" in some western human cultures, and is denounced more adamantly
+than any of the other old gods by the nephilim.
+
+
+[PART 5: KOGUT]
+
+To Voruk's brother, Kogut, Armok passed the mantle of revelry.  Hand in hand with wealth, Kogut governs the celebrations and pleasures of the
+world below.  According to dwarven legend, the first alcohol was brewed by a priest of Kogut, and the subsequent increase in production brought
+about a new age of Dwarven prosperity, marked by the invention of the high-backed chair.  Festivals are often dedicated equally to Voruk and
+Kogut, as the two occupy similar spheres.  Kogut is portrayed in dwarven culture as a male dwarf with an absurdly long beard.
+
+
+[PART 6: PEL]
+
+Pel is the goddess of mysteries, whose mantle was handed down by Armok unfinished.  Pel's wisdom guided her through the finishing of her mantle,
+under which she governs the unseen inner workings of all that is.  Gravity is thought to be governed by Pel, as well as materials, reactions,
+and mechanics.  Pel does not like to influence the world as directly as the other gods - her blessings often come in disguise.  She is portrayed
+as a female dwarf with long, flowing black hair and a cloak of stars.  Pel is also, for reasons not entirely known, the patron goddess of singers,
+where Kogut governs other forms of music and entertainment.
+
+
+[PART 7: THE ELEMENTALS]
+
+The elemental gods are the lower echelon of the category of old gods.  Most of them are paired with an opposing force - much like Visthel and
+Armok, but on a far lesser scale.  Though younger than the first five old gods, the elemental generation is still a close second when it comes
+to power, influence, and importance.  The pairings are as follows:
+
+Gisthal and Pharis, god of light and goddess of darkness.  Gisthal is usually portrayed as a male dwarf with light hair and radiant beams coming
+off of his body.  Pharis, curiously, is not often directly portrayed in artwork - most often, she is referenced by a symbol or other subtleties.
+
+Zalkor and Temanat, god of fire and goddess of water (the latter is wed to Gisthal).  Zalkor is portrayed as a dark-skinned dwarf with a beard that
+smolders with embers and coals.  Temanat is portrayed as (top) half female dwarf and (bottom) half lobster.
+
+Kerox and Lemox, twin goddesses of earth and wind.  Some stories say that they are the children of Visthel and Kogut, but this is not universally
+accepted.  Kerox and Lemox are usually portrayed together, as a pair of young, female dwarves grasping each other's hands - Kerox's hair twisted
+with vines and roots, Lemox's blowing in the wind.
+
+Bartoth, the orphan, adopted by Pel, is the lone god of unbound energy.  Not much is known about Bartoth, nor about the sphere he governs.
+Lightning and radiation are most often associated with him, though Pel is also thought to have a hand in these phenomena.  Bartoth is the
+least frequently honored of the old gods, and is portrayed as a young, male dwarf carrying a disproportionately large hammer.
+
+
+[PART 8: THE NEW GODS]
+
+Over the centuries predating the modern civilization of the dwarves, the old gods are said to have had children and grandchildren, who have inherited
+portions of their power.  These "new gods" are not nearly as powerful as their ancestors, but have taken a strong hold of the day-to-day operations of
+the world.  Though free to do as they please and go by whatever names they desire, it is important to note that all of their power is derived from the
+old gods.
+
+New gods are often squabbling and fighting over the affairs of mortals, and many of them resent or envy their parents.  Erecting a temple to a new god
+can draw the ire of his or her rivals, and is generally considered a bad idea.  Erecting a temple to an old god invokes less of their anger, but sometimes
+a new god will take offense to being left out of a sacrifice to the sphere they represent.  Powerless against the old gods, they take out this
+anger on mortals from time to time.  Without exception, however, it is better to draw the ire of a new god than that of an old one.
+
+As new gods sponser civilizations that worship them, so are they deposed if these followers are exterminated.  The most loyal of followers of these fallen
+gods can persist for centuries following the fall of their masters, who are gone but never completely destroyed.  What becomes of forgotten gods is a secret
+known only to Armok.
+
+
+[PART 9: KEXEL]
+
+The name of Kexel is found only in the oldest of surviving texts, which are so fragmented that any clue to his or her identity or role in the ancient pantheon 
+remains a mystery to this day.  Kexel has not been worshipped for thousands of years, at least, and no surviving depictions of the god are known to exist.  The 
+lack of a response from the ancient god seems to suggest that he either never existed, or simply does not care for the affairs and affections of mortals.  There 
+are few today who know or openly speak Kexel's name.
+

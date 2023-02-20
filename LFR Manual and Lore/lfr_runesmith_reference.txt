@@ -1,0 +1,40 @@
+A quick-reference sheet for the runesmith's workshop, added with 0.20a.
+
+BUILDING REQUIREMENTS: precision tool kit, ceremonial urn, table, chair, 4 building materials.
+
+All reactions use the engraver skill (DETAILSTONE).
+
+
+RUNES AND COSTS:
+
+--For Weapons (note that runes applied to ranged weapons will only affect their melee attacks)--
+
+Weapons are engraved one at a time.
+
+-Runes of Minor Bleeding (cause enemy to bleed more from struck body part, 30% proc rate) - one rough ruby.
+-Runes of Major Bleeding (cause enemy to bleed excessively from struck body part, 5% proc rate) - one rough abyssal eye.
+-Runes of Blinding (impair most enemies' sight, causing their attacks to be less accurate, 30% proc rate) - one rough amethyst.
+-Runes of Slowing (impair enemy's movement and attack speed, can also cause lingering pains, 10% proc rate) - one rough sapphire.
+-Runes of Fear (decreases enemy's willpower, causing them to flee from combat more easily, 50% proc rate) - one rutile boulder.
+-Runes of Interference (prevents enemies from using certain interactions, i.e. crystal dragon blasts, 50% proc rate) - one rough emerald.
+-Runes of Death (stops the heart of most enemies, usually killing them, 10% proc rate) - one rough mountain heart.
+-Runes of Rust (causes struck machines to briefly become more vulnerable to all attacks, 100% proc rate) - one rough sentinel core fragment.
+-Runes of Shedim Slaying (causes struck shedim to briefly become more vulnerable to all attacks, 100% proc rate) - one rough bloodstone.
+-Runes of Voidwalker Slaying (causes struck voidwalkers to briefly become more vulnerable to all attacks, 100% proc rate) - one voidshard bar.
+-Runes of Demon Slaying (causes struck non-procedural demons to briefly become more vulnerable to all attacks, 100% proc rate) - three rough clear glass gems.
+-Runes of Grum Slaying (causes struck grum to briefly become more vulnerable to all attacks, 100% proc rate) - eight rough green glass gems.
+
+
+
+--For Ammunition--
+
+Ammunition is engraved 300 units at a time - this is 12 stacks of bolts, arrows, or blowdarts, or 5 stacks of magnetic darts.  I guess you could engrave javelins, too, 
+if you manage to get 300 or more of them.
+
+-Runes of Death (stops the heart of most enemies, usually killing them, 3% proc rate) - one rough mountain heart.
+-Runes of Bleeding (cause enemy to bleed from struck body part, 40% proc rate) - one rough ruby.
+-Runes of Hindering (impair enemy's movement and attack speed, 10% proc rate) - one rough sapphire.
+-Runes of Suppression (prevents enemies from using certain interactions, i.e. crystal dragon blasts, 15% proc rate) - one rough emerald.
+-Runes of Blinding (impair most enemies' sight, causing their attacks to be less accurate, 20% proc rate) - one rough amethyst.
+-Runes of Critical Strikes (destroys the brain of most enemies, usually killing them instantly, 3% proc rate) - one rough abyssal eye.
+-Runes of Cataclysmic Destruction (causes enemy to violently explode, use with extreme caution, 20% proc rate) - one rough sentinel core fragment.
