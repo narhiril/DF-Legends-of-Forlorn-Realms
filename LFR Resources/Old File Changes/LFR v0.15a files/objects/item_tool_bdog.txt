@@ -1,0 +1,12 @@
+item_tool_bdog
+
+[OBJECT:ITEM]
+
+[ITEM_TOOL:ITEM_TOOL_WHEELBARROW_BDOG]
+	[NAME:wheelbarrow:wheelbarrows]
+	[SIZE:10000]
+	[HARD_MAT]
+	[UNIMPROVABLE] remove this if you want to have wheelbarrows with quality 
+	[CONTAINER_CAPACITY:100000]
+	[TILE:229]
+	[VALUE:10]

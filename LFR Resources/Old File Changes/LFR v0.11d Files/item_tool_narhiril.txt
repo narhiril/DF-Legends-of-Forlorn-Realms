@@ -1,0 +1,12 @@
+item_tool_narhiril
+
+[OBJECT:ITEM]
+
+[ITEM_TOOL:ITEM_TOOL_ADVMECH_LFR]
+[NAME:mechanisms:mechanisms]
+[ADJECTIVE:advanced]
+[VALUE:30]
+[METAL_MAT]
+[TILE:144]
+[SIZE:100]
+[MATERIAL_SIZE:1]

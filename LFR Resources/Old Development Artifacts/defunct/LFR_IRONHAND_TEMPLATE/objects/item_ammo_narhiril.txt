@@ -1,0 +1,28 @@
+item_ammo_narhiril
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_ONE]
+[NAME:broadhead javelin:broadhead javelins]
+[CLASS:JAVELIN]
+[SIZE:4500]
+[ATTACK:EDGE:100000:100000:strike:strikes:NO_SUB:1000]
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_TWO]
+[NAME:piercing javelin:piercing javelins]
+[CLASS:JAVELIN]
+[SIZE:4000]
+[ATTACK:EDGE:10:200000:strike:strikes:NO_SUB:1500]
+
+[ITEM_AMMO:ITEM_AMMO_JAVELINS_THREE]
+[NAME:hammerhead javelin:hammerhead javelins]
+[CLASS:JAVELIN]
+[SIZE:5000]
+[ATTACK:BLUNT:100000:2000:smash:smashes:NO_SUB:1000]
+
+[ITEM_AMMO:ITEM_AMMO_VOID]
+[NAME:bound void energy:bound void energies]
+[CLASS:VOID]
+[SIZE:2000]
+[ATTACK:BLUNT:100000:100000:impact:impacts:NO_SUB:4000]
+[ATTACK:EDGE:100000:100000:slice through:slices through:NO_SUB:4000]

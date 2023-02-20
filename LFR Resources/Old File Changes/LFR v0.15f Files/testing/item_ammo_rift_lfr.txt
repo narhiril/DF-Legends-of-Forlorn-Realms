@@ -1,0 +1,9 @@
+item_ammo_rift_lfr
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_RIFT]
+[NAME:serrated disc:serrated discs]
+[CLASS:THROWN]
+[SIZE:2000]
+[ATTACK:EDGE:20000:400000:slice through:slices through:NO_SUB:4000]

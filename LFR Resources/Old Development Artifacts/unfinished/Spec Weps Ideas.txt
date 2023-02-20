@@ -1,0 +1,58 @@
+Divine bastion - shield w/ ailment protection
+Flayer - whip that causes proximity pain and bleeding
+Stonecrusher - hammer that allows pbAoE stone bursts.
+Lifedriker - blessed blade of Armok.
+Hellfire Brand - blessed weapon of Zalkor.
+
+
+Race Specific Bonuses:
+goblins - daggers grant increased mental attributes
+elves - greatbows grant increased mental attributes
+dwarves - runic defenders grant increased toughness
+nephilim - lances grant increased speed
+shedim - n/a
+grum - grum weapons grant immunity to fear
+voidwakers - reavers grant ability to berserk
+moroii - n/a
+humans - scimitars and long swords prevent attribute rust
+kobolds - n/a
+bog trolls - claymores and two-hand swords grant increased strength
+lizardmen - pitchforks grant immunity to exertion
+
+
+---
+
+TO EXP.WEP.LAB:
+
+(ritual knife)
+[ITEM_WEAPON_CLAYMORE_WEIGHTED]
+[ITEM_WEAPON_EXECUTIONER_AXE]
+
+
+To vanguard coffers:
+
+[ITEM_WEAPON_AXE_TITAN]
+[ITEM_WEAPON_FEARLESS_SWORD]
+[ITEM_WEAPON_FEARLESS_SPEAR]
+[ITEM_WEAPON_FEARLESS_AXE]
+[ITEM_WEAPON_KNIFE_OF_DEVASTATION]
+[ITEM_WEAPON_AXE_UNBOUND]
+
+To Temples:
+
+[ITEM_WEAPON_STONECRUSHER]
+[ITEM_WEAPON_FLAYER]
+[ITEM_WEAPON_LIFEDRINKER]
+[ITEM_WEAPON_HELLFIRE_BRAND]
+
+To Adv. Alch. Experiments
+
+[ITEM_WEAPON_BOW_TRUESHOT]
+[ITEM_WEAPON_ETERNITY_STAFF]
+[ITEM_WEAPON_AXE_CONSTANT]
+
+To Drops
+
+(locust scepter)
+[ITEM_WEAPON_OCCULT_SWORD]
+[ITEM_WEAPON_ASSASSIN_KNIFE]

@@ -1,0 +1,76 @@
+THE SHEDIM
+
+
+The shedim are a mysterious, universally hostile race that has plagued the world since its inception.  Though their numbers today are diminished from their original strength, they are 
+a constant threat and a force to be reckoned with.  Many a civilization has crumbled before them.
+
+The information contained within this file is a briefing from a dwarven high commander to his subordinate generals, left over from an ancient time of conflict.  It is presented in its 
+original form so that the full nature of the shedim threat might be understood in case such a threat should arise.
+
+
+
+
+[PART 1: INTRODUCTION]
+
+The shedim are only considered a civilized "race" due to their influence.  In a technical sense, they are not a true "civilization," but their actions and reputation for large and 
+cohesive military units place any civilization that does not treat their armies as they would an enemy in dire jeopardy.  The shedim are best described as natural killing machines. 
+They thrive on bloodshed and cannot sustain themselves without war.
+
+
+[PART 2: NATURE]
+
+Shedim are divided into a number of castes.  While this is not unusual among creatures, the dividing lines between the castes of the shedim are sharper than almost every known creature.  
+Certain shedim castes are almost unrecognizable as being the same creature as other castes, primarily due to size differentials.  The smallest of shedim castes is only about two thirds
+the size of a dwarf - the largest, over ten times as large.  However, all of the shedim share a common trait - their lust for blood.  The shedim cannot sustain themselves and their 
+armies without a continual supply of corpses.  Shedim devour the remnants of their enemies - a heinous act in most cultures, but simply a way of life for them.  Without blood,
+there is no life for the shedim.
+
+
+[PART 3: CULTURE]
+
+Shedim "culture," if it can even be called that, is primitive under the best of circumstances.  The shedim form packs to more easily overcome their prey.  These packs are roughly organized 
+by caste.  This is the closest that the shedim ever come to forming anything resembling a culture.  The shedim do have a language, but how it was formed is a great mystery.
+
+
+[PART 4: BATTLE TACTICS]
+
+With a land full of enemies to devour, shedim of all castes band together into packs.
+
+When faced with an enemy that can resist them, these packs combine into larger warbands.  Shedim packs behave as a single unit, each shedim and each caste performing as part of a whole, 
+in a sort of limited hive mentality.  THis mentality does not extend beyond the pack, however - warbands of multiple packs will behave as multiple packs.  If a pack finds itself in a
+dire situation, it expects nor receives no help from other packs unless such assistance would be beneficial in some way to the assisting pack (i.e. a slaughter).
+
+Shedim packs are organized by caste.  The smallest castes, currants and vibrants, form the outer perimeter of a pack's formation.  Currants are fast, weak melee units, functioning as 
+scouts and chaser units.  Vibrants are slower, but stronger fighters, forming the bulk of the shedim's fighting force.
+
+Vibrants and currants surround a "core" of other castes.  Within a ring of currants and vibrants, one can usually find a few discordants.  Discordants are frail, small units, but they are
+protected for their power.  Discordants can weaken enemies with a number of ranged abilities.  Two vibrants might be easily outmatched by a skilled fighter, but a vibrant and discordant 
+together will usually overwhelm all but the strongest units.
+
+The larger and more dangerous castes of the shedim can be found within these inner rings.  The "ah tel" is the next largest shedim unit, at roughly one and a half times the size of a dwarf.
+Ah tels possess four arms, which carry long, blade-like claws that run for almost their entire length.  Ah tels are the "command" units for discordants, currants, and vibrants.  When faced
+with a credible danger, lesser castes will fall back to the whirling arms of an ah tel for support.  More often than not, such support is enough.
+
+There exist three other castes of even greater size and power than the ah tel, but such castes are not frequently found in full compliment.  While a typical pack will have a dozen or so currants,
+vibrants, and discordants, and a handful of ah tels, it is rare to see more than one of the higher castes as a member of a pack.  These castes are most frequently seen when packs form together
+into warbands, and the terror they bring is legendary.
+
+The "ah kora" is a slow, massive unit, three times the size of a dwarf or more.  Ah koras are walking tanks, with extremely thick bones and hide, and can suck up almost as much punishment as an
+entire pack can deal.  In a warband setting, ah koras position themselves with ah tels as the blades and shields of the shedim forces.
+
+The "ah kiral" is perhaps best described as a walking siege engine.  Positioned behind the ranks of the other shedim, ah kirals bombard their enemies with brutal ranged attacks of acids and
+poisons created within their bodies.
+
+Finally, and most rarely, there is the "ah haleel."  The largest specimen of shedim kind, ah haleels are monstrous creatures that rival megabeasts in strength.  They fight with two envenomed 
+stingers, and are over ten times the size of a dwarf.  While the other shedim dismember and poison their enemies with the intention of devouring them, ah haleels exist as an evolutionary last 
+resort should a shedim warband be matched with a superior force.  They will destroy any threat to their bretheren, even if that means rendering their prey inedible.  Ah haleels are known for 
+leaving the rotting corpses of their enemies on the battlefield in piles, a monument to those who would defy the inevitable onslaught of this cruel and unusual race.  Curiously, this means that
+ah haleels are unable to survive on their own, relying on the work of their lesser bretheren to feed them.  This degree of symbiosis has led some to argue that shedim civilization is much more 
+advanced than it has been given credit for, though this argument is not widely accepted as credible.
+
+
+[PART 5: DIPLOMATIC RELATIONS]
+
+For obvious reasons, the shedim are enemies of every other civilized race.  Even when embroiled in their own conflicts, armies will often drop their qualms with each other in favor of eliminating 
+a shedim attack.  Even the voidwalkers know that, left unchecked, the shedim will eventually overwhelm even the most coordinated and advanced defenses - the only way to prevent this from happening 
+is to keep their numbers down.

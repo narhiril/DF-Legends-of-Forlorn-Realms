@@ -1,0 +1,188 @@
+creature_lfr_god
+
+[OBJECT:CREATURE]
+
+[CREATURE:LFR_VISTHEL]
+[DOES_NOT_EXIST]
+[FEMALE]
+[NAME:radiant figure:Old God:mercy]
+[CASTE_NAME:Visthel:Visthel:Visthel] The third one here is the name of the god
+[DESCRIPTION:An Old God, kinswoman of Armok, and goddess of mercy.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:MERCY]
+[SPHERE:PEACE]
+[SPHERE:REBIRTH]
+[SPHERE:LOVE]
+[SPHERE:MARRIAGE]
+[SPHERE:HEALING]
+[SPHERE:FORGIVENESS]
+
+
+[CREATURE:LFR_ARMOK]
+[DOES_NOT_EXIST]
+[MALE]
+[NAME:inspiring figure:Old God:blood] The third one here is what it shows in legends mode
+[CASTE_NAME:Armok:Armok:Armok] The third one here is the name of the god
+[DESCRIPTION:The god of blood, shaper of worlds, and the leader of the Old Gods] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:CREATION]
+[SPHERE:DEATH]
+[SPHERE:MURDER]
+[SPHERE:STRENGTH]
+[SPHERE:COURAGE]
+[SPHERE:WAR]
+[SPHERE:VICTORY]
+[SPHERE:VALOR]
+
+
+[CREATURE:LFR_VORUK]
+[DOES_NOT_EXIST]
+[MALE]
+[NAME:dignified figure:Old God:fortune] The third one here is what it shows in legends mode
+[CASTE_NAME:Voruk:Voruk:Voruk] The third one here is the name of the god
+[DESCRIPTION:The Old God of wealth and fortune, kinsman of Armok.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:WEALTH]
+[SPHERE:CRAFTS]
+[SPHERE:GAMBLING]
+[SPHERE:JEWELS]
+[SPHERE:LUCK]
+[SPHERE:TRADE]
+[SPHERE:FAME]
+
+
+[CREATURE:LFR_KOGUT]
+[DOES_NOT_EXIST]
+[MALE]
+[NAME:lighthearted figure:Old God:revelry] The third one here is what it shows in legends mode
+[CASTE_NAME:Kogut:Kogut:Kogut] The third one here is the name of the god
+[DESCRIPTION:The Old God of revelry, kinsman of Armok.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:REVELRY]
+[SPHERE:MUSIC]
+[SPHERE:GAMES]
+[SPHERE:FOOD]
+[SPHERE:DANCE]
+[SPHERE:HOSPITALITY]
+[SPHERE:SONG]
+[SPHERE:POETRY]
+
+
+[CREATURE:LFR_PEL]
+[DOES_NOT_EXIST]
+[FEMALE]
+[NAME:shrouded figure:Old God:mysteries] The third one here is what it shows in legends mode
+[CASTE_NAME:Pel:Pel:Pel] The third one here is the name of the god
+[DESCRIPTION:An Old God, kinswoman of Armok, and goddess of mysteries.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:SILENCE]
+[SPHERE:PERSUASION]
+[SPHERE:TRUTH]
+[SPHERE:WISDOM]
+[SPHERE:DREAMS]
+
+
+[CREATURE:LFR_ZALKOR]
+[DOES_NOT_EXIST]
+[MALE]
+[NAME:blazing figure:Old God:fire] The third one here is what it shows in legends mode
+[CASTE_NAME:Zalkor:Zalkor:Zalkor] The third one here is the name of the god
+[DESCRIPTION:The firstborn child of Armok and Visthel, Zalkor is the quick-tempered Old God of fire] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:FIRE]
+[SPHERE:REVENGE]
+[SPHERE:TORTURE]
+[SPHERE:VOLCANOS]
+
+[CREATURE:LFR_TEMANAT]
+[DOES_NOT_EXIST]
+[FEMALE]
+[NAME:flowing figure:Old God:water and ice] The third one here is what it shows in legends mode
+[CASTE_NAME:Temanat:Temanat:Temanat] The third one here is the name of the god
+[DESCRIPTION:The firstborn daughter of Pel and Kogut, Temanat is an Old God and is the goddess of water and ice.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:WATER]
+[SPHERE:COASTS]
+[SPHERE:FISH]
+[SPHERE:RIVERS]
+[SPHERE:OCEANS]
+[SPHERE:LAKES]
+
+[CREATURE:LFR_BARTOTH]
+[DOES_NOT_EXIST]
+[MALE]
+[NAME:stormy figure:Old God:lightning and thunder] The third one here is what it shows in legends mode
+[CASTE_NAME:Bartoth:Bartoth:Bartoth] The third one here is the name of the god
+[DESCRIPTION:The youngest son of Armok and Visthel, Bartoth is the Old God of tempests and storms.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:STORMS]
+[SPHERE:THUNDER]
+[SPHERE:WEATHER]
+[SPHERE:LIGHTNING]
+[SPHERE:RAIN]
+[SPHERE:YOUTH]
+
+[CREATURE:LFR_KEROX]
+[DOES_NOT_EXIST]
+[FEMALE]
+[NAME:grounded figure:Old God:earth] The third one here is what it shows in legends mode
+[CASTE_NAME:Kerox:Kerox:Kerox] The third one here is the name of the god
+[DESCRIPTION:Daughter of Pel and Kogut, and twin sister of Lemox, Kerox is an Old God and serves as the goddess of earth.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:EARTH]
+[SPHERE:MINERALS]
+[SPHERE:PREGNANCY]
+[SPHERE:MOUNTAINS]
+[SPHERE:MUCK]
+[SPHERE:METALS]
+[SPHERE:AGRICULTURE]
+[SPHERE:PLANTS]
+[SPHERE:NATURE]
+[SPHERE:LONGEVITY]
+
+[CREATURE:LFR_LEMOX]
+[DOES_NOT_EXIST]
+[FEMALE]
+[NAME:dancing figure:Old God:the four winds] The third one here is what it shows in legends mode
+[CASTE_NAME:Lemox:Lemox:Lemox] The third one here is the name of the god
+[DESCRIPTION:Daughter of Pel and Kogut, and twin sister of Kerox, Lemox is an Old God and serves as the lighthearted goddess of the winds.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:WIND]
+[SPHERE:HAPPINESS]
+[SPHERE:BIRTH]
+[SPHERE:BEAUTY]
+
+[CREATURE:LFR_GISTHAL]
+[DOES_NOT_EXIST]
+[MALE]
+[NAME:radiant figure:Old God:light] The third one here is what it shows in legends mode
+[CASTE_NAME:Gisthal:Gisthal:Gisthal] The third one here is the name of the god
+[DESCRIPTION:The only son of Pel and Kogut, Gisthal is the Old God of light.] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:LIGHT]
+[SPHERE:RAINBOWS]
+[SPHERE:ANIMALS]
+[SPHERE:HOSPITALITY]
+[SPHERE:LOYALTY]
+[SPHERE:OATHS]
+[SPHERE:STARS]
+[SPHERE:SUN]
+[SPHERE:DAY]
+
+[CREATURE:LFR_PHARIS]
+[DOES_NOT_EXIST]
+[FEMALE]
+[NAME:radiant figure:Old God:light] The third one here is what it shows in legends mode
+[CASTE_NAME:Gisthal:Gisthal:Gisthal] The third one here is the name of the god
+[DESCRIPTION:The only daughter of Armok and Visthel, Pharis is an Old God and serves as the goddess of darkness] This is unnecessary and does nothing, but I have it just in case.
+[CREATURE_CLASS:DFHACK_GOD] Required for god to be god.
+[SPHERE:DARKNESS]
+[SPHERE:NIGHT]
+[SPHERE:MOON]
+[SPHERE:CAVERNS]
+[SPHERE:DEPRAVITY]
+[SPHERE:DUSK]
+[SPHERE:RUMORS]
+[SPHERE:MISERY]
+
+Kexel is intentionally omitted from this file.

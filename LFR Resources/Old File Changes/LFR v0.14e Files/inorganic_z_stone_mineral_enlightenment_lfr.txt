@@ -1,0 +1,15 @@
+inorganic_z_stone_mineral_enlightenment_lfr
+
+[OBJECT:INORGANIC]
+
+[INORGANIC:ENLIGHTENMENT_STONE] used as a product that instantly disappears for the advancement of skills in the ritual tree.
+[USE_MATERIAL_TEMPLATE:STONE_VAPOR_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:stone of enlightenment]
+[STATE_NAME_ADJ:LIQUID:molten enlightenment stone]
+[STATE_NAME_ADJ:GAS:the pungent scent of progress] I found this amusing.
+[DISPLAY_COLOR:7:0:1][TILE:'*']
+[STATE_COLOR:GAS:WHITE]
+[MELTING_POINT:9000]
+[BOILING_POINT:9959]
+[SOLID_DENSITY:20]
+[MATERIAL_VALUE:1]

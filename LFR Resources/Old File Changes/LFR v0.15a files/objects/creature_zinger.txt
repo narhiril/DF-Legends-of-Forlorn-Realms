@@ -1,0 +1,208 @@
+creature_zinger
+
+[OBJECT:CREATURE]
+
+[CREATURE:ZINGER_LFR]
+	[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with harmful consequences to those nearby.]
+	[NAME:zinger:zingers:zinger]
+	[CASTE_NAME:zinger:zingers:zinger]
+	[GENERAL_CHILD_NAME:little zinger:little zingers:zinger]
+	[PREFSTRING:spots][CREATURE_TILE:'z'][COLOR:1:0:1]
+	[CHILD:2][BABY:1][LITTERSIZE:1:2]
+	[PET][PETVALUE:10]
+	[COMMON_DOMESTIC]
+	[BIOME:SUBTERRANEAN_CHASM]
+	[UNDERGROUND_DEPTH:1:2]
+	[LARGE_ROAMING][DIFFICULTY:2][FREQUENCY:2]
+	[POPULATION_NUMBER:40:60]
+	[CLUSTER_NUMBER:5:7]
+	[BENIGN][AT_PEACE_WITH_WILDLIFE]
+	[LARGE_PREDATOR][MEANDERER]
+	[GRASSTRAMPLE:50]
+	[BODY:BODY_WITH_HEAD_FLAG:BASIC_3PARTLEGS]
+	[NO_THOUGHT_CENTER_FOR_MOVEMENT]
+	[EXTRAVISION]
+	[NOBREATHE]
+	[NOFEAR]
+	[NOTHOUGHT]
+	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+		[SELECT_TISSUE:HAIR]
+			[RELSIZE:150]
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:BODY_HAIR_TISSUE_LAYERS:HAIR]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+	[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
+	[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
+	[HAS_NERVES]
+	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+	[CREATURE_CLASS:GENERAL_POISON]
+	[GETS_WOUND_INFECTIONS]
+	[GETS_INFECTIONS_FROM_ROT]
+	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+	[BODY_SIZE:0:0:5000]
+	[BODY_SIZE:1:122:20000]
+	[BODY_SIZE:20:0:50000]
+	[BODY_APPEARANCE_MODIFIER:HEIGHT:90:95:98:100:102:105:110]
+	[BODY_APPEARANCE_MODIFIER:BROADNESS:90:95:98:100:102:105:110]
+	[MAXAGE:10:35]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ALL_ACTIVE]
+	[HOMEOTHERM:10070]
+	[SWIMS_INNATE][SWIM_SPEED:2500]
+	[CASTE:FEMALE_FLASHBANG]
+		[FEMALE]
+		[CHILDNAME:little flashbang zinger:little flashbang zingers:flashbang zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a brilliant light and concussion wave.]
+		[CASTE_NAME:flashbang zinger:flashbang zingers:flashbang zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_FLASH]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:YELLOW:1:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+	[CASTE:MALE_FLASHBANG]
+		[MALE]
+		[CHILDNAME:little flashbang zinger:little flashbang zingers:flashbang zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a brilliant light and concussion wave.]
+		[CASTE_NAME:flashbang zinger:flashbang zingers:flashbang zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_FLASH]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:YELLOW:1:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+	[CASTE:FEMALE_PUTRID]
+		[FEMALE]
+		[CHILDNAME:little putrid zinger:little putrid zingers:putrid zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with an extremely foul smell.]
+		[CASTE_NAME:putrid zinger:putrid zingers:putrid zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_PUTRID]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:GREEN:1]
+				[TLCM_NOUN:skin:SINGULAR]
+	[CASTE:MALE_PUTRID]
+		[MALE]
+		[CHILDNAME:little putrid zinger:little putrid zingers:putrid zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with an extremely foul smell.]
+		[CASTE_NAME:putrid zinger:putrid zingers:putrid zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_PUTRID]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:GREEN:1]
+				[TLCM_NOUN:skin:SINGULAR]
+	[CASTE:FEMALE_FRAG]
+		[FEMALE]
+		[CHILDNAME:little fragmented zinger:little fragmented zingers:fragmented zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a burst of high-velocity bone fragments.]
+		[CASTE_NAME:fragmented zinger:fragmented zingers:fragmented zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_FRAG]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:BLACK:1]
+				[TLCM_NOUN:skin:SINGULAR]
+	[CASTE:MALE_FRAG]
+		[MALE]
+		[CHILDNAME:little fragmented zinger:little fragmented zingers:fragmented zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a burst of high-velocity bone fragments.]
+		[CASTE_NAME:fragmented zinger:fragmented zingers:fragmented zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_FRAG]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:BLACK:1]
+				[TLCM_NOUN:skin:SINGULAR]
+	CASTE:FEMALE_FIRE
+		FEMALE
+		CHILDNAME:little pyrophoric zinger:little pyrophoric zingers:pyrophoric zinger
+		DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a burst of flame.
+		CASTE_NAME:pyrophoric zinger:pyrophoric zingers:pyrophoric zinger
+		ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_FIRE
+		FIREIMMUNE
+		SET_TL_GROUP:BY_CATEGORY:ALL:SKIN
+			TL_COLOR_MODIFIER:RED:1:ORANGE:1
+				TLCM_NOUN:skin:SINGULAR
+	CASTE:MALE_FIRE
+		MALE
+		CHILDNAME:little pyrophoric zinger:little pyrophoric zingers:pyrophoric zinger
+		DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a burst of flame.
+		CASTE_NAME:pyrophoric zinger:pyrophoric zingers:pyrophoric zinger
+		FIREIMMUNE
+		ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_FIRE
+		SET_TL_GROUP:BY_CATEGORY:ALL:SKIN
+			TL_COLOR_MODIFIER:RED:1:ORANGE:1
+				TLCM_NOUN:skin:SINGULAR
+	CASTE:FEMALE_ICE
+		FEMALE
+		CHILDNAME:little frigid zinger:little frigid zingers:frigid zinger
+		DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a gust of extremely cold air.
+		CASTE_NAME:frigid zinger:frigid zingers:frigid zinger
+		ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_ICE
+		SELECT_TISSUE:HAIR
+			RELSIZE:180
+			INSULATION:250
+		SET_TL_GROUP:BY_CATEGORY:ALL:SKIN
+			TL_COLOR_MODIFIER:BLUE:1:PURPLE:1
+				TLCM_NOUN:skin:SINGULAR
+	CASTE:MALE_ICE
+		MALE
+		CHILDNAME:little frigid zinger:little frigid zingers:frigid zinger
+		DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often with a gust of extremely cold air.
+		CASTE_NAME:frigid zinger:frigid zingers:frigid zinger
+		ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_ICE
+		SELECT_TISSUE:HAIR
+			RELSIZE:180
+			INSULATION:250
+		SET_TL_GROUP:BY_CATEGORY:ALL:SKIN
+			TL_COLOR_MODIFIER:BLUE:1:PURPLE:1
+				TLCM_NOUN:skin:SINGULAR
+	[CASTE:MALE_ACID]
+		[MALE]
+		[CHILDNAME:little corrosive zinger:little corrosive zingers:corrosive zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often spewing its corrosive fluids everywhere.]
+		[CASTE_NAME:corrosive zinger:corrosive zingers:corrosive zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_ACID]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:CHARTREUSE:1:TAUPE_SANDY:1:BEIGE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+		[SELECT_MATERIAL:BLOOD]
+			[STATE_COLOR:ALL:GREEN]
+			[STATE_NAME_ADJ:LIQUID:acid]
+			[SYNDROME]
+			[SYN_NAME:acid burns]
+			[SYN_AFFECTED_CLASS:GENERAL_POISON]
+			[SYN_IMMUNE_CREATURE:ZINGER_LFR:ALL]
+			[SYN_CONTACT]
+			[CE_PAIN:SEV:400:PROB:100:START:1:PEAK:5:END:800]
+			[CE_BLISTERS:SEV:600:PROB:100:START:1:PEAK:5000:END:10000]
+	[CASTE:FEMALE_ACID]
+		[FEMALE]
+		[CHILDNAME:little corrosive zinger:little corrosive zingers:corrosive zinger]
+		[DESCRIPTION:A walking, spotted ball of flesh covered with long, fine hairs.  It is rarely hostile, but is not a good source of food, as its death causes its body to rapidly disintegrate, often spewing its corrosive fluids everywhere.]
+		[CASTE_NAME:corrosive zinger:corrosive zingers:corrosive zinger]
+		[ITEMCORPSE:BOULDER:NONE:INORGANIC:LFR_ZINGER_ACID]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+			[TL_COLOR_MODIFIER:CHARTREUSE:1:TAUPE_SANDY:1:BEIGE:1:CREAM:2]
+				[TLCM_NOUN:skin:SINGULAR]
+		[SELECT_MATERIAL:BLOOD]
+			[STATE_COLOR:ALL:GREEN]
+			[STATE_NAME_ADJ:LIQUID:acid]
+			[SYNDROME]
+			[SYN_NAME:acid burns]
+			[SYN_AFFECTED_CLASS:GENERAL_POISON]
+			[SYN_IMMUNE_CREATURE:ZINGER_LFR:ALL]
+			[SYN_CONTACT]
+			[CE_PAIN:SEV:400:PROB:100:START:1:PEAK:5:END:800]
+			[CE_BLISTERS:SEV:600:PROB:100:START:1:PEAK:5000:END:10000]
+	[SELECT_CASTE:ALL]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
+			[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:hair:SINGULAR]
+	[SELECT_MATERIAL:ALL]
+		[MULTIPLY_VALUE:5]

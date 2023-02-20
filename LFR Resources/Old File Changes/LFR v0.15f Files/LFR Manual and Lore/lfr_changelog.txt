@@ -1,0 +1,1155 @@
+Changelog/Full Version History
+
+====
+
+
+[CL0] - CHANGE LOG / VERSION HISTORY
+	[CLT] - v0.15e
+	[CLS] - v0.15d
+	[CLR] - v0.15c
+	[CLQ] - v0.15b
+	[CLP] - v0.15a
+	[CLO] - v0.14e
+	[CLN] - v0.14d
+	[CLM] - v0.14c
+	[CLL] - v0.14b
+	[CLK] - v0.14a
+	[CLJ] - v0.13b
+	[CLI] - v0.13a
+	[CLH] - v0.12c
+	[CLG] - v0.12b
+	[CLF] - v0.12a
+	[CLE] - v0.11c
+	[CLD] - v0.11b
+	[CLC] - v0.11a
+	[CLB] - v0.10c-d
+	[CLA] - v0.10b
+	[CL9] - v0.10a
+	[CL8] - v0.07b-e
+	[CL7] - v0.07a
+	[CL6] - v0.06
+	[CL5] - v0.05
+	[CL4] - v0.04
+	[CL3] - v0.03
+	[CL2] - v0.02
+	[CL1] - v0.01
+
+====
+
+
+
+
+[CL0] CHANGE LOG / VERSION HISTORY
+
+This log will be numbered in reverse, with the most recent changes on top.
+
+[CLx] v0.yz
+
+--
+[CLU] v0.15f
+
+
+Fixed a typo with bayonet crossbow blueprints.  Added custom secrets and curses.  Added framework for additional creature developments.  Revised description for exiled rift wardens.  Revised 
+graphic for exiled rift wardens.  Added graphics for hellions.  Added the temple of water and associated reactions.  Lowered success rate for the prayer for celebration at the shrine of 
+prosperity.  Added exiled rift wardens to worldgen as rare megabeasts.  Fixed an issue with Visthel's embrace that was causing it to be used by metalsmithing moods.  Fixed an issue with 
+dwarf caste descriptors.  Added the ability to make wooden wheelbarrows at the machine shop.  Added the archaeologist's lab and associated reactions.  Added vanguard ruins.  Orichalcum can 
+now be found in vanguard ruins in additional to its usual locations.  Fixed an issue with the graphic for the greater demon of pestilence.  Fixed an issue causing the potted plant to accept 
+non-empty pots.  Removed caste-level appearance modifiers for emberlight warriors until the crash issue is resolved.  Renamed the reward from sentinel core research so as not to be confused 
+with the crossbow upgrades from the tech tree.
+
+Added Files:
+
+b_detail_plan_tempimmune.txt
+material_template_tempimmune.txt
+tissue_template_templimmune.txt
+lfr_nephilim_professions_two.png
+inorganic_interaction_mat_lfr.txt
+interaction_secret_lfr.txt
+reaction_archaeology_lfr.txt
+inorganic_z_stone_mineral_vanguard.txt
+reaction_ritual_t3.txt
+
+
+Modified Files:
+
+lfr_manual.txt
+lfr_changelog.txt
+lfr_mechanical_tech_tree.txt
+lfr_ritual_reference.txt
+entity_default.txt
+inorganic_z_stone_mineral_enlightenment_lfr.txt
+building_mechanical_lfr.txt
+building_plant_lfr.txt
+building_y_temple_lfr.txt
+creature_demon_lfr.txt
+creature_rift_lfr.txt
+creature_servant.txt
+creature_standard.txt
+interaction_narhiril.txt
+item_tool_narhiril.txt
+item_weapon_narhiril.txt
+reaction_bdog.txt
+reaction_ritual_t2.txt
+reaction_tech_t3_lfr.txt
+rift_warden_lfr.png
+lfr_more_creatures.png
+graphics_lfr_custom.txt
+graphics_z_demon_lfr.txt
+
+--
+
+[CLT] v0.15e
+
+
+Fixed an issue causing the rare mineral cooperite to refine to cobalt instead of palladium.  Fixed an issue with metal javelin throwers requiring an obscene number of bars.  Fixed an issue 
+preventing empyrean carbuncles from using their most powerful ability on their own.  Fixed an issue preventing a rare (non-savant) caste of dwarves from being able to undergo the emberlight 
+warrior transformation.  Added additional framework for future creature developments.  Updated LFR for compatability with DF v0.34.04.
+
+Added Files:
+
+material_template_fireimmune.txt
+b_detail_plan_fireimmune.txt
+tissue_template_fireimmune.txt
+rift_warden_lfr.png
+lfr_nephilim_professions_one.png
+
+
+Modified Files:
+
+graphics_lfr_custom.txt
+b_detail_plan_narhiril.txt
+creature_standard.txt
+creature_pet_narhiril.txt
+item_toy_special.txt
+entity_default.txt
+item_weapon_narhiril.txt
+material_template_narhiril.txt
+reaction_tech_t3_lfr.txt
+tissue_template_narhiril.txt
+inorganic_z_stone_mineral_enlightenment_lfr.txt
+lfr_manual.txt
+lfr_changelog.txt
+
+
+--
+
+[CLS] v0.15d
+
+
+Added missing token for allowing mithril strands to be woven into cloth.  Prayers of the armor and weapon apprentices at the temple of fire now require a ceremonial urn (preserved), which is 
+made from two silver bars at the temple component foundry.  Fixed an issue causing specific brew reactions to kick out generic "drinks" instead of the alcohol they were supposed to.  Restored 
+missing unlock reaction to the lustrum energy extractor.  Fixed an issue causing orichalcum precision tools not to be available at magma-powered alchemy labs.  Requirements and products for the 
+greater ritual of sustinence have been changed - it now requires ash instead of a live creature, and can produce fireproof backpacks.  Cooldown for emberlight warriors' fireballs has been 
+substantially reduced.  Percentage chance for emberlight warrior transformation from appropriate reaction has been increased.  Fixed an issue causing every caste of zinger to bleed acid instead 
+of just the corrosive ones.  As originally intended, emberlight warriors are now immune to fire, while regular dwarves are not (UGH, most irritating bug ever).  High priests have been changed - 
+dwarves must now be blessed servants of an old god before they can hold that position.  Removed the cap on the number of high priests.  Fixed a bug preventing the reaction to unlock the fishing 
+pond from showing up.  Fixed a bug preventing the "crush stones" reaction from appearing at the trash compactor.  Female emberlight warriors are now sterile (no more giving birth to a very 
+unfotunate baby in the midst of a conflagration).  Simplified clothing plug-in will now include shoes for dwarves only.  Fixed a graphics glitch with t+he experimental materials and weapons 
+concept workshops.
+
+Simplified clothing and Sphalerite's rare animal mini-mod are now included with both the raw-only and pre-packaged downloads (they are not installed by default).  See the readme files for those 
+plug-ins for more information.
+
+
+
+Added Files:
+
+language_words.txt
+creature_rift.txt (not used)
+inorganic_metal_rift_lfr.txt (not used)
+carbuncle_rev_lfr.png (not used)
+
+
+Modified Files:
+
+descriptor_shape_easter_egg.txt
+creature_pet_narhiril.txt
+reaction_tech_adv.txt
+reaction_brew_lfr.txt
+inorganic_z_stone_mineral_enlightenment.txt
+building_exp_materials.txt
+building_exp_weapons.txt
+material_template_narhiril.txt
+creature_zinger.txt
+creature_standard.txt
+b_detail_plan_narhiril.txt
+item_tool_narhiril.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+reaction_tech_adv_lfr.txt
+item_armor_narhiril.txt
+interaction_narhiril.txt
+lfr_manual.txt
+lfr_changelog.txt
+lfr_ritual_reference.txt
+
+
+Plug-ins Added:
+
+Sphalerite's c_variation_default.txt
+
+--
+
+[CLR] v0.15c
+
+Configured LFR to run properly with the new release of Dwarf Fortress (v0.34.02)
+
+Language files have been expanded to include new words.  Removed [CANNOT_UNDEAD] from all civilized creatures and added undead graphics for them.  Fixed an error in the file for 
+LFR-related shapes.  Removed [FIREIMMUNE_SUPER] from emberlight warriors (was erroneously being applied at creature-level).  Void energy projectors will now use the spear skill in 
+melee and have been given a bayonet attack.
+
+
+Added Files:
+
+undead_civ_lfr.png
+
+
+Modified Files:
+
+graphics_lfr_easter_egg.txt
+graphics_lfr-custom.txt
+entity_default.txt
+creature_standard.txt
+creature_easter_egg.txt
+lfr_manual.txt
+lfr_changelog.txt
+language_MOROII.txt
+language_LIZMAN.txt
+language_LATIN.txt
+language_FRENCH.txt
+language_SHEDIM.txt
+language_VOID.txt
+creature_bog.txt
+creature_meow.txt
+creature_void.txt
+creature_lizardmen.txt
+creature_nephilim.txt
+descriptor_shape_easter_egg.txt
+descriptor_shape_narhiril.txt
+item_weapon_narhiril.txt
+building_z_cathedral_lfr.txt (not used)
+
+
+--
+
+[CLQ] v0.15b
+
+Configured LFR to run properly with the new release of Dwarf Fortress (v0.34.01).
+
+Content and balancing: Added prayers for weapon and armor smithing at temple of fire.  Added the potted plant (thanks Deon and Meph) as a bit of tasteful decoration.  Added adventure mode 
+reactions to manufacture bolts, blowdarts, and arrows.  Added specific mill reactions and brew reactions to millstone, quern, and still for each applicable plant in LFR (thank Urist Da Vinci 
+and hermano).  Added the ability to extract mithril strands (thanks Meph).  Fixed an issue causing behemoths to be affected by their own syndrome.  Tortoises have been renamed to "bronze-
+shelled tortoises."  Added a few easter eggs. Added the ceremonial pyre reaction to the temple of fire.  Restored previosuly removed pyrophoric zingers.  Dwarves will now engrave images of 
+the Old Gods.  Emberlight warriors have been added.  Buffed empyrean carbuncles slightly.
+
+File structure: Split changelog/version hitory from the manual - it now has its own file (lfr_changelog.txt).  Pigeons (only standard pigeons) have been moved to creature_narhiril.txt, 
+and should no longer be percieved as hostiles by your military.  Split descriptor_shape_narhiril.txt into two files, the other being descriptor_shape_easter_egg.txt, and moved appropriate 
+entries.  Greater demons will now use the new graphics_z_demon_lfr.txt file for their sprites.
+
+Added Files:
+
+graphics_z_demon_lfr.txt
+creature_demon_lfr.txt
+descriptor_shape_easter_egg.txt
+building_z_cathedral_lfr.txt (not used, as of yet)
+reaction_adventure_lfr.txt
+reaction_mill_lfr.txt
+reaction_brew_lfr.txt
+interaction_narhiril.txt
+building_plant_lfr.txt
+lfr_changelog.txt
+
+
+Modified Files:
+
+graphics_lfr_easter_egg.txt
+graphics_lfr_custom.txt
+plant_narhiril.txt
+inorganic_stone_mineral_narhiril.txt
+inorganic_z_stone_enlightenment_lfr.txt
+entity_lizardmen.txt
+entity_default.txt
+inorganic_stone_transmute_narhiril.txt
+inorganic_zinger_death_blasts.txt
+entity_nephilim.txt
+creature_standard.txt
+creature_narhiril.txt
+creature_zinger.txt
+creature_easter_egg.txt
+creature_hellion.txt
+creature_lizardmen.txt
+creature_legendary_narhiril.txt
+creature_nephilim.txt
+creature_pet_narhiril.txt
+creature_servant.txt
+descriptor_shape_narhiril.txt
+item_helm_mood_lfr.txt
+item_armor_special_lfr.txt
+material_template_narhiril.txt
+reaction_narhiril.txt
+reaction_ritual_t2.txt
+lfr_ritual_reference.txt
+lfr_manual.txt
+lore_pantheon.txt
+
+--
+
+[CLP] v0.15a
+
+Fixed a typo in the description for megalania.  Added a new easter egg creature (this thing is vicious, just warning you guys, but you'll have to go a bit out of the way to find it).  
+Fixed an issue with incubi that was causing them to be much rarer than intended.  Fixed a bug related to vines of xanadu returning a bugged (null) mill product. Vines of xanadu will now 
+produce "heavenly seasoning" when milled, which carries a material value of 20.  Nephilim will now use heraldic shields in addition to their previous two types (this change is mostly cosmetic).  
+Added the ability to craft hadrine reactive shields (same prerequisites as other hadrine pieces).  Alchemical experiments now have a small (5%) chance of producing a lustrum rock.  Added 
+savant castes for glassmakers.  Zinger anatomy has been vastly simplified.  Added corrosive zingers.  Removed a redundant extra "document efficient casting procedure" reaction.  A certain type of 
+pigeon is now substantially less common, and will use a unique graphic.  Stock whips have been beaten with the nerf bat of justice and will no longer offer ridiculous armor penetration, which 
+didn't make any sense anyway.  The trash compactor can now be used to remove slabs of accreditation - unlike documentation, this reaction uses no skill and creates no product, it is purely for 
+disposal of unwanted slabs once things are unlocked.  Creatures have had their background colors removed, which should make the unit screen a bit easier to look at.  Plants in ASCII version have 
+had background colors removed.  Minerals and metals in ASCII version have had their background colors removed.  Artwork for the experimental materials workshop, shrine of nature, shrine of 
+victory, shrine of prosperity, mechanical obstacle course, medical training dummy, and weapons concept labs has been revised.  Nephilim will no longer send caravans or diplomats during the spring.
+Terminated "support" for Phoebus' graphic set until I can more adequately get it to work properly.  Meowkin have had their adult size slightly increased.
+
+Added a good amount of documentation for the tech and ritual trees, found in the lfr manual and lore folder.  The tech tree and ritual tree now have their own dedicated manuals and/or reference 
+sheets.  Tier three of the tech tree has a guide on how to fully utilize the new features.
+
+Tier three of the tech tree has been implemented.  The full changelog for this is so enormous that it would fill most of the screen, so I'll try to paraphrase.  Added buildings: the advanced 
+alchemy lab, the prototype workbench, the scientific library, the exotic cheesery.  Weapons upgrades - the dwarves can perform research at the advanced alchemy lab to unlock upgrades to the 
+crossbow and a new weapon entirely.  Weapon upgrades can create formidable hybrid weapons, which are capable of great power in both ranged and melee combat. The magnetic dart launcher can be 
+researched, unlocked, and then upgraded alongside the crossbow. Ammo for the magnetic dart launcher can be manufactured from certain metals in stacks of 60. Advanced alchemy experiments - the 
+bigger, meaner cousin of the alchemical experiments of old.  New risks, new rewards. Advanced transmutation experiments, to much more reliably grant access to rare plants. Added the ability to 
+manufacture a potent knockout gas from voracious maws at the advanced alchemy lab. Added new methods for creating cheese. In case you missed any tier two advances on the way to tier three, 
+the scientific library can unlock them for you.  Of course, added new easter eggs.
+
+
+Added Files:
+
+building_adv_cook_lfr.txt
+building_tech_t3.txt
+creature_hellion.txt
+inorganic_metal_t3.txt
+item_weapon_tech_t3.txt
+reaction_adv_cook_lfr.txt
+item_tool_bdog.txt
+building_bdog_adv_hauling.txt
+reaction_bdog.txt
+reaction_tech_t3_lfr.txt
+lfr_ritual_reference.txt
+lfr_mechanical_tech_tree.txt
+lfr_mechanical_t3_reference.txt
+
+
+
+Modified Files:
+
+graphics_lfr_easter_egg.txt
+lfr_manual.txt
+lore_misc.txt
+lore_pantheon.txt
+building_exp_materials.txt
+building_exp_weapons.txt
+building_mechanical_lfr.txt
+building_ritual_lfr.txt
+creature_easter_egg.txt
+creature_legendary_narhiril.txt
+creature_lizardmen.txt
+creature_meow.txt
+creature_moroii.txt
+creature_narhiril.txt
+creature_nephilim.txt
+creature_pegasus_efhuman.txt
+creature_pet_narhiril.txt
+creature_void.txt
+creature_zinger.txt
+descriptor_shape_narhiril.txt
+entity_default.txt
+entity_meow.txt
+entity_void.txt
+entity_nephilim.txt
+inorganic_stone_mineral_narhiril.txt
+inorganic_z_stone_mineral_enlightenment.txt
+inorganic_zinger_death_blasts.txt
+item_ammo_narhiril.txt
+item_armor_meow.txt
+item_armor_special_lfr.txt
+item_food_narhiril.txt
+item_helm_mood_lfr.txt
+item_tool_narhiril.txt
+item_weapon.txt
+item_weapon_narhiril.txt
+item_weapon_special.txt
+plant_narhiril.txt
+reaction_alchemy_narhiril.txt
+reaction_exp_weapons.txt
+reaction_orrery_lfr.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+reaction_slab_removal.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+
+... and all other LFR-related inorganic files for the ASCII version only.
+
+
+
+--
+[CLO] v0.14e
+
+Added the Greater Demon of Famine.  Strengthened the claws and/or horns of a few spoiler-related creatures.  Revised the syndromes on a spoiler-related creature.  
+Empyrean carbuncles will no longer pose a friendly fire risk to other common war animals.  Removed a duplicate description token from certain castes of carbuncles.
+Nephilim will no longer fly - instead, they will move at enhanced speeds as a sort of "limited flight capability."  As a result, nephilim caravans will now trade 
+their goods with the dwarves.  Lore has been modified to accomodate this change.  Fixed a bug causing adamantine javelins at the advanced casters to require more 
+bars than intended.  White gold can now be used for advanced mechanisms.  Added "perform mock autopsy" reaction to the morgue (trains diagnostics).  Vermin autopsy 
+will now advance diagnostics significantly more (2x).  Zingers are now substantially less common in the wild to minimize their impact on fortresses who rely on 
+underground fauna for hunting.  Added pygmy anyklosaurs as a new trainable war beast (thanks Imp for the concept).  The material value of rainbow diamonds has been
+reduced (approx 1/2) due to increased availability (they're still quite valuable though :D).  A bug causing lizardmen to periodically use voidshard has been fixed
+(thanks Jilladilla).  Many LFR-related megabeasts have been given tougher hides and/or scales.  Added megalania.  Added a small number of new easter eggs.  Deep 
+wolves are now substantially more common.
+
+
+Added Files:
+
+descriptor_shape_narhiril.txt
+inorganic_z_stone_mineral_enlightenment.txt
+lfr_ankylosaur.png
+lfr_megalania.png
+lfr_famine.png
+
+
+Modified Files:
+
+body_narhiril.txt
+creature_easter_egg.txt
+creature_land_mover_lfr.txt
+creature_legendary_narhiril.txt
+creature_narhiril.txt
+creature-nephilim.txt
+creature_pet_narhiril.txt
+creature_zinger.txt
+entity_default.txt
+graphics_lfr_easter_egg.txt
+graphics_lfr_custom.txt
+inorganic_stone_gem_narhiril.txt
+item_tool_narhiril.txt
+material_template_narhiril.txt
+reaction_narhiril.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+lfr_manual.txt
+lore_nephilim.txt
+
+--
+[CLN] v0.14d
+
+Fixed a bug causing the fish pond to kick out generic "raw fish" items.  Added the grazer token to pegasoi.  Fixed a bug causing items made from ritual materials not
+to stockpile properly - they are now considered "wood" products from a technical standpoint.  Fixed a bug causing the machine shop to create bins and beds of clay.
+Fishing pond speed has been significantly increased.  Added shedim lore file.  Added several easter eggs of varying complexity.  Added framework for upcoming ritual
+and mechanical advances.  Revised the appearance of the temple of fire.  The alchemy lab, weapons concept lab, magma-powered weapons concept lab, and magma-powered
+alchemy lab are now listed as furnaces on the build menu (previously listed as workshops).  Fixed an issue with the weapons concept labs causing the labrys to never
+be produced (thanks 73).  Hadrine meshes no longer carry a quality modifier (reason: absurd values for an intermediate item).  Fixed a bug causing the temple of fire
+to require any "tool" item to construct.  Fixed a bug causing a spoiler-relate creature not to drop the proper item on death.  Tweaked the attributes and lethality
+of a certain spoiler-related creature.  Added a small bit of lore for the previously mentioned spoiler-related creature.  Added manual entries for the shrine reactions
+(somehow I forgot these in 0.14c).  Dwarves will no longer seek out LFR-related slabs for decoration (memorial slabs are unaffected).  The prayers for fortune and
+celebration have been moved to the shrine of prosperity (they were erroneously located at the shrine of victory).  Damascus sentinels can now be killed by shattering
+the "control module" located in their head.  You will still need to penetrate the outer plating to do this, but this will make them more easily killable with blunt or 
+piercing weapons (previously, you had to cut the head or lower body off to kill them).  Flying cave oyster pearls are no longer considered inorganic, and will no longer 
+appear in the stone stockpile list.  Appearances of display cases and hadrine meshes have been changed to avoid confusion with corpses.  Fixed a bug with the trash 
+compactor causing one of the "reduce clutter" reactions to call for the wrong item.  Added reactions for adamantine javelins.  Revised wording of javelin casting reactions 
+to help distinguish between the different casters on the manager screen.  Fixed a bug causing a spoiler-related creature to spawn in the wrong cavern layer (thanks 73). 
+Crystalline blocks are now a bit heavier.  Devourers of the depths can now be stunned.
+
+
+Added Files:
+
+lore_shedim.txt
+
+
+Modified Files:
+
+b_detail_plan_narhiril.txt
+body_narhiril.txt
+building_alchemy_lfr.txt
+building_display_case_kipi.txt
+building_exp_weapons_lfr.txt
+building_mechanical_lfr.txt
+building_npc_lfr.txt
+building_y_temple_lfr.txt
+carbuncle.png
+creature_easter_egg.txt
+creature_fish_domestic.txt
+creature_lizardmen.txt
+creature_narhiril.txt
+creature_pegasus_efhuman.txt
+creature_pet_narhiril.txt
+creature_servant.txt
+entity_bog.txt
+entity_default.txt
+entity_meow.txt
+entity_nephilim.txt
+entity_void.txt
+graphics_lfr_custom.txt
+inorganic_other_narhiril.txt
+inoragnic_stone_mineral_narhiril.txt
+item_tool_narhiril.txt
+lfr_manual.txt
+lore_misc.txt
+material_template_narhiril.txt
+reaction_exp_weapons.txt
+reaction_fish_lfr.txt
+reaction_narhiril.txt
+reaction_ritual_t2.txt
+reaction_slab_removal.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+tissue_template_narhiril.txt
+
+--
+[CLM] v0.14c
+
+Fixed a bug that was preventing transmutation and flashbang zingers' blind effects from working properly.  Clutch size for tortoises has been substantially reduced.  Excess
+clutter (gamelog, bmps) has been removed from the pre-packaged version.  Fixed a bug causing lead hammerhead javelins not to show up at the non-magma advanced metal caster.  
+The rituals of power have had the number of reagents reduced from "3 and 8" to "1 and 3." Added a "crush stone" reaction to the trash compactor (see that entry for details) 
+as yet another stone sink.  Plant transmutation now uses six seeds instead of eight random plants - as a result, products will no longer be consumed immediately after being 
+produced when multiple copies of this reaction are queued.  Tortoises now cost a more reasonable amount of embark points (this was absurdly low in previous versions).  Added 
+the "high priest" position (two possible).  Added the machine shop, a new tier one mechanical workshop (see that entry for details).  Local legends may now make a single demand.  
+Added NO_STONE_STOCKPILE to the template for stones which evaporate on creation (alchemy byproducts, etc).  All appropriate LFR-related creatures now have sounds associated 
+with them (for adventure mode).  Fixed a number of minor bits of erroneous text.  High priests and local legends are not duty bound - they can join you in adventure mode 
+(this is intentional).  Added rituals and prayer reactions to shrines.  Added the first tier two "hybrid" building, the temple of fire, and an associated reaction.  The
+temple of fire currently uses a modified orrery visual design - this will be revised (read: gutted and replaced by something cooler) in future versions.
+
+
+Added Files:
+
+building_machine_shop.txt
+building_y_temple_lfr.txt
+
+
+Modified Files:
+
+lfr_manual.txt
+item_tool_narhiril.txt
+item_food_narhiril.txt
+building_trash_lfr.txt
+reaction_slab_removal.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+reaction_exp_weapons.txt
+reaction_alchemy_lfr.txt
+material_template_narhiril.txt
+entity_void.txt
+entity_default.txt
+inorganic_zinger_death_blasts.txt
+inorganic_stone_mineral_narhiril.txt
+inorganic_stone_transmute_narhiril.txt
+graphics_lfr_custom.txt
+
+...as well as all LFR-associated creature files
+
+
+
+
+--
+
+[CLL] v0.14b
+
+Fixed a bug that was causing the dwarven caravan to carry ether bars.  Cleaned up a few inconsistencies in documentation for the mod.  Renamed the reward for the "banshee
+funeral rite" reaction to avoid confusion with ether metal.  The "melt ethereal spheres" reaction at the smelter no longer requires fuel and has had its function changed
+to convert an ethereal sphere into a base-quality "ethereal sphere (processed)," which can then be melted down towards ethereal bars (special thanks to TehNoob for this 
+reaction).  The crystal growth tank now requires two clear glass boxes to construct (instead of a barrel).  Fixed a few minor text errors in reactions and manual.
+
+
+Modified Files:
+
+building_crystal_lfr.txt
+building_npc_lfr.txt
+entity_default.txt
+inorganic_stone_mineral_narhiril.txt
+item_toy_special.txt
+reaction_narhiril.txt
+reaction_alchemy_narhiril.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+lfr_manual.txt
+
+
+
+
+
+
+
+--
+[CLK] v0.14a
+
+Added bismuth bars as a possible result from alchemy.  Removed grazer tags from carbuncles and tortoises.  Added the orrery, a new training workshop.  Added 
+the trash compactor and "slab removal" reactions.  Meowkin ears are now properly sized, and their litter sizes have been cut to 1-2 (was 1-3) in order to put a dent  
+in their domination during world gen (they were killing absolutely everything, likely due to numbers).  Added the crystal growth tank, a tier three mechanical building.
+Moved amaroks, leviathans, wyverns, behemoths, manticores, and dragons to a new material template with stronger bone and leather (this change was also applied
+to a few spoiler-related creatures).  Leather and bone products of these creatures will be significantly stronger and more valuable.  Added a reaction to turn
+masterwork ethereal spheres into ethereal bars without producing a tantrum spiral (found at smelter).  Added v0.03a of "zingers" raws.  Added tier one of the 
+ritual tech tree and framework for tier two.  Voidwalkers will now siege from stealth - sneaky buggers.  All accumulated wealth and trade siege triggers 
+have been moved one notch back to compensate for the added material value of tech and ritual tree goods.  The "perform banshee funeral rite" reaction has been
+moved from the alchemy lab to the altar, and the fuel requirement for this reaction has been removed (the magma version of this reaction has also been removed).
+Zingers and sabre-toothed tigers are now available on embark due to popular demand - values have been adjusted accordingly.  Added a handful of easter eggs.
+Added a small number of new food items (for no good reason, possibly due to hunger at the time).  Added the fish pond, the first "hybrid" building.  A rare
+caste ofpigeon will no longer appear in siege forces.
+
+
+Modified Files:
+
+building_npc_lfr.txt
+creature_easter_egg_lfr.txt
+creature_legendary_narhiril.txt
+creature_standard.txt
+creature_land_mover_lfr.txt
+creature_meow.txt
+creature_narhiril.txt
+creature_pet_narhiril.txt
+entity_default.txt
+entity_meow.txt
+entity-bog.txt
+entity_void.txt
+entity_lizardmen.txt
+entity_nephilim.txt
+item_helm_mood_lfr.txt
+item_armor_special_lfr.txt
+item_weapon_special.txt
+material_template_narhiril.txt
+reaction_alchemy_narhiril.txt
+tissue_template_land_mover_lfr.txt
+graphics_lfr_custom.txt
+lfr_manual.txt
+
+
+Removed Files:
+
+inorganic_material_land_mover_narhiril.txt (this file's function has been replaced by a new, better material template)
+graphics_set_support_lfr (remnant folder of an early test build, was serving no purpose other than taking up space)
+
+
+Added Files:
+
+b_detail_plan_narhiril.txt
+body_narhiril.txt
+building_fishpond_lfr.txt
+building_crystals_lfr.txt
+building_orrery_lfr.txt
+building_ritual_lfr.txt
+building_trash_lfr.txt
+creature_fish_domestic.txt
+creature_servant.txt
+creature_zinger.txt
+inorganic_z_ritual_lfr.txt
+inorganic_zinger_death_blasts.txt
+item_food_narhiril.txt
+reaction_crystals_lfr.txt
+reaction_fish_lfr.txt
+reaction_orrery_lfr.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+reaction_slab_removal.txt
+lfr_zinger.png
+lore_pantheon.txt
+
+
+--
+
+
+[CLJ] v0.13b
+
+Various bugfixes.  Fixed a small number of typos.  Fixed an issue with advanced metal casters using a duplicate reaction.  Made tortoises flee
+combat by default.  Adjusted the weight of voidshard.  Fixed an error with manual compatibility instructions for the creature_standard file.
+
+Modified Files:
+
+lfr_manual.txt
+creature_pet_narhiril.txt
+item_tool_narhiril.txt
+reaction_tech_t2_lfr.txt
+inorganic_metal_narhiril.txt
+creature_standard.txt
+
+
+--
+
+[CLI] v0.13a
+
+Added nephilim and meowkin diplomats.  Added carbuncles, a new common domestic creature.  Added dwarven savants - more details on this later.
+Added the second tier of the "tech tree," including five new buildings and lots of associated reactions.  Added new easter eggs.  Added new
+graphics for relevant creatures.  Added the moroii, a new underground tribal race.  Added rare drops for more creatures.  Moved bog troll
+siege trigger back slightly.  Took the opportunity to fix a bug with kobolds that was causing them to starve to death by year 4 of worldgen.
+It is now possible for players to purchase tame tortoises at embark.  Pet value for tortoises has been adjusted for this purpose.  Added amaroks 
+and humbabas.  Added jackalopes and sabre-toothed tigers.  Added a caste of lizardmen which carry mischievious behavior tokens.  Removed a 
+special caste of pigeons from the arena spawn list.  Resolved an issue causing widow's tears to appear as black squares.  Added weapons and
+graphics for voidwalker thieves.
+
+Added Files:
+
+lfr_additional_creatures.png
+lfr_carbuncle.png
+lfr_jack_sabre.png
+lfr_moroii.png
+language_MOROII.txt
+building_exp_materials.txt
+building_exp_weapons.txt
+building_mechanical_t2.txt
+reaction_tech_t2_lfr.txt
+reaction_exp_weapons.txt
+lore_moroii.txt
+
+Modified Files:
+
+lfr_voidwalkers.png
+creature_pet_narhiril.txt
+creature_easter_egg.txt
+creature_lizardmen.txt
+entity_meow.txt
+entity_nephilim.txt
+entity_bog.txt
+entity_void.txt
+inorganic_other_narhiril.txt
+inorganic_stone_gem_narhiril.txt
+creature_standard.txt  <- stock file, see compatibility section for details
+item_armor_special_lfr.txt
+item_tool_narhiril.txt
+item_weapon_special.txt
+plant_narhiril.txt
+reaction_tech_adv_lfr.txt
+graphics_lfr_custom.txt
+graphics_lfr_easter_egg.txt
+lfr_manual.txt
+
+
+--
+
+[CLH] v0.12c
+
+Fixed a bug with bog troll and voidwalker civs that was causing them to be friendly to the player.  Gave metal weapons back to the bog trolls.
+
+Modified files:
+
+entity_bog.txt
+entity_void.tst
+
+--
+
+[CLG] v0.12b
+
+Resolved a bug where bog trolls and voidwalkers were ignoring their siege triggers.  Fixed a typo with the name of a spoiler-related item.  Fixed an unintended
+"feature" of will o' wisps that was causing nearby enemies to burn to death.  Added will o' wisp rare drops and an alchemical reaction to use them.  Added a
+rare drop to masters of locusts.  Removed previously mentioned diplomatic changes for bog trolls and voidwalkers (but not for nephilim).  Removed the broken
+"cremate corpse" reaction due to a broken token (hah, the rhymed) - this may be re-implemented in the future.  Autopsy reactions will now use vermin remains.
+Added one new mood weapon (this one's awesome, but I'm not sharing any more about it).  Voidwalker, bog troll, and lizardman sieges and ambushes will no longer
+enter the map in autumn.
+
+Added files:
+
+item_weapon_special.txt
+
+Modified Files:
+
+creature_bog.txt
+creature_void.txt
+reaction_alchemy_narhiril.txt
+item_toy_special.txt
+material_template_narhiril.txt
+entity_default.txt
+entity_bog.txt
+entity_lizardmen.txt
+entity_void.txt
+lfr_manual.txt
+reaction_narhiril.txt
+item_weapon_narhiril.txt
+reaction_tech_adv_lfr.txt
+
+--
+
+[CLF] v0.12a
+
+Resolved a few minor anomalies.  Added numerous language files.  Added mechanical-themed first installment of the "tech tree," including
+six new buildings and associated reactions.  Added orichalcum.  Added new easter eggs.  Nephilim caravans will not trade with you, but you
+can still offer them tribute or forcibly take their goods.  Bog trolls are not hostile to lizardmen or goblins, but will no longer send ambushes and will 
+now only use wooden weapons (they are meant to be a first-tier enemy).  Voidwalkers will now siege at population 110 (down from 150, for lower system specs).  If
+you create a LOT of wealth, they may come earlier.  Voidwalker will no longer abuse bodies (they have better things to do) and no longer ignore neutrals.
+
+(pause for breath)
+
+Fixed an issue that was making incubi much rarer than intended (though they're still pretty rare).  Added some other hidden features, including a preview of 
+the second tier of the tech tree.  Fixed an issue preventing a spoiler-related creature, pigeons, and will o' wisps from spawning.  Fixed an issue with 
+voidwalker graphics tiles being slightly misaligned.  Slightly brightened voidwalker graphics tiles to make them more visible on dark backgrounds.
+
+Added Files:
+
+language_FRENCH.txt
+language_LATIN.txt
+language_LIZMAN.txt
+language_SHEDIM.txt (currently unused, planned for future developments)
+building_mechanical_lfr.txt
+item_toy_tech_adv_lfr.txt
+item_tool_narhiril.txt
+reaction_tech_adv_lfr.txt
+building_crematorium_lfr.txt
+item_armor_special_lfr.txt
+item_trapcomp_special.txt
+building_lustrum_lfr.txt
+wrath_lfr.png
+
+Modified Files:
+
+inorganic_stone_mineral_narhiril.txt
+inorganic_metal_narhiril.txt
+entity_default.txt
+reaction_alchemy_narhiril.txt
+creature_easter_egg.txt
+entity_bog.txt
+creature_bog.txt
+entity_lizardmen.txt
+entity_nephilim.txt
+lfr_manual.txt
+lore_bog_troll.txt
+lore_misc.txt
+creature_lizardmen.txt
+creature_nephilim.txt
+creature_void.txt
+entity_void.txt
+building_alchemy_narhiril.txt
+reaction_narhiril.txt
+item_helm_mood_lfr.txt
+lore_nephilim.txt
+graphics_lfr_custom.txt
+lfr_voidwalkers.png
+
+
+--
+
+
+[CLE] v0.11c
+
+Fixed a bug preventing damascus sentinels from spawning properly during worldgen.  Tweaked new civilizations - Nephilim are no
+longer hostile by default (unless they declare war on you).  Bog Trolls will now send abductors rather than just item thieves.
+Names and symbols used by civilizations have been changed.  Dwarven names have been changed for dwarfier epithets.  Bog trolls should now
+attack goblins and lizardmen.  Voidwalkers should now attack everything.
+
+Added Files:
+
+language_SYM_LFR.txt
+
+Modified Files:
+
+entity_default.txt
+entity_bog.txt
+creature_bog.txt
+entity_lizardmen.txt
+entity_nephilim.txt
+lfr_manual.txt
+lore_bog_troll.txt
+creature_lizardmen.txt
+creature_nephilim.txt
+creature_void.txt
+entity_void.txt
+lore_void.txt
+creature_narhiril.txt
+
+--
+
+[CLD] v0.11b
+
+Cleaned up a few bugs with the magma alchemy lab.  A few other minor bug fixes.
+
+Modified Files:
+
+building_alchemy_narhiril.txt
+building_display_case_kipi.txt
+
+---
+
+[CLC] v0.11a
+
+Various minor bug/quirk fixes (thanks Jeoshua).  Added LFR_ASCII folder - better support for this version is planned in the future.  Added some unique profession
+names to mod-related civilized races.  Added pigeons.  Added new mood weapons.  Added pre-installed version for Ironhand's graphics set (thanks Ult1mara).  Pre-
+installed versions for other graphics sets are planned.  Added plant transmutation reaction to alchemy lab.  Added graphics for new creatures.  Added magma versions
+of alchemy lab and metal caster (and associated reactions).  Added new easter eggs, including six "mood hats."  Fixed a bug with a duplicate instrument entry.  Moved
+metal caster and magma caster to "furnace" menu.  Added white gold and associated smelting reaction.  Added gems to raw mithril.  Added incubi.  Fixed a bug with
+alchemical byproducts causing them to destroy wooden buckets within the workshop.
+
+
+Added Files:
+
+material_template_narhiril.txt
+item_helm_mood_lfr.txt
+inorganic_stone_transmute_narhiril.txt
+building_npc_lfr.txt
+
+Modified Files:
+
+entity_bog.txt
+creature_bog.txt
+entity_lizardmen.txt
+creature_lizardmen.txt
+entity_nephilim.txt
+lfr_manual.txt
+lore_bog_troll.txt
+creature_lizardmen.txt
+creature_nephilim.txt
+creature_void.txt
+creature_easter_egg.txt
+entity_default.txt
+item_weapon_narhiril.txt
+item_instrument_nephilim.txt
+reaction_alchemy_narhiril.txt
+reaction_narhiril.txt
+building_alchemy_narhiril.txt
+building_caster_lfr.txt
+inorganic_stone_mineral_narhiril.txt
+inorganic_metal_narhiril.txt
+inorganic_stone_gem_narhiril.txt
+item_toy_special.txt
+
+--
+
+[CLB] v0.10c-d
+
+Minor error log cleanup versions.  Fixed a bug preventing dwarves from manufaturing blowdarts.
+
+Modified Files:
+
+(too many to list)
+
+--
+
+
+[CLA] v0.10b
+
+Fixed a bug with the metal caster that was preventing the dwarves from building it.
+
+Modified Files:
+
+entity_default.txt
+lfr_manual.txt
+
+--
+
+[CL9] v0.10a
+
+First public release on Bay12 forums.  Fixed a bug with sentinel core research reaction that was preventing the products from showing up.  Added meowkin
+merchant guards.  Tweaked bog troll and voidwalker ethics.  Changed the unpicked color of mousebulb to yellow to differentiate from bluebells (oversight).
+Finalized entity lore files.  Tweaked lizardmen to make them show up more often (they were starting in a relatively rare biome not present in all worlds).
+Re-introduced ether, which is now produced as an item that must be melted to obtain an ethereal bar (this *should* resolve the caravan problem).  Resolved
+an issue with state names of ether.  Tweaked bog trolls to make them show up slightly later.  Made tortoises appear more frequently.  Added preliminary support 
+for Phoebus' graphics set.  Support for default (ascii) and Mayday's graphics sets planned.
+
+Ethereal spheres are now produced in batches of ten, as melting was requiring ten of them to produce a single bar.  Getting ten of an item with a 1% chance
+of production was ridiculous, so I've adjusted this to make an ethereal sphere production more of an exciting moment.
+
+Syndromes from alchemical reactions now last longer.  While this will not make much of a difference for most reactions, it will make the rare chemical
+burns much more dangerous (previously, dwarves were recovering too quickly for the syndrome to cause many problems).
+
+Javelins have been moved to a new building, the metal caster, with associated reactions.
+
+The land mover, a new megabeast, has been added.
+
+Note: Because of difficulties with diplomatic relations, voidwalkers carry the [ITEM_THIEF] token, meaning that a lone voidwalker will periodically show up
+(stealthed) and try to steal something.  This is inconsistent with the lore files, which imply that the voidwalkers have nothing to gain from stealing dwarven
+stuff, but I needed a token that would force hostilities.  Think of it as the voidwalkers wanting to keep an eye on the other races.
+
+Added Files:
+
+tissue_template_land_mover_lfr.txt
+inorganic_material_land_mover_narhiril.txt
+creature_land_mover_lfr.txt
+building_caster_lfr.txt
+
+Modified Files:
+
+lfr_manual.txt
+entity_meow.txt
+entity_bog.txt
+entity_void.txt
+entity_nephilim.txt
+creature_nephilim.txt
+entity_lizardmen.txt
+reaction_narhiril.txt
+reaction_alchemy_narhiril.txt
+plant_narhiril.txt
+lore_nephilim.txt
+inorganic_metal_narhiril.txt
+inorganic_stone_mineral_narhiril.txt
+creature_pet_narhiril.txt
+lore_bog_troll.txt
+
+--
+
+[CL8] v0.07b-e
+
+Internal testing versions.  Too many files modified (and many later reverted) for a list to be terribly helpful.  Changelog will be posted for next version.
+
+--
+
+[CL7] v0.07a
+
+Added the long-overdue graphics for voidwalkers.  Added child graphics to meowkin and lizardmen.  Added two new reactions to alchemy lab.
+Pre-production is now complete.  This version will undergo a little more testing before being released as v0.10.
+
+Ether, unfortunately, is showing up in caravans a lot more often than intended.  The importing of large quantities of this metal are limited by its extremely
+high value, but seeing every dwarf merchant stride in with an entire company of ethereal spears is detrimental to the mod's intentions and immersion factor.
+Until this is resolved, I am removing the ethereal bar from the possible results of alchemical experiments.
+
+Added Files:
+
+lfr_voidwalkers.png
+
+Modified Files:
+
+lfr_meowkin.png
+lfr_lizardmen.png
+graphics_lfr_custom.txt
+reaction_alchemy_narhiril.txt
+
+--
+
+[CL6] v0.06
+
+Added alchemy and associated files.  Added banshees and will o' wisps.  Added Kipi's block factory (renamed "foundry") and display case.
+Added nephilim graphics.  Tweaked a few frequency values for creatures.  Added new noble position and graphics for bog trolls.  Moved a
+spoiler-related creature to the creature_easter_egg.txt file (from creature_legendary_narhiril.txt).  Added a spoiler-related new helmet.  
+Added graphics for all non-entity creatures.  Removed placeholder graphics for all creatures that used them.
+
+Added Files:
+
+reaction_alchemy_narhiril.txt
+building_alchemy_narhiril.txt
+building_foundry_kipi.txt
+building_display_case_kipi.txt
+reaction_foundry_kipi.txt
+lfr_nephilim.png
+lfr_bog_trolls.png
+lfr_assorted_creatures.png
+lfr_tortoise.png
+
+Modified Files:
+
+creature_narhiril.txt
+entity_default.txt
+entity_bog.txt
+creature_bog.txt
+creature_easter_egg.txt
+creature_legendary_narhiril.txt
+graphics_lfr_custom.txt
+graphics_lfr_easter_egg.txt
+item_weapon_narhiril.txt
+
+
+
+--
+
+[CL5] v0.05
+
+Fixed a bug with lizardmen and bog trolls that was causing them to die out during worldgen.  Lizardmen can now breathe underwater as well.
+Nephilim will now build castles in adventure mode.  Axes and associated graphics have been added to lizardmen and meowkin to allow them to
+cut wood for fuel.  Added a new creature, the master of locusts.  Added stones and metal associated with alchemy (will have no effect without
+alchemy lab, which will be in the next version).  Updated to compatability with DF v0.31.25.
+
+Added Files:
+
+(none)
+
+Modified Files:
+
+entity_bog.txt
+entity_lizardmen.txt
+entity_meow.txt
+creature_lizardmen.txt
+creature_bog_troll.txt
+entity_nephilim.txt
+lfr_meowkin.png
+lfr_lizardmen.png
+graphics_custom_lfr.txt
+creature_deep_narhiril.txt
+inorganic_metal_narhiril.txt
+inorganic_stone_mineral_narhiril.txt
+
+--
+
+[CL4] v0.04
+
+Added nephilim civilization and associated other files.  Added several new plants.  Also added graphics for meowkin, behemoths, and
+damascus sentinels.
+
+
+Added files:
+
+lore_nephilim.txt
+creature_nephilim.txt
+entity_nephilim.txt
+item_toy_nephilim.txt
+item_instrument_nephilim.txt
+lfr_sentinel.png
+lfr_behemoth.png
+lfr_meowkin.png
+spoiler_lfr folder and associated image files.
+graphics_lfr_easter_egg.txt
+inorganic_other_narhiril.txt
+
+Modified files:
+
+creature_lizardmen.txt
+graphics_lfr_custom.txt
+creature_legendary_narhiril.txt
+creature_narhiril.txt
+entity_meow.txt
+plant_narhiril.txt
+item_weapon_narhiril.txt
+
+--
+
+[CL3] v0.03
+
+Added elf-fondling human's pegasoi as a friendly creature.  Graphics and RAWs created by elf-fondling
+human - all I did was integration.  Added graphics for lizardmen and graphical support for bog trolls
+with Ironhand's graphics pack.  If there ends up being demand for it, I may do unique graphics for bog trolls.
+
+Added files:
+
+item_armor_narhiril.txt
+item_toy_special.txt
+creature_pegasus_efhuman.txt
+graphics_pegasus.txt
+graphics_lfr.txt
+graphics_lfr_custom.txt
+pegasus.bmp
+lfr_lizardmen.png
+creature_easter_egg.txt
+
+Modified files:
+
+(too many to accurately list)
+
+--
+
+[CL2] v0.02
+
+Updated files for compatability with v0.31.21.
+Note that new changes and tokens will make this incompatable with any versions prior to v0.31.19.
+
+Fixed an issue with meowkin and voidwalker nobility not being appointed properly.
+
+
+Added files:
+
+language_VOID.txt
+creature_lizardmen.txt
+entity_lizardmen.txt
+lore_lizardmen.txt
+
+Modified files:
+
+entity_void.txt
+entity_meow.txt
+item_weapon_narhiril.txt
+most of the lore files
+
+
+--
+
+[CL1] v0.01
+
+First version :)

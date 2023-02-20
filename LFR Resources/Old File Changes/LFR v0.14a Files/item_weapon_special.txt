@@ -1,0 +1,53 @@
+item_weapon_special
+
+[OBJECT:ITEM]
+
+This file will be used for rare drops and unique weapon designs.
+
+[ITEM_WEAPON:ITEM_WEAPON_SCEPTER_OF_LOCUSTS] dropped by master of locusts
+[NAME:locust scepter:locust scepters]
+[SIZE:650]
+[SKILL:MACE]
+[TWO_HANDED:27500]
+[MINIMUM_SIZE:25000]
+[MATERIAL_SIZE:4]
+[ATTACK:BLUNT:100:4000:jab:jabs:insectoid head:1100]
+[ATTACK:BLUNT:8000:3000:beat:beats:NO_SUB:1200]
+[ATTACK:BLUNT:8000:3000:bludgeon:bludgeons:NO_SUB:1200]
+[ATTACK:BLUNT:50:3000:strike:strikes:handle:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_SWORD_RUSTY] dropped periodically by leviathans
+[NAME:sword:swords]
+[ADJECTIVE:rusty]
+[SIZE:300]
+[SKILL:SWORD]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:32500]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:20000:200:slash:slashes:NO_SUB:1250]
+[ATTACK:EDGE:50:1000:stab:stabs:NO_SUB:1000]
+[ATTACK:BLUNT:20000:2000:slap:slaps:flat:1250]
+[ATTACK:BLUNT:100:500:strike:strikes:pommel:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_THORN_BLADE]
+[NAME:branch of thorns:branches of thorns]
+[SIZE:300]
+[SKILL:SWORD]
+[TWO_HANDED:37500]
+[MINIMUM_SIZE:32500]
+[MATERIAL_SIZE:3]
+[ATTACK:EDGE:50:1000:perforate:perforates:NO_SUB:1100]
+[ATTACK:BLUNT:100:500:strike:strikes:pommel:1000]
+
+[ITEM_WEAPON:ITEM_WEAPON_GLYPHIC_BLADE]
+[NAME:long sword:long swords]
+[ADJECTIVE:glowing]
+[SIZE:400]
+[SKILL:SWORD]
+[TWO_HANDED:30000]
+[MINIMUM_SIZE:22000]
+[MATERIAL_SIZE:4]
+[ATTACK:EDGE:40000:2000:cut:cuts:guided accuracy:2000]
+[ATTACK:EDGE:30000:2000:slash:slashes:inscribed blade:1100]
+[ATTACK:EDGE:50:10000:run through:runs through:NO_SUB:1100]
+[ATTACK:BLUNT:100:500:strike:strikes:pommel:1000]

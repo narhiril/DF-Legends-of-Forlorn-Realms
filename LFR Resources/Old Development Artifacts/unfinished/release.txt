@@ -1,0 +1,69 @@
+I felt it important to let you all know that it is, in fact, coming.  It is coming very soon.
+
+What is "it," you ask?
+
+I have been silently working on a very involved expansion mod for some time now, and I am nearing the final stages of pre-production.
+
+Project LFR
+
+[INCLUDED_FEATURES]
+
+With great risk comes great reward.
+
+-Five new civilizations - possibly more down the road.
+[spoiler=Civilizations]
+*the Meowkin, a slightly demented race of feline humanoids that will sometimes trade with you.
+*the Bog Trolls, a large, dangerous and savage race that knows only war.
+*the Lizardmen, a paranoid tribal culture that thrives on ambush and guerrilla tactics.
+*The Nephilim, a race of flying, angelic humanoids bound by their religion to conquer "lesser" races.  They periodically form alliances.
+*another hostile race that is meant to challenge even the most advanced military.
+[/spoiler]
+
+-New plants, aimed at filling roles not filled by default plants.  This includes...
+[spoiler=Plants]
+*colorful plants both above and below ground
+*a plant that can be used for just about anything, but has a very low value.
+*a hyper-dense tree.
+*a plant that produces high-value thread.
+*a plant whose alcohol is designed to be used as a bio-weapon.
+*a few rare and unusual plants with high values and/or unique properties
+*even more!
+[/spoiler]
+
+-Six new metals, including new ores and my previously-released mithril.
+
+-New clothing, crafts, and armor types to add diversity to new races.
+
+-Tweaks to two-handed weapons to allow dwarves to wield and manufacture some of them.
+
+-A new, powerful, dwarf-exclusive ranged weapon with three types of ammunition.
+
+-New creatures, including ...
+[spoiler=Creatures]
+*the wyvern, a flying subspecies of dragon.
+*the leviathan, a terrifying creature of the deep ocean.
+*the devourer, a deep cavern spider ten times the size of the GCS that avoids traps and rips limbs from bodies.  Its silk is precious.
+*the deep wolf, a creature that attacks in enormous swarms.
+*the damascus sentinel, a mechanical construct of an ancient civilization long since gone from the world.
+*the tortoise, a harmless above-ground creature that is a breeding source of shells.
+*the pegasus, a winged horse (raws and graphics by elf-fondling human) that thrives in good biomes.
+*even more legendary creatures and megabeasts, some of which have some very unique properties (more in-depth descriptions in the manual).
+[/spoiler]
+
+-A painstakingly written new language file.
+
+-Over sixty new types of weapon.
+[spoiler=Weapons]
+Yeah, that's right.  SIXTY.  But Narhiril, how the hell am I going to manage sixty more weapon types in my stockpiles?  The simple answer is, you don't have to.  
+Of these 60+ weapons, only about 10 are actually used by existing and new civilizations.  The rest are there for one reason - artifacts.  When you get a weaponsmith in a strange mood with my mod, you have no idea what you're going to get.  Maybe you'll get a boring old sword or axe, or maybe you'll get "Blacktemples, a mithril khopesh," or "Hauntedrazor, a damascus steel pair of bladed chains."  Legendary weapons should be legendary.  Your civilization will be known forever for the weapon it creates, which will truly be one-of-a-kind.  And yes, some of these weapons are obscenely powerful - but believe me, you'll need them.
+[/spoiler]
+
+-Three new buildings, including the alchemy lab, foundry (raws by Kipi), and display case (raws also by Kipi).
+
+-Graphics support for Ironhand's graphics pack, and new graphics created specifically for this mod by myself.
+
+-Extensive personally-written lore files.
+
+-An incredibly detailed manual on 95% of new features - I didn't want to give EVERYTHING away ;)
+
+-Modular file structure.  If you don't want the graphics, don't include them.  If you don't like a new civilization, simply remove them.  File names are similar enough to default raws for easy navigation, but different enough to be obvious which files are mod-related.

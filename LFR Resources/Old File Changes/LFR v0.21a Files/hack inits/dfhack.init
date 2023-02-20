@@ -1,0 +1,34 @@
+##########LFR v0.21 init file##########
+
+##binary patches to fix vanilla bugs##
+
+binpatch apply deconstruct-heapfall	#prevents buildings from killing or injuring dwarves when deconstructed#
+binpatch apply deconstruct-teleport  	#prevents items from teleporting around when a building is deconstructed#
+binpatch apply hospital-overstocking 	#makes hospitals actually obey their stock limits#
+binpatch apply custom-reagent-size	#allows for partial use of reagents with dimensions in custom reactions - not used in LFR, but doesn't hurt#
+binpatch apply training-ammo		#allows marksdwarves to pick up and use training ammunition even if their quiver is full of combat ammo#
+binpatch apply armorstand-capacity
+	#doubles the capacity of armorstands#
+binpatch apply weaponrack-unassign	#fixes weapon racks - works together with the "fix armory" plugin#
+
+##tweaks##
+
+tweak patrol-duty			#dwarves will not get negative thoughts for training sessions#
+tweak stable-cursor			#cursor remembers its position between menus#
+tweak fix-dimensions			#something involved with the custom reagent size fix#
+tweak military-stable-assign		#military position assignment list will no longer jump back to the start every time a unit is assigned#
+tweak military-color-assigned		#units already in squads will appear as a different color in the military assignment list#
+tweak hive-crash			#fixes a bee-related crash bug#
+
+##plugins##
+
+load autoSyndrome			#required for ritual transformations and mechanical constructs#
+autoSyndrome enable
+load syndromeTrigger			#required to make paragons work properly#
+syndromeTrigger enable
+
+##scripts##
+
+fix/cloth-stockpile enable		$Fixes a bug with cloth in stockpiles... I don't know the details#
+fix/growthbug enable			#Fixes an extremely annoying bug with dwarves and other not growing to full adult size#
+itemsyndrome enable contaminantsoff	#Required for magical weapons, contaminants disabled because of redundancy with addSpatter#

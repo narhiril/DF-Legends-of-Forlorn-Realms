@@ -1,0 +1,2833 @@
+LEGENDS OF FORLORN REALMS
+
+Version 0.15a
+
+-----
+
+[CR0] CREDITS AND LEGAL MUMBO JUMBO
+
+This modification was designed and written by narhiril of the bay12 forums, for Dwarf Fortress.  Please do not
+redistribute this mod in its entirety or any individual features of this mod without consent.  As many of the included
+features of this mod are inspired by other high fantasy universes and real-life technologies, some resemblance to other
+mods is both inevitable and entirely coincidental (except for those mentioned below).
+
+You MAY:
+-Link the thread and download page to anyone you wish.
+-Play this mod to your heart's content.
+-Modify any component of this mod, as long as these modifications are not publicly distributed.
+
+You may NOT:
+-Claim this mod as your own work, because it isn't.
+-Re-upload this mod in part or in its entirety without my express consent.
+-Distribute this mod in part or in its entirety via hard copy without my express consent.
+
+I would like to give special thanks to the following:
+
+From Bay12 forums:
+
+-Ironhand, who taught me everything I know about graphics in DF.
+-Kipi, who graciously provided permissions, raws for the display case, and reaction raws for the foundry (block factory).
+-elf-fondling human, who graciously allowed me to include the pegasoi in this mod and provided the graphics and raws for them.
+-darkflagrance, TomiTapio, and Deon, whose Fortress Defense and Genesis mods provided me with a frame of reference when writing my own raws.
+-Jeoshua, legendary bug hunter.
+-In no particular order, Carn, Pan, thatkid, TehNoob, trees, Putnam, Patchouli, 73, Imp, astinax, Meph, darkflagrance (again) and countless others for suggestions and feedback.
+-Kweri and Alem for help with early bug hunting.
+-Pan (again) for help with testing zingers.
+-Ult1mara for publicity through his YouTube channel.
+-nuklearpower for his whip modifications.
+-Reelyanoob, for the French language file.
+-bdog for allowing me to use his wheelbarrow workshops and reactions.
+-An unknown author for the Latin language file.
+-Putnam (again) for assembling the material properties for experimental metals raws.
+-peterix (and any other tool developers) for DFHack, which helped immensely with testing.
+-Toady One and Threetoe, of course, who made this game possible.
+-all others who answered questions during my time of exploration with modding DF.
+
+
+Others:
+
+-Josh and Joann, the food service people who made me burritos while I worked on the early versions of this mod.
+-My friend Helen, who taught me how to do digital art (and I still suck at it, but at least I can make something now).
+
+Questions and comments can be directed to narhiril (bay12forums), or x_narhiril_x@yahoo.com (I check this every couple of days).
+
+
+-----
+
+[TC0] CONTENTS:
+
+[CR0] - credits and legal mumbo jumbo.
+[TC0] - this table of contents.
+[KI0] - known issues.
+[CL0] - change log / version history header.
+	[CLP] - v0.15a
+	[CLO] - v0.14e
+	[CLN] - v0.14d
+	[CLM] - v0.14c
+	[CLL] - v0.14b
+	[CLK] - v0.14a
+	[CLJ] - v0.13b
+	[CLI] - v0.13a
+	[CLH] - v0.12c
+	[CLG] - v0.12b
+	[CLF] - v0.12a
+	[CLE] - v0.11c
+	[CLD] - v0.11b
+	[CLC] - v0.11a
+	[CLB] - v0.10c-d
+	[CLA] - v0.10b
+	[CL9] - v0.10a
+	[CL8] - v0.07b-e
+	[CL7] - v0.07a
+	[CL6] - v0.06
+	[CL5] - v0.05
+	[CL4] - v0.04
+	[CL3] - v0.03
+	[CL2] - v0.02
+	[CL1] - v0.01
+[IN0] - installation header.
+	[IN1] - notes about balance
+	[IN2] - basic installation instructions
+[NM0] - new metals/minerals section header.
+	[NM1] - mithril [0.05a]
+	[NM2] - tungsten
+	[NM3] - iovium and abyssal eyes
+	[NM4] - vanadium and damascus steel
+	[NM5] - shards of the void
+	[NM6] - ether
+	[NM7] - lustrum
+	[NM8] - orichalcum
+	[NM9] - hadrine
+	[NMA] - experimental materials
+[WA0] - new weapons section header.
+	[WA1] - the dwarven javelin thrower
+	[WA2] - javelins (ammo)
+	[WA3] - two-handed weapons
+	[WA4] - other combat tweaks
+	[WA5] - "mood weapons"
+	[WA6] - weapons upgrades
+	[WA7] - the magnetic dart launcher and magnetic darts
+[AR0] - new armor section header.
+	[AR1] - shields
+	[AR2] - body armor
+	[AR3] - leg armor
+	[AR4] - gloves and boots
+	[AR5] - helms
+	[AR6] - clothing
+[CV0] - civilizations section header.
+	[CV1] - the meowkin
+	[CV2] - the bog trolls
+	[CV3] - the voidwalkers
+	[CV4] - the lizardmen
+	[CV5] - the nephilim
+	[CV6] - the moroii
+[FC0] - friendly creatures section header.
+	[FC1] - tortoises
+	[FC2] - pegasoi (by elf-fondling human)
+	[FC3] - cave oysters
+	[FC4] - will o' wisps
+	[FC5] - pigeons
+	[FC6] - carbuncles
+	[FC7] - jackalopes
+	[FC8] - sabre-toothed tigers
+	[FC9] - dwarven savants
+	[FCA] - zingers
+	[FCB] - ankylosaurs
+[DC0] - deadly creatures section header.
+	[DC1] - the devourer of the depths
+	[DC2] - wyverns
+	[DC3] - leviathans
+	[DC4] - damascus sentinels
+	[DC5] - deep wolves
+	[DC6] - behemoths
+	[DC7] - aatxes
+	[DC8] - masters of locusts
+	[DC9] - banshees
+	[DCA] - land movers
+	[DCB] - incubi
+	[DCC] - manticores
+	[DCD] - megalania
+	[DCX] - other creatures
+[NP0] - new plants section header.
+	[NP1] - bluebells and dwarven whiskey
+	[NP2] - the thyme has come
+	[NP3] - widow's tear
+	[NP4] - tonicbriar
+	[NP5] - voracious maw and atrophic bliss
+	[NP6] - winding spire
+	[NP7] - tatterstone's buckle
+	[NP8] - pygmy lime
+	[NP9] - prism star
+	[NPA] - shankweed
+	[NPB] - vine and drops of xanadu
+	[NPC] - herald's horn
+	[NPD] - courage oak
+	[NPE] - mousebulb
+[NB0] - changes to dwarven nobility header.
+	[NB1] - the champion
+	[NB2] - the dungeon master
+	[NB3] - the local legend
+	[NB4] - the high priest
+[SC0] - dwarven science and construction section header.
+	[SC1] - the foundry (by Kipi)
+	[SC2] - the display case (by Kipi)
+	[SC3] - dwarven mechanical advances - the "tech tree"
+	[SC4] - the crematorium
+	[SC5] - the loading and unloading stations
+[RT0] - dwarven ritual and spirituality section header.
+	[RT1] - the dwarven "ritual tree"
+[HB0]- hybrid buildings section header.
+	[HB1] - the fishing pond
+	[HB2] - the temple of fire
+	[HB3] - the exotic cheesery
+[RC0] - manual compatability fixes header.
+	[RC1] - changes to the entity_default file for proper functionality. 
+	[RC2] -	changes to the item_weapon file for proper functionality.
+	[RC3] - changes to the creature_standard file for proper functionality.
+[PQ0] - FAQ about mood weapon attributes.
+
+
+------
+
+[KI0] KNOWN ISSUES
+
+The foundry is known to cause all of the stones that it can produce blocks from to be listed as economic stones by default.  This is annoying, as you will have to
+manually change them back to mundane stones in the stone menu, but does not otherwise affect gameplay.  There is currently no fix for this.
+
+Hostile races will not fight amongst each other (except for goblins) outside of legends mode.  This is currently impossible for me to fix given the current engine.
+
+Turning temperature off will cause a fair number of this mod's functions to work improperly.
+
+Mineral scarcity values higher than 300 will make a number of features of this mod less common or accessible than intended.
+
+This mod is compatible with any mod that does not modify stock raws.  For compatibility mods that only modify one or two stock raws, check the compatibility section.
+Unfortunately, this means that at this time, LFR is not compatible with total conversion or major overhaul mods like Genesis or Corrosion, though it is compatible with 
+Fortress Defense.  This is unlikely to change in the near future.
+
+------
+
+
+[CL0] CHANGE LOG / VERSION HISTORY
+
+This log will be numbered in reverse, with the most recent changes on top.
+
+[CLx] v0.yz
+
+-
+
+[CLQ] v0.15a
+
+Fixed a typo in the description for megalania.  Added a new easter egg creature (this thing is vicious, just warning you guys, but you'll have to go a bit out of the way to find it).  
+Fixed an issue with incubi that was causing them to be much rarer than intended.  Fixed a bug related to vines of xanadu returning a bugged (null) mill product. Vines of xanadu will now 
+produce "heavenly seasoning" when milled, which carries a material value of 20.  Nephilim will now use heraldic shields in addition to their previous two types (this change is mostly cosmetic).  
+Added the ability to craft hadrine reactive shields (same prerequisites as other hadrine pieces).  Alchemical experiments now have a small (5%) chance of producing a lustrum rock.  Added 
+savant castes for glassmakers.  Zinger anatomy has been vastly simplified.  Added corrosive zingers.  Removed a redundant extra "document efficient casting procedure" reaction.  A certain type of 
+pigeon is now substantially less common, and will use a unique graphic.  Stock whips have been beaten with the nerf bat of justice and will no longer offer ridiculous armor penetration, which 
+didn't make any sense anyway.  The trash compactor can now be used to remove slabs of accreditation - unlike documentation, this reaction uses no skill and creates no product, it is purely for 
+disposal of unwanted slabs once things are unlocked.  Creatures have had their background colors removed, which should make the unit screen a bit easier to look at.  Plants in ASCII version have 
+had background colors removed.  Minerals and metals in ASCII version have had their background colors removed.  Artwork for the experimental materials workshop, shrine of nature, shrine of 
+victory, shrine of prosperity, mechanical obstacle course, medical training dummy, and weapons concept labs has been revised.  Nephilim will no longer send caravans or diplomats during the spring.
+Terminated "support" for Phoebus' graphic set until I can more adequately get it to work properly.  Meowkin have had their adult size slightly increased.
+
+Added a good amount of documentation for the tech and ritual trees, found in the lfr manual and lore folder.  The tech tree and ritual tree now have their own dedicated manuals and/or reference 
+sheets.  Tier three of the tech tree has a guide on how to fully utilize the new features.
+
+Tier three of the tech tree has been implemented.  The full changelog for this is so enormous that it would fill most of the screen, so I'll try to paraphrase.  Added buildings: the advanced 
+alchemy lab, the prototype workbench, the scientific library, the exotic cheesery.  Weapons upgrades - the dwarves can perform research at the advanced alchemy lab to unlock upgrades to the 
+crossbow and a new weapon entirely.  Weapon upgrades can create formidable hybrid weapons, which are capable of great power in both ranged and melee combat. The magnetic dart launcher can be 
+researched, unlocked, and then upgraded alongside the crossbow. Ammo for the magnetic dart launcher can be manufactured from certain metals in stacks of 60. Advanced alchemy experiments - the 
+bigger, meaner cousin of the alchemical experiments of old.  New risks, new rewards. Advanced transmutation experiments, to much more reliably grant access to rare plants. Added the ability to 
+manufacture a potent knockout gas from voracious maws at the advanced alchemy lab. Added new methods for creating cheese. In case you missed any tier two advances on the way to tier three, 
+the scientific library can unlock them for you.  Of course, added new easter eggs.
+
+
+Added Files:
+
+building_adv_cook_lfr.txt
+building_tech_t3.txt
+creature_hellion.txt
+inorganic_metal_t3.txt
+item_weapon_tech_t3.txt
+reaction_adv_cook_lfr.txt
+item_tool_bdog.txt
+building_bdog_adv_hauling.txt
+reaction_bdog.txt
+reaction_tech_t3_lfr.txt
+lfr_ritual_reference.txt
+lfr_mechanical_tech_tree.txt
+lfr_mechanical_t3_reference.txt
+
+
+
+Modified Files:
+
+graphics_lfr_easter_egg.txt
+lfr_manual.txt
+lore_misc.txt
+lore_pantheon.txt
+building_exp_materials.txt
+building_exp_weapons.txt
+building_mechanical_lfr.txt
+building_ritual_lfr.txt
+creature_easter_egg.txt
+creature_legendary_narhiril.txt
+creature_lizardmen.txt
+creature_meow.txt
+creature_moroii.txt
+creature_narhiril.txt
+creature_nephilim.txt
+creature_pegasus_efhuman.txt
+creature_pet_narhiril.txt
+creature_void.txt
+creature_zinger.txt
+descriptor_shape_narhiril.txt
+entity_default.txt
+entity_meow.txt
+entity_void.txt
+entity_nephilim.txt
+inorganic_stone_mineral_narhiril.txt
+inorganic_z_stone_mineral_enlightenment.txt
+inorganic_zinger_death_blasts.txt
+item_ammo_narhiril.txt
+item_armor_meow.txt
+item_armor_special_lfr.txt
+item_food_narhiril.txt
+item_helm_mood_lfr.txt
+item_tool_narhiril.txt
+item_weapon.txt
+item_weapon_narhiril.txt
+item_weapon_special.txt
+plant_narhiril.txt
+reaction_alchemy_narhiril.txt
+reaction_exp_weapons.txt
+reaction_orrery_lfr.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+reaction_slab_removal.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+
+... and all other LFR-related inorganic files for the ASCII version only.
+
+
+
+--
+[CLO] v0.14e
+
+Added the Greater Demon of Famine.  Strengthened the claws and/or horns of a few spoiler-related creatures.  Revised the syndromes on a spoiler-related creature.  
+Empyrean carbuncles will no longer pose a friendly fire risk to other common war animals.  Removed a duplicate description token from certain castes of carbuncles.
+Nephilim will no longer fly - instead, they will move at enhanced speeds as a sort of "limited flight capability."  As a result, nephilim caravans will now trade 
+their goods with the dwarves.  Lore has been modified to accomodate this change.  Fixed a bug causing adamantine javelins at the advanced casters to require more 
+bars than intended.  White gold can now be used for advanced mechanisms.  Added "perform mock autopsy" reaction to the morgue (trains diagnostics).  Vermin autopsy 
+will now advance diagnostics significantly more (2x).  Zingers are now substantially less common in the wild to minimize their impact on fortresses who rely on 
+underground fauna for hunting.  Added pygmy anyklosaurs as a new trainable war beast (thanks Imp for the concept).  The material value of rainbow diamonds has been
+reduced (approx 1/2) due to increased availability (they're still quite valuable though :D).  A bug causing lizardmen to periodically use voidshard has been fixed
+(thanks Jilladilla).  Many LFR-related megabeasts have been given tougher hides and/or scales.  Added megalania.  Added a small number of new easter eggs.  Deep 
+wolves are now substantially more common.
+
+
+Added Files:
+
+descriptor_shape_narhiril.txt
+inorganic_z_stone_mineral_enlightenment.txt
+lfr_ankylosaur.png
+lfr_megalania.png
+lfr_famine.png
+
+
+Modified Files:
+
+body_narhiril.txt
+creature_easter_egg.txt
+creature_land_mover_lfr.txt
+creature_legendary_narhiril.txt
+creature_narhiril.txt
+creature-nephilim.txt
+creature_pet_narhiril.txt
+creature_zinger.txt
+entity_default.txt
+graphics_lfr_easter_egg.txt
+graphics_lfr_custom.txt
+inorganic_stone_gem_narhiril.txt
+item_tool_narhiril.txt
+material_template_narhiril.txt
+reaction_narhiril.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+lfr_manual.txt
+lore_nephilim.txt
+
+--
+[CLN] v0.14d
+
+Fixed a bug causing the fish pond to kick out generic "raw fish" items.  Added the grazer token to pegasoi.  Fixed a bug causing items made from ritual materials not
+to stockpile properly - they are now considered "wood" products from a technical standpoint.  Fixed a bug causing the machine shop to create bins and beds of clay.
+Fishing pond speed has been significantly increased.  Added shedim lore file.  Added several easter eggs of varying complexity.  Added framework for upcoming ritual
+and mechanical advances.  Revised the appearance of the temple of fire.  The alchemy lab, weapons concept lab, magma-powered weapons concept lab, and magma-powered
+alchemy lab are now listed as furnaces on the build menu (previously listed as workshops).  Fixed an issue with the weapons concept labs causing the labrys to never
+be produced (thanks 73).  Hadrine meshes no longer carry a quality modifier (reason: absurd values for an intermediate item).  Fixed a bug causing the temple of fire
+to require any "tool" item to construct.  Fixed a bug causing a spoiler-relate creature not to drop the proper item on death.  Tweaked the attributes and lethality
+of a certain spoiler-related creature.  Added a small bit of lore for the previously mentioned spoiler-related creature.  Added manual entries for the shrine reactions
+(somehow I forgot these in 0.14c).  Dwarves will no longer seek out LFR-related slabs for decoration (memorial slabs are unaffected).  The prayers for fortune and
+celebration have been moved to the shrine of prosperity (they were erroneously located at the shrine of victory).  Damascus sentinels can now be killed by shattering
+the "control module" located in their head.  You will still need to penetrate the outer plating to do this, but this will make them more easily killable with blunt or 
+piercing weapons (previously, you had to cut the head or lower body off to kill them).  Flying cave oyster pearls are no longer considered inorganic, and will no longer 
+appear in the stone stockpile list.  Appearances of display cases and hadrine meshes have been changed to avoid confusion with corpses.  Fixed a bug with the trash 
+compactor causing one of the "reduce clutter" reactions to call for the wrong item.  Added reactions for adamantine javelins.  Revised wording of javelin casting reactions 
+to help distinguish between the different casters on the manager screen.  Fixed a bug causing a spoiler-related creature to spawn in the wrong cavern layer (thanks 73). 
+Crystalline blocks are now a bit heavier.  Devourers of the depths can now be stunned.
+
+
+Added Files:
+
+lore_shedim.txt
+
+
+Modified Files:
+
+b_detail_plan_narhiril.txt
+body_narhiril.txt
+building_alchemy_lfr.txt
+building_display_case_kipi.txt
+building_exp_weapons_lfr.txt
+building_mechanical_lfr.txt
+building_npc_lfr.txt
+building_y_temple_lfr.txt
+carbuncle.png
+creature_easter_egg.txt
+creature_fish_domestic.txt
+creature_lizardmen.txt
+creature_narhiril.txt
+creature_pegasus_efhuman.txt
+creature_pet_narhiril.txt
+creature_servant.txt
+entity_bog.txt
+entity_default.txt
+entity_meow.txt
+entity_nephilim.txt
+entity_void.txt
+graphics_lfr_custom.txt
+inorganic_other_narhiril.txt
+inoragnic_stone_mineral_narhiril.txt
+item_tool_narhiril.txt
+lfr_manual.txt
+lore_misc.txt
+material_template_narhiril.txt
+reaction_exp_weapons.txt
+reaction_fish_lfr.txt
+reaction_narhiril.txt
+reaction_ritual_t2.txt
+reaction_slab_removal.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+tissue_template_narhiril.txt
+
+--
+[CLM] v0.14c
+
+Fixed a bug that was preventing transmutation and flashbang zingers' blind effects from working properly.  Clutch size for tortoises has been substantially reduced.  Excess
+clutter (gamelog, bmps) has been removed from the pre-packaged version.  Fixed a bug causing lead hammerhead javelins not to show up at the non-magma advanced metal caster.  
+The rituals of power have had the number of reagents reduced from "3 and 8" to "1 and 3." Added a "crush stone" reaction to the trash compactor (see that entry for details) 
+as yet another stone sink.  Plant transmutation now uses six seeds instead of eight random plants - as a result, products will no longer be consumed immediately after being 
+produced when multiple copies of this reaction are queued.  Tortoises now cost a more reasonable amount of embark points (this was absurdly low in previous versions).  Added 
+the "high priest" position (two possible).  Added the machine shop, a new tier one mechanical workshop (see that entry for details).  Local legends may now make a single demand.  
+Added NO_STONE_STOCKPILE to the template for stones which evaporate on creation (alchemy byproducts, etc).  All appropriate LFR-related creatures now have sounds associated 
+with them (for adventure mode).  Fixed a number of minor bits of erroneous text.  High priests and local legends are not duty bound - they can join you in adventure mode 
+(this is intentional).  Added rituals and prayer reactions to shrines.  Added the first tier two "hybrid" building, the temple of fire, and an associated reaction.  The
+temple of fire currently uses a modified orrery visual design - this will be revised (read: gutted and replaced by something cooler) in future versions.
+
+
+Added Files:
+
+building_machine_shop.txt
+building_y_temple_lfr.txt
+
+
+Modified Files:
+
+lfr_manual.txt
+item_tool_narhiril.txt
+item_food_narhiril.txt
+building_trash_lfr.txt
+reaction_slab_removal.txt
+reaction_tech_adv_lfr.txt
+reaction_tech_t2_lfr.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+reaction_exp_weapons.txt
+reaction_alchemy_lfr.txt
+material_template_narhiril.txt
+entity_void.txt
+entity_default.txt
+inorganic_zinger_death_blasts.txt
+inorganic_stone_mineral_narhiril.txt
+inorganic_stone_transmute_narhiril.txt
+graphics_lfr_custom.txt
+
+...as well as all LFR-associated creature files
+
+
+
+
+--
+
+[CLL] v0.14b
+
+Fixed a bug that was causing the dwarven caravan to carry ether bars.  Cleaned up a few inconsistencies in documentation for the mod.  Renamed the reward for the "banshee
+funeral rite" reaction to avoid confusion with ether metal.  The "melt ethereal spheres" reaction at the smelter no longer requires fuel and has had its function changed
+to convert an ethereal sphere into a base-quality "ethereal sphere (processed)," which can then be melted down towards ethereal bars (special thanks to TehNoob for this 
+reaction).  The crystal growth tank now requires two clear glass boxes to construct (instead of a barrel).  Fixed a few minor text errors in reactions and manual.
+
+
+Modified Files:
+
+building_crystal_lfr.txt
+building_npc_lfr.txt
+entity_default.txt
+inorganic_stone_mineral_narhiril.txt
+item_toy_special.txt
+reaction_narhiril.txt
+reaction_alchemy_narhiril.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+lfr_manual.txt
+
+
+
+
+
+
+
+--
+[CLK] v0.14a
+
+Added bismuth bars as a possible result from alchemy.  Removed grazer tags from carbuncles and tortoises.  Added the orrery, a new training workshop.  Added 
+the trash compactor and "slab removal" reactions.  Meowkin ears are now properly sized, and their litter sizes have been cut to 1-2 (was 1-3) in order to put a dent  
+in their domination during world gen (they were killing absolutely everything, likely due to numbers).  Added the crystal growth tank, a tier three mechanical building.
+Moved amaroks, leviathans, wyverns, behemoths, manticores, and dragons to a new material template with stronger bone and leather (this change was also applied
+to a few spoiler-related creatures).  Leather and bone products of these creatures will be significantly stronger and more valuable.  Added a reaction to turn
+masterwork ethereal spheres into ethereal bars without producing a tantrum spiral (found at smelter).  Added v0.03a of "zingers" raws.  Added tier one of the 
+ritual tech tree and framework for tier two.  Voidwalkers will now siege from stealth - sneaky buggers.  All accumulated wealth and trade siege triggers 
+have been moved one notch back to compensate for the added material value of tech and ritual tree goods.  The "perform banshee funeral rite" reaction has been
+moved from the alchemy lab to the altar, and the fuel requirement for this reaction has been removed (the magma version of this reaction has also been removed).
+Zingers and sabre-toothed tigers are now available on embark due to popular demand - values have been adjusted accordingly.  Added a handful of easter eggs.
+Added a small number of new food items (for no good reason, possibly due to hunger at the time).  Added the fish pond, the first "hybrid" building.  A rare
+caste ofpigeon will no longer appear in siege forces.
+
+
+Modified Files:
+
+building_npc_lfr.txt
+creature_easter_egg_lfr.txt
+creature_legendary_narhiril.txt
+creature_standard.txt
+creature_land_mover_lfr.txt
+creature_meow.txt
+creature_narhiril.txt
+creature_pet_narhiril.txt
+entity_default.txt
+entity_meow.txt
+entity-bog.txt
+entity_void.txt
+entity_lizardmen.txt
+entity_nephilim.txt
+item_helm_mood_lfr.txt
+item_armor_special_lfr.txt
+item_weapon_special.txt
+material_template_narhiril.txt
+reaction_alchemy_narhiril.txt
+tissue_template_land_mover_lfr.txt
+graphics_lfr_custom.txt
+lfr_manual.txt
+
+
+Removed Files:
+
+inorganic_material_land_mover_narhiril.txt (this file's function has been replaced by a new, better material template)
+graphics_set_support_lfr (remnant folder of an early test build, was serving no purpose other than taking up space)
+
+
+Added Files:
+
+b_detail_plan_narhiril.txt
+body_narhiril.txt
+building_fishpond_lfr.txt
+building_crystals_lfr.txt
+building_orrery_lfr.txt
+building_ritual_lfr.txt
+building_trash_lfr.txt
+creature_fish_domestic.txt
+creature_servant.txt
+creature_zinger.txt
+inorganic_z_ritual_lfr.txt
+inorganic_zinger_death_blasts.txt
+item_food_narhiril.txt
+reaction_crystals_lfr.txt
+reaction_fish_lfr.txt
+reaction_orrery_lfr.txt
+reaction_ritual_t1.txt
+reaction_ritual_t2.txt
+reaction_slab_removal.txt
+lfr_zinger.png
+lore_pantheon.txt
+
+
+--
+
+
+[CLJ] v0.13b
+
+Various bugfixes.  Fixed a small number of typos.  Fixed an issue with advanced metal casters using a duplicate reaction.  Made tortoises flee
+combat by default.  Adjusted the weight of voidshard.  Fixed an error with manual compatibility instructions for the creature_standard file.
+
+Modified Files:
+
+lfr_manual.txt
+creature_pet_narhiril.txt
+item_tool_narhiril.txt
+reaction_tech_t2_lfr.txt
+inorganic_metal_narhiril.txt
+creature_standard.txt
+
+
+--
+
+[CLI] v0.13a
+
+Added nephilim and meowkin diplomats.  Added carbuncles, a new common domestic creature.  Added dwarven savants - more details on this later.
+Added the second tier of the "tech tree," including five new buildings and lots of associated reactions.  Added new easter eggs.  Added new
+graphics for relevant creatures.  Added the moroii, a new underground tribal race.  Added rare drops for more creatures.  Moved bog troll
+siege trigger back slightly.  Took the opportunity to fix a bug with kobolds that was causing them to starve to death by year 4 of worldgen.
+It is now possible for players to purchase tame tortoises at embark.  Pet value for tortoises has been adjusted for this purpose.  Added amaroks 
+and humbabas.  Added jackalopes and sabre-toothed tigers.  Added a caste of lizardmen which carry mischievious behavior tokens.  Removed a 
+special caste of pigeons from the arena spawn list.  Resolved an issue causing widow's tears to appear as black squares.  Added weapons and
+graphics for voidwalker thieves.
+
+Added Files:
+
+lfr_additional_creatures.png
+lfr_carbuncle.png
+lfr_jack_sabre.png
+lfr_moroii.png
+language_MOROII.txt
+building_exp_materials.txt
+building_exp_weapons.txt
+building_mechanical_t2.txt
+reaction_tech_t2_lfr.txt
+reaction_exp_weapons.txt
+lore_moroii.txt
+
+Modified Files:
+
+lfr_voidwalkers.png
+creature_pet_narhiril.txt
+creature_easter_egg.txt
+creature_lizardmen.txt
+entity_meow.txt
+entity_nephilim.txt
+entity_bog.txt
+entity_void.txt
+inorganic_other_narhiril.txt
+inorganic_stone_gem_narhiril.txt
+creature_standard.txt  <- stock file, see compatibility section for details
+item_armor_special_lfr.txt
+item_tool_narhiril.txt
+item_weapon_special.txt
+plant_narhiril.txt
+reaction_tech_adv_lfr.txt
+graphics_lfr_custom.txt
+graphics_lfr_easter_egg.txt
+lfr_manual.txt
+
+
+--
+
+[CLH] v0.12c
+
+Fixed a bug with bog troll and voidwalker civs that was causing them to be friendly to the player.  Gave metal weapons back to the bog trolls.
+
+Modified files:
+
+entity_bog.txt
+entity_void.tst
+
+--
+
+[CLG] v0.12b
+
+Resolved a bug where bog trolls and voidwalkers were ignoring their siege triggers.  Fixed a typo with the name of a spoiler-related item.  Fixed an unintended
+"feature" of will o' wisps that was causing nearby enemies to burn to death.  Added will o' wisp rare drops and an alchemical reaction to use them.  Added a
+rare drop to masters of locusts.  Removed previously mentioned diplomatic changes for bog trolls and voidwalkers (but not for nephilim).  Removed the broken
+"cremate corpse" reaction due to a broken token (hah, the rhymed) - this may be re-implemented in the future.  Autopsy reactions will now use vermin remains.
+Added one new mood weapon (this one's awesome, but I'm not sharing any more about it).  Voidwalker, bog troll, and lizardman sieges and ambushes will no longer
+enter the map in autumn.
+
+Added files:
+
+item_weapon_special.txt
+
+Modified Files:
+
+creature_bog.txt
+creature_void.txt
+reaction_alchemy_narhiril.txt
+item_toy_special.txt
+material_template_narhiril.txt
+entity_default.txt
+entity_bog.txt
+entity_lizardmen.txt
+entity_void.txt
+lfr_manual.txt
+reaction_narhiril.txt
+item_weapon_narhiril.txt
+reaction_tech_adv_lfr.txt
+
+--
+
+[CLF] v0.12a
+
+Resolved a few minor anomalies.  Added numerous language files.  Added mechanical-themed first installment of the "tech tree," including
+six new buildings and associated reactions.  Added orichalcum.  Added new easter eggs.  Nephilim caravans will not trade with you, but you
+can still offer them tribute or forcibly take their goods.  Bog trolls are not hostile to lizardmen or goblins, but will no longer send ambushes and will 
+now only use wooden weapons (they are meant to be a first-tier enemy).  Voidwalkers will now siege at population 110 (down from 150, for lower system specs).  If
+you create a LOT of wealth, they may come earlier.  Voidwalker will no longer abuse bodies (they have better things to do) and no longer ignore neutrals.
+
+(pause for breath)
+
+Fixed an issue that was making incubi much rarer than intended (though they're still pretty rare).  Added some other hidden features, including a preview of 
+the second tier of the tech tree.  Fixed an issue preventing a spoiler-related creature, pigeons, and will o' wisps from spawning.  Fixed an issue with 
+voidwalker graphics tiles being slightly misaligned.  Slightly brightened voidwalker graphics tiles to make them more visible on dark backgrounds.
+
+Added Files:
+
+language_FRENCH.txt
+language_LATIN.txt
+language_LIZMAN.txt
+language_SHEDIM.txt (currently unused, planned for future developments)
+building_mechanical_lfr.txt
+item_toy_tech_adv_lfr.txt
+item_tool_narhiril.txt
+reaction_tech_adv_lfr.txt
+building_crematorium_lfr.txt
+item_armor_special_lfr.txt
+item_trapcomp_special.txt
+building_lustrum_lfr.txt
+wrath_lfr.png
+
+Modified Files:
+
+inorganic_stone_mineral_narhiril.txt
+inorganic_metal_narhiril.txt
+entity_default.txt
+reaction_alchemy_narhiril.txt
+creature_easter_egg.txt
+entity_bog.txt
+creature_bog.txt
+entity_lizardmen.txt
+entity_nephilim.txt
+lfr_manual.txt
+lore_bog_troll.txt
+lore_misc.txt
+creature_lizardmen.txt
+creature_nephilim.txt
+creature_void.txt
+entity_void.txt
+building_alchemy_narhiril.txt
+reaction_narhiril.txt
+item_helm_mood_lfr.txt
+lore_nephilim.txt
+graphics_lfr_custom.txt
+lfr_voidwalkers.png
+
+
+--
+
+
+[CLE] v0.11c
+
+Fixed a bug preventing damascus sentinels from spawning properly during worldgen.  Tweaked new civilizations - Nephilim are no
+longer hostile by default (unless they declare war on you).  Bog Trolls will now send abductors rather than just item thieves.
+Names and symbols used by civilizations have been changed.  Dwarven names have been changed for dwarfier epithets.  Bog trolls should now
+attack goblins and lizardmen.  Voidwalkers should now attack everything.
+
+Added Files:
+
+language_SYM_LFR.txt
+
+Modified Files:
+
+entity_default.txt
+entity_bog.txt
+creature_bog.txt
+entity_lizardmen.txt
+entity_nephilim.txt
+lfr_manual.txt
+lore_bog_troll.txt
+creature_lizardmen.txt
+creature_nephilim.txt
+creature_void.txt
+entity_void.txt
+lore_void.txt
+creature_narhiril.txt
+
+--
+
+[CLD] v0.11b
+
+Cleaned up a few bugs with the magma alchemy lab.  A few other minor bug fixes.
+
+Modified Files:
+
+building_alchemy_narhiril.txt
+building_display_case_kipi.txt
+
+---
+
+[CLC] v0.11a
+
+Various minor bug/quirk fixes (thanks Jeoshua).  Added LFR_ASCII folder - better support for this version is planned in the future.  Added some unique profession
+names to mod-related civilized races.  Added pigeons.  Added new mood weapons.  Added pre-installed version for Ironhand's graphics set (thanks Ult1mara).  Pre-
+installed versions for other graphics sets are planned.  Added plant transmutation reaction to alchemy lab.  Added graphics for new creatures.  Added magma versions
+of alchemy lab and metal caster (and associated reactions).  Added new easter eggs, including six "mood hats."  Fixed a bug with a duplicate instrument entry.  Moved
+metal caster and magma caster to "furnace" menu.  Added white gold and associated smelting reaction.  Added gems to raw mithril.  Added incubi.  Fixed a bug with
+alchemical byproducts causing them to destroy wooden buckets within the workshop.
+
+
+Added Files:
+
+material_template_narhiril.txt
+item_helm_mood_lfr.txt
+inorganic_stone_transmute_narhiril.txt
+building_npc_lfr.txt
+
+Modified Files:
+
+entity_bog.txt
+creature_bog.txt
+entity_lizardmen.txt
+creature_lizardmen.txt
+entity_nephilim.txt
+lfr_manual.txt
+lore_bog_troll.txt
+creature_lizardmen.txt
+creature_nephilim.txt
+creature_void.txt
+creature_easter_egg.txt
+entity_default.txt
+item_weapon_narhiril.txt
+item_instrument_nephilim.txt
+reaction_alchemy_narhiril.txt
+reaction_narhiril.txt
+building_alchemy_narhiril.txt
+building_caster_lfr.txt
+inorganic_stone_mineral_narhiril.txt
+inorganic_metal_narhiril.txt
+inorganic_stone_gem_narhiril.txt
+item_toy_special.txt
+
+--
+
+[CLB] v0.10c-d
+
+Minor error log cleanup versions.  Fixed a bug preventing dwarves from manufaturing blowdarts.
+
+Modified Files:
+
+(too many to list)
+
+--
+
+
+[CLA] v0.10b
+
+Fixed a bug with the metal caster that was preventing the dwarves from building it.
+
+Modified Files:
+
+entity_default.txt
+lfr_manual.txt
+
+--
+
+[CL9] v0.10a
+
+First public release on Bay12 forums.  Fixed a bug with sentinel core research reaction that was preventing the products from showing up.  Added meowkin
+merchant guards.  Tweaked bog troll and voidwalker ethics.  Changed the unpicked color of mousebulb to yellow to differentiate from bluebells (oversight).
+Finalized entity lore files.  Tweaked lizardmen to make them show up more often (they were starting in a relatively rare biome not present in all worlds).
+Re-introduced ether, which is now produced as an item that must be melted to obtain an ethereal bar (this *should* resolve the caravan problem).  Resolved
+an issue with state names of ether.  Tweaked bog trolls to make them show up slightly later.  Made tortoises appear more frequently.  Added preliminary support 
+for Phoebus' graphics set.  Support for default (ascii) and Mayday's graphics sets planned.
+
+Ethereal spheres are now produced in batches of ten, as melting was requiring ten of them to produce a single bar.  Getting ten of an item with a 1% chance
+of production was ridiculous, so I've adjusted this to make an ethereal sphere production more of an exciting moment.
+
+Syndromes from alchemical reactions now last longer.  While this will not make much of a difference for most reactions, it will make the rare chemical
+burns much more dangerous (previously, dwarves were recovering too quickly for the syndrome to cause many problems).
+
+Javelins have been moved to a new building, the metal caster, with associated reactions.
+
+The land mover, a new megabeast, has been added.
+
+Note: Because of difficulties with diplomatic relations, voidwalkers carry the [ITEM_THIEF] token, meaning that a lone voidwalker will periodically show up
+(stealthed) and try to steal something.  This is inconsistent with the lore files, which imply that the voidwalkers have nothing to gain from stealing dwarven
+stuff, but I needed a token that would force hostilities.  Think of it as the voidwalkers wanting to keep an eye on the other races.
+
+Added Files:
+
+tissue_template_land_mover_lfr.txt
+inorganic_material_land_mover_narhiril.txt
+creature_land_mover_lfr.txt
+building_caster_lfr.txt
+
+Modified Files:
+
+lfr_manual.txt
+entity_meow.txt
+entity_bog.txt
+entity_void.txt
+entity_nephilim.txt
+creature_nephilim.txt
+entity_lizardmen.txt
+reaction_narhiril.txt
+reaction_alchemy_narhiril.txt
+plant_narhiril.txt
+lore_nephilim.txt
+inorganic_metal_narhiril.txt
+inorganic_stone_mineral_narhiril.txt
+creature_pet_narhiril.txt
+lore_bog_troll.txt
+
+--
+
+[CL8] v0.07b-e
+
+Internal testing versions.  Too many files modified (and many later reverted) for a list to be terribly helpful.  Changelog will be posted for next version.
+
+--
+
+[CL7] v0.07a
+
+Added the long-overdue graphics for voidwalkers.  Added child graphics to meowkin and lizardmen.  Added two new reactions to alchemy lab.
+Pre-production is now complete.  This version will undergo a little more testing before being released as v0.10.
+
+Ether, unfortunately, is showing up in caravans a lot more often than intended.  The importing of large quantities of this metal are limited by its extremely
+high value, but seeing every dwarf merchant stride in with an entire company of ethereal spears is detrimental to the mod's intentions and immersion factor.
+Until this is resolved, I am removing the ethereal bar from the possible results of alchemical experiments.
+
+Added Files:
+
+lfr_voidwalkers.png
+
+Modified Files:
+
+lfr_meowkin.png
+lfr_lizardmen.png
+graphics_lfr_custom.txt
+reaction_alchemy_narhiril.txt
+
+--
+
+[CL6] v0.06
+
+Added alchemy and associated files.  Added banshees and will o' wisps.  Added Kipi's block factory (renamed "foundry") and display case.
+Added nephilim graphics.  Tweaked a few frequency values for creatures.  Added new noble position and graphics for bog trolls.  Moved a
+spoiler-related creature to the creature_easter_egg.txt file (from creature_legendary_narhiril.txt).  Added a spoiler-related new helmet.  
+Added graphics for all non-entity creatures.  Removed placeholder graphics for all creatures that used them.
+
+Added Files:
+
+reaction_alchemy_narhiril.txt
+building_alchemy_narhiril.txt
+building_foundry_kipi.txt
+building_display_case_kipi.txt
+reaction_foundry_kipi.txt
+lfr_nephilim.png
+lfr_bog_trolls.png
+lfr_assorted_creatures.png
+lfr_tortoise.png
+
+Modified Files:
+
+creature_narhiril.txt
+entity_default.txt
+entity_bog.txt
+creature_bog.txt
+creature_easter_egg.txt
+creature_legendary_narhiril.txt
+graphics_lfr_custom.txt
+graphics_lfr_easter_egg.txt
+item_weapon_narhiril.txt
+
+
+
+--
+
+[CL5] v0.05
+
+Fixed a bug with lizardmen and bog trolls that was causing them to die out during worldgen.  Lizardmen can now breathe underwater as well.
+Nephilim will now build castles in adventure mode.  Axes and associated graphics have been added to lizardmen and meowkin to allow them to
+cut wood for fuel.  Added a new creature, the master of locusts.  Added stones and metal associated with alchemy (will have no effect without
+alchemy lab, which will be in the next version).  Updated to compatability with DF v0.31.25.
+
+Added Files:
+
+(none)
+
+Modified Files:
+
+entity_bog.txt
+entity_lizardmen.txt
+entity_meow.txt
+creature_lizardmen.txt
+creature_bog_troll.txt
+entity_nephilim.txt
+lfr_meowkin.png
+lfr_lizardmen.png
+graphics_custom_lfr.txt
+creature_deep_narhiril.txt
+inorganic_metal_narhiril.txt
+inorganic_stone_mineral_narhiril.txt
+
+--
+
+[CL4] v0.04
+
+Added nephilim civilization and associated other files.  Added several new plants.  Also added graphics for meowkin, behemoths, and
+damascus sentinels.
+
+
+Added files:
+
+lore_nephilim.txt
+creature_nephilim.txt
+entity_nephilim.txt
+item_toy_nephilim.txt
+item_instrument_nephilim.txt
+lfr_sentinel.png
+lfr_behemoth.png
+lfr_meowkin.png
+spoiler_lfr folder and associated image files.
+graphics_lfr_easter_egg.txt
+inorganic_other_narhiril.txt
+
+Modified files:
+
+creature_lizardmen.txt
+graphics_lfr_custom.txt
+creature_legendary_narhiril.txt
+creature_narhiril.txt
+entity_meow.txt
+plant_narhiril.txt
+item_weapon_narhiril.txt
+
+--
+
+[CL3] v0.03
+
+Added elf-fondling human's pegasoi as a friendly creature.  Graphics and RAWs created by elf-fondling
+human - all I did was integration.  Added graphics for lizardmen and graphical support for bog trolls
+with Ironhand's graphics pack.  If there ends up being demand for it, I may do unique graphics for bog trolls.
+
+Added files:
+
+item_armor_narhiril.txt
+item_toy_special.txt
+creature_pegasus_efhuman.txt
+graphics_pegasus.txt
+graphics_lfr.txt
+graphics_lfr_custom.txt
+pegasus.bmp
+lfr_lizardmen.png
+creature_easter_egg.txt
+
+Modified files:
+
+(too many to accurately list)
+
+--
+
+[CL2] v0.02
+
+Updated files for compatability with v0.31.21.
+Note that new changes and tokens will make this incompatable with any versions prior to v0.31.19.
+
+Fixed an issue with meowkin and voidwalker nobility not being appointed properly.
+
+
+Added files:
+
+language_VOID.txt
+creature_lizardmen.txt
+entity_lizardmen.txt
+lore_lizardmen.txt
+
+Modified files:
+
+entity_void.txt
+entity_meow.txt
+item_weapon_narhiril.txt
+most of the lore files
+
+
+--
+
+[CL1] v0.01
+
+First version :)
+
+
+-----
+
+
+
+[IN0] INSTALLATION:
+
+
+
+
+[IN1] Notes:
+
+A few new races (some friendly, some not so much) are included as a feature of this mod.  They are included by default, but can
+be easily removed by removing their associated entity and creature files (all should be clearly labelled).
+
+If you elect to remove any of these new races (particularly the more hostile ones), the game may become considerably
+easier for you.  The new features of the mod are meant to expand and diversify the dwarven civiliation, and the new races are
+meant to prevent these additions from becoming overly powerful.  Yes, your dwarves may be able to hack apart goblin ambushes
+a little more effortlessly with this mod, but wait until your fortress gets rushed by bog trolls or a damascus sentinel strolls
+in from below.  If you live long enough, you might even find yourself on the recieving end of challenges far greater and full of
+surprises that no kobold abductor could hope to match.
+
+Suffice to say, certain races won't take kindly to your amassment of riches, booze, and power, and some of these races
+have considerably nastier toys than your average goblin mischief maker.
+
+Much of this mod was tested alongside the Fortress Defense mod.  While it does not include or require/use
+any of Fortress Defense's features or races,  I have written the file names and code so as not to conflict with anything 
+in Fortress Defense.  This mod can safely be installed on top of FD, or vice versa.  For those who haven't checked out 
+darkflagrance's Fortress Defense, I highly recommend it.
+
+If you downloaded the raw-only release, only use the graphics and object folders from the folder that corresponds to your graphics set.  Tile numbers vary 
+greatly across graphics sets, so if your walls look like mushrooms or your mushrooms look like dragons, chances are that you used the wrong folder, or I made a terrible
+mistake with the tiles (which is unlikely but possible - if this is the case, please notify me via forum or email).
+
+This mod was tested with a mineral scarcity setting of 100 or "everywhere," and is designed to be played with a mineral scarcity setting of 300 or less.
+Playing with higher scarcity settings will make metals for the tech tree (especially orichalcum) very much more difficult to come by than was intended.  
+I know, this is stated in like 5 places, but it's really important.
+
+
+[IN2] The Actual Installation:
+
+Overwrite "entity_default.txt", "creature_standard.txt", and "item_weapon.txt" with the provided versions.
+
+If you are using another mod that already modifies one or both of these files, you can still use this mod, 
+but it will require some manual file editing on your part.  If this is the case, see section [RC1], [RC2] and/or [RC3].
+
+
+If you have overwritten the default files with those provided, you can safely SKIP sections [RC1], [RC2] and [RC3].
+
+
+
+
+------
+
+
+[NM0] METALS/MINERALS
+
+A few new minerals, ores and alloys with several goals: to weaken the necessity for Dwarves to embark on flux,
+to add more options for effective blunt weapons, and to bridge the massive power gap between steel and "cotton candy."
+Some of these minerals will be also be used for some more... unorthodox uses.
+
+
+[NM1] Mithril:
+
+Mithril, previously released as a stand-alone mini-mod, is back with only minor changes.
+Mithril in its mineral form, "raw mithril," can be found as small clusters within any igneous rock,
+or as the rare mithril vein within obsidian.  Mithril, in its smelted form, is brittle and useless for
+just about everything, but can be refined at a smelter, taking four bars of low-grade mithril and 
+producing a single bar of mithril in its pure form, which is comparable to steel in effectiveness,
+but slightly lighter and without the prerequisite of flux stone.  Mithril is a brilliant red color.
+It has a material value of 20 (low-grade) or 70 (refined).
+
+Changes to Mithril from v0.04b:
+
+A few changes to wording.  Items made from impure mithril are called "low-grade mithril (item)." Reactions have been changed 
+to "smelt mithril ore" and "refine low-grade mithril bars."
+
+Mithril's density has been lowered from 7850 (identical to steel) to 5850.  This will make mithril armor and weapons lighter,
+and is meant to differentiate mithril from the new damascus steel (discussed later).
+
+
+
+[NM2] Tungsten:
+
+TUngsten is an uncommon metal found on Earth as a mineral called "wolframite," from which it derives
+its IUPAC symbol on the periodic table ("W").  Wolfamite is a natural compound of iron, manganese, and
+tungsten, which can be broken down into its constituent parts by sufficient heat (magma forge) or in the
+presence of carbon (coke) at a lower relative temperature.  Manganese is another metal I hope to include for
+alloying purposes later.
+
+Wolframite occurs naturally in a variety of minerals - most notably quartz.  In this mod, attempting to 
+find some balance between rarity and real-life occurance, wolframite is found as veins within quartz and mica,
+and as small clusters within microcline and orthoclase.  Smelting wolframite will produce a tungsten bar, and
+has an additional (10%) chance of producing an iron bar as well.
+
+Tungsten is notable for its density and its hardness.  It is magma-safe and makes a better bludgeoning weapon than
+silver, though it isn't very effective for blades or armor.  Tungsten is used in modern-day applications for its hard and 
+heat-resistant properties, including lightbulb filaments, kinetic projectiles (as a non-pyrophoric substitute for depleted uranium), 
+and in alloys such as tungsten carbide.  Tungsten carbide can be used effectively in blades but is, unfortunately, beyond 
+the technology level of the dwarves to synthesize (it requires molten tungsten, which requires a temperature of
+over 16000 urists, whereas magma is only 12000).
+
+Tungsten is meant to be a metal used for bludgeoning weapons and as a moderate value (15) decoration, as well
+as in magma-safe components.
+
+
+
+
+[NM3] Iovium and Abyssal Eyes:
+
+Prepare for some !!SCIENCE!!
+
+Iovium is meant to be the end-game metal for bludgeoning weapons, from the Latin word for Zeus ("Iovis").  Iovium is a fictional 
+name given to a theoretical element, unbihexium (element 126), which is of interest in the scientific community due to its position 
+right in the middle of the theorized "island of stability," where the number of protons and neutrons are though to be such that the shape 
+of the nucleus will be spherical and thus, will be much less radioactive than other superheavy elements.  The properties of Iovium are
+a combination of theorized and fictional numbers.  In Dwarf Fortress, it is roughly 5 times the density of silver, and carries a molar
+mass of 310000 (310.000, based on the most stable theoretical isotope).  The half-life of Unbihexium-310 has been theorized as anywhere from
+a few minutes to millions of years, and the only attempt to synthesize it in a laboratory thus far has been unsuccessful.  In this representation,
+I am assuming that its half life is long enough and its chain of decay harmless enough not to cause any syndromes.  In Dwarf Fortress, it is simply
+a super-heavy (though not nearly as heavy as slade) weapon material meant for hammers, mauls, and a few new weapons (see weapons section).
+
+Iovium ore ("iovite") can be found only as small clusters within bauxite, granite, cinnabar, and jet.  Because it is very rare,
+Iouvium carries a material value of 100 - second only to the 300 of "cotton candy."  This is meant to limit importing of large
+quantities of the metal from the Dwarven caravan.  Iovium clusters sometimes contain vibrant gemstones called "abyssal eyes," which
+carry a material value of 150 - the highest value of any gemstone.
+
+Smelting iovite requires an additional unit of fuel, for both regular and magma forges.
+
+Unlike tungsten, iovium is not magma safe.
+
+
+
+[NM4] Vanadium and Damascus Steel:
+
+Meant to be an upgrade to steel, damascus steel is inspired by the lost art of middle-eastern swordsmiths.  It is characterized by the unusual
+wave-like patterns contained within it - a byproduct of the forging process.
+
+Examination of weapons forged from damascus steel under electron microscopes has revealed that the forging process was actually capable of creating 
+nanocarbon rods within the blades. While the original art of production has been lost, damascus steel is thought to be an alloy of high-carbon 
+steel and vanadium, forged in a crucible and hammered and folded extensively.  In this mod, damascus steel is an alloy of one part steel, one part coke, 
+and one part vanadium.
+
+Vanadium is found as an ore called patronite (which is found in quartz) or as ferrovanadium, a natural alloy with iron, within gabbro.  Smelting
+patronite will yield a bar of vanadium.  Smelting ferrovanadium will yield a bar of vanadium and a bar of iron.  Vanadium is magma-safe, but an
+unfit material for weapons, armor, and ammunition.  It can be used for low value furniture or craft production, or for damascus steel production.
+
+Damascus steel is magma-safe.  It is slightly more dense than steel, but also stronger (~20%) and more valuable.  Its material value is 45 - 
+ever so slightly greater than the sum of its parts.
+
+
+
+[NM5] - Shards of the Void:
+
+Shards of the Void are small, semi-organic slivers which compose a metal of unknown origin called "voidshard".  No ore of voidshard is known to exist, 
+and its properties are inconsistent with any alloys of any known metals.  As such, it is impossible for dwarves to obtain or create this metal directly.  
+The only confirmed weapons and armor made of voidshard are in the hands of the voidwalkers (discussed in civilizations section).  How these unusual
+beings came to possess this material is veiled in secrecy - what is known is that the voidwalkers are not afraid to strike down anyone of any
+race who would attempt to glean their secrets.  Due to the magnificent properties of their metal of choice, they are able to do this with
+unparalleled efficiency.
+
+Dwarves can not acquire voidshard without defeating a voidwalker extermination attempt, which is a herculean task in and of itself.  Voidshard
+salvaged from the battlefield can be melted down into voidshard bars, which can be used to forge weapons and armor of obscene power and value.
+Though adamantine forges better blades and armor, voidshard is a relatively close second.  The glimmering black armor and weapons of a voidwalker 
+extermination force are feared by even the most powerful of creatures and civilizations.
+
+Voidshard, for all of its mythical properties, is not magma safe.  In fact, it violently explodes in extreme temperatures.  The otherworldy vapors
+produced in this reaction are as deadly and feared as any weapon.
+
+
+[NM6] - Ether
+
+Ether is a fabled substance thought to exist in the space between the known world and the realm of the gods.  Ether has supernatural properties.  It is
+the second lightest material in the game - only about four times the density of adamantine, and able to hold an edge not quite as sharp, but statistically 
+comparable to voidshard.  Ether cannot be mined - it is produced as a rare product of an alchemical experiment as an "ethereal sphere," which can be melted down
+into a useable bar.  Ether is magma-safe, but cannot be used for armor.
+
+NOTES: Ether was supposed to cause a syndrome upon contact with certain creatures, but this idea had to be scrapped due to technical difficulties.  The remnants
+of this code have not been removed from the raws, but should not affect anything.
+
+
+[NM7] - Lustrum
+
+Lustrum is an unusual, glowing stone that can sometimes be found in veins within metamorphic rock.  It is not known how or why it forms, but it appears to be
+similar to shale in all but color.  Lustrum glows with an unexplained energy, which some of the more eccentric dwarves have tried to find ways to harvest.  If they
+were to succeed, lustrum could become a powerful intermediate fuel source between coal and magma.
+
+
+[NM8] - Orichalcum
+
+A rare mineral found infrequently in several common types of rock, orichalcum is found as "native orichalcum," which can be smelted into orichalcum bars.  Besides
+being a moderate value crafting metal (35), orichalcum's unique shape-memory properties have the potential to bring about significant advances in Dwarven machinery.
+Striking orichalcum is one of the ways to unlock some of the more advanced machinery-themed workshops.
+
+
+[NM9] - Hadrine
+
+Not technically a metal as much as it is a synthetic semi-metallic compound, hadrine is both extremely strong and extremely heavy.  Hadrine is used
+in the manufacture of extremely advanced suits of armor.  Hadrine does not occur in nature - the dwarves must find a way to create it using
+other means.
+
+
+[NMA] - Experimental Materials
+
+A few other ores (cooperite and monazite) may be found in small clusters, periodically.  These, along with cobaltite, are ores for a few "experimental" metals, which are
+unlocked and utilized more and more as the dwarves continue to advance technologically.  Right off the bat, these aren't of much use, but they're worth holding on to.
+
+
+-----
+
+
+[WA0] WEAPONS
+
+A variety of weapons have been added to the game, with properties derived from their real-life counterparts.
+Some of these weapons are available from the get-go, but others are considerably more difficult to obtain.
+
+
+
+[WA1] The Javelin Thrower:
+
+The javelin thrower is a new breakthrough in Dwarven technology.  After losing several remote outposts to
+the bog trolls (discussed later), who absorbed massive amounts of crossbow fire without even flinching,
+the Dwarves realized that they needed a ranged weapon that packed more of a punch.  The resulting years of methodical
+!!SCIENCE!! produced a great number of mangled corpses,  severed limbs, inexplicable burning wreckage, and the
+javelin thrower.  
+
+The javelin thrower is a two-handed crossbow of enormous size, meant solely for the purpose of
+hurling a special ammunition at enemies with a dangerous amount of force.  While the crossbow was
+designed to allow for hunters to kill animals without ruining the valuable meat and body parts, the
+javelin thrower has no qualms about rendering enemies unrecognizable.  The javelin thrower uses javelins,
+which are cast at a smelter (for technical reasons) out of metal bars, but are quite expensive - one bar
+only produces three javelins, as opposed to the 25 crossbow bolts produced per bar at a forge.  The size of javelins
+also prohibits rangers from carrying as many of them in their quivers.  This weapon is designed as a weapon to be
+fired from the battlements to help break a siege, with a nearby ammo stockpile.  Novice marksmen are probably
+better off using a crossbow, while master crossbowmen will make these precious few shots much more effective.
+
+The Javelin Thrower is meant to function as an in-between to the crossbow and the ballista siege engine.  Since the
+ballista cannot, regrettably, fire across z-levels, I felt inclined to design something more powerful than a crossbow
+that could.  The javelin thrower, unlike the ballista, does NOT strike multiple targets.
+
+
+[WA2] Types of Javelins:
+
+Javelins, furthermore, are divided into three subtypes.
+
+Broadhead javelins (the most fun, in my opinion), are javelins with a broad, sharpened cutting head.
+These are designed to open arteries, cut tendons, and even sever limbs.  Full decapitation is not unheard of.
+
+Piercing javelins are more traditional javelins, focusing all of their kinetic energy to a sharp point.  These
+are made to pierce tough hides and strike vital organs, and are the most effective javelins against large
+foes and megabeasts.  These javelins were designed to kill bog trolls, but have found themselves useful against
+a variety of targets.
+
+Hammerhead javelins are blunt javelins, which are most effective when cast out of high-density metals not suitable
+for other types of javelin (i.e. lead).  They are designed to smash through armor - and skulls.  
+
+Javelins are forged at a new building called the "metal caster."  This is discussed later.  Javelins are forged
+from five metal bars, producing a stack of fifteen javelins.
+
+
+
+[WA3] The Age of the Two-Hander:
+
+Two-handed weapons previously unavailable to Dwarves have had their [MINIMUM_SIZE] fields reduced below 60000.
+This requires either replacing item_weapon.txt with the version included in this mod (easy), or modifying the file 
+manually if compatibility is a concern (also easy, but harder than just replacing - this is covered in a later section).
+
+Dwarves have been tweaked in the entity_default file to allow manufacture of the maul, greataxe, and two handed sword.  This allows
+dwarves to sacrifice their shield-carrying ability for more damage, although this tends to be a more worthwhile sacrifice for more skilled 
+combatants, who can make up for this newfound weakness with dodging and parrying.
+
+Dwarves also have a new weapon in their arsenal - the glaive: a massive, two-handed spear with both a point and a substantial cutting edge.
+
+
+
+[WA4] Other Tweaks:
+
+Dwarves can now produce arrows and blowdarts (you will still need to acquire bows and blowguns by normal means).
+
+The short sword has been renamed the "gladius."  Its [ITEM_WEAPON] identification tag has not been changed.
+
+The long sword has also been added to the Dwarven arsenal.
+
+The goblins have been given a new spear-type weapon (it isn't the glaive).
+
+Elves have been given two of the three new types of bow.
+
+Humans have been given two new types of blunt weapon.
+
+
+
+[WA5] Mood Weapons:
+
+"Mood weapons" are specialty weapons.  With only a few exceptions (ten or so, I think), they are not used by any races.  They are called "mood weapons" for two 
+reasons.  The first is that, if you like, you can add them to any race's arsenal, depending entirely on your own preferences.  The second is that 
+the only way to acquire these weapons is by a dwarf in a strange mood.  "Mood weapons" use existing skills, but add some new attacks and 
+styles to combat.  An example is the jitte - a sword that deals blunt damage.  Some of these weapons are considerably
+more powerful than their normal counterparts, adding new attacks and (sometimes) combat log wording befitting of their status
+as legendary artifact weapons. One example is the serrated axe, which is basically an axe with an additional and very powerful
+attack using its sawtoothed blade.  Other weapons are full of even more surprises.  I don't wish to give too much more away, but 
+there are a substantial number of these weapons added to the RAWs.  If you want to ruin the surprise for yourself, peek into the item_weapon_narhiril file.
+
+One thing is clear.  EXPECT NEW LEVELS OF BRUTALITY.
+
+There are currently well over sixty different types of these "mood weapons," mostly based on real weapons from middle-age
+cultures around the world, and these use a wide variety of combat attributes.  This list does not include the javelin thrower or the glaive, and
+50(ish) of these weapons are not currently used by any civilizations (but feel free to add them as you wish).
+
+This list includes...
+19 new types of sword.
+11 new types of spear.
+4 new types of whip.
+10 new types of dagger.
+7 new types of axe.
+1 new type of mining weapon.
+5 new types of hammer.
+4 new types of mace.
+6 new types of crossbow.
+3 new types of bow.
+1 new type of pike.
+1 new "punching" weapon.
+
+5 of these new weapons are actually "dual" weapons.
+
+Dual weapons are considered small two-handed weapons.  Strikes in the combat log with left and right weapons are simply different attacks.  These weapons,
+currently, cannot be split and are considered one two-handed item ("pair of (weapon name)s").  They also are utterly vicious in combat.
+
+Watching a weaponsmith produce "Kolshmistar (made up name), a mithril pitchfork" will hopefully surprise and excite you as much as it does me.
+
+The FAQ/spoiler section and/or a typical Google search should tell you all you need to know about any weapon types you don't recognize.
+
+Ok, I promise I won't give any more away now.
+
+
+**NOTE**  Mood weapons have been integrated into a new "tech tree" element as of v0.13a to make them a little less rare.  See the technical advancement
+section for details.
+
+
+[WA6] Weapons Upgrades
+
+As the dwarves continue to advance technologically, some dwarves may discover ways to make older weapon designs more effective.  This is discussed in more detail in the scientific
+breakthroughs section, but I thought it was worth mentioning here as well.
+
+
+[WA7] The Magnetic Dart Lancher and Magnetic Darts
+
+A fair ways through LFR's tech tree, the dwarves may stumble on some fundamental properties of electromagnetism.  Experiments performed at the advanced alchemy lab can yield ways for 
+the dwarves to use these new discoveries in the construction of a new weapon.  The magnetic dart launcher is a ranged weapon that fires a special kind of ammunition, magnetic darts, 
+which are assembled at the prototype workbench (once it is unlocked, of course).  Several upgrades to the magnetic dart launcher can be researched as well, giving it enhanced melee or 
+ranged capabilities.
+
+Because the weapon requires a ferromagnetic projectile, magnetic darts can only be made from iron, steel, damascus steel, cobalt, and mithril.  Tungsten and voidshard darts can also be 
+assembled, but require iron as an additional reagent.  Magnetic darts are produced from two bars of metal, and are made in stacks of sixty.
+
+
+-----
+
+
+[AR0] ARMOR
+
+The advancement of Dwarven weapons technology, along with the advent of the bog trolls, has not occured without similar developments in
+the field of personal protection.  While the two-handed weapons attempt to steal the spotlight on the battlefield, new types of armor and
+shields have been developed in the interest of - well, veriety, for one, because that's fun - and for keeping the dwarf in the spotlight
+alive to fight another day.
+
+
+[AR1] Shields:
+
+The tower shield has been added to the dwarven arsenal.  A massive, weighty shield, it provides more protection and block rate for those who
+elect to use one-handed weapons.  The humans have developed a similar design.
+
+A new civilization carries two unique types of shield.  The aegis and the bastion are powerful shields which vary slightly - the aegis has slightly better 
+protection, while the bastion has slightly better block rate.  Both are significantly more advanced than even the dwarven tower shield, due in no small part 
+to the mysterious technologies of their creators.  If you are very lucky, a dwarf in a strange mood may take inspiration from these designs and fashion a 
+similar, powerful piece of armor for your civilization.
+
+In the spirit of "mood weapons," a few (currently 4) additional types of shield have been added to the game and left unused (for now, anyways).  One of these 
+shields is slightly superior to the buckler, one is slightly superior to the default shield, and two are slightly superior to the tower shield.
+
+
+[AR2] Body Armor:
+
+A new civilization uses a special, ornate kind of chain armor that is statistically identical to regular chainmail.  However, since these items are "large,"
+they cannot be worn if they are taken from an invasion force.  Dwarves can, however, produce similar dwarf-sized items in strange moods.
+
+
+[AR3] Leg Armor:
+
+Humans have been given the plate skirt, which is a 33% more protective variant of the greaves with slightly (10%) poorer coverage.  In other words, it absorbs
+impacts a bit better due to having room to yield, but it has a big hole in the bottom.  Dwarves can produce similar, dwarf-sized items in strange moods.
+
+
+[AR4] Gloves and Boots:
+
+A new civilization uses a new type of glove and boot that are statistically identical to the gauntlet and high boot.  However, since these items are "large,"
+they cannot be worn if they are taken from an invasion force.  Dwarves can, however, produce similar dwarf-sized items in strange moods.
+
+
+[AR5] Helms:
+
+Dwarves can produce the "great helm," a helm that is much larger than the typical helmet.  This helmet is meant to be an indicator of military
+authority, and to better protect the head of an important military dwarf.  This helm requires three bars of armor-grade metal to forge.
+
+A new civilization uses two new types of helm that are statistically identical to the dwarven helm.  However, since these items are "large,"
+they cannot be worn if they are taken from an invasion force.  Dwarves can, however, produce similar dwarf-sized items in strange moods.
+
+
+[AR6] Clothing:
+
+Two of the new civilizations use unique articles of clothing.  Similar clothing may be produced my dwarves in strange moods.  This clothing is meant
+to add diversity to civilizations, and should not have a significant effect on combat.
+
+
+
+-----
+
+
+[CV0] CIVILIZATIONS
+
+With armor and weapons augmented, civilizations seemed the next logical aspect to expand upon.  These new civilizations borrow some
+ideas both original and from other fantasy universes and attempt to weave them together into a world of societies which is both unique 
+and diverse.
+
+
+[CV1] The Meowkin:
+
+The meowkin are inspired by four concepts.  They are, in no particular order, kittens, mittens, weird japanese anime,
+and crossdressing, The meowkin are a friendly (albeit slightly perverse) humanoid race with feline ears, paws, tails, and 
+whiskers.  They will trade with your civilization and have a particular affinity for toys and cages - and they are not
+always clear on the distinctions between the two.  More on the meowkin in the lore_meow.txt file, which is included with this mod.
+
+NOTE: I did not make a "yarn ball" toy for the meowkin.  My own cat nearly died from playing with a yarn ball at a young age, so I refuse
+to make one on principle.  If you REALLY want a yarn ball, I think the guys over on the S.L.A.D.E. mod ought to be able to help you, just
+remember to add it to the entity file.
+
+
+[CV2] The Bog Trolls:
+
+The bog trolls are a subspecies of troll that live independantly from the goblins.  They are large, muscular creatures who love to
+fight and have caused considerable disruptions to civilizations and trade routes in the past.  More on the bog trolls in the 
+lore_bog_troll.txt file, which is included with this mod.
+
+
+[CV3] The Voidwalkers:
+
+An ancient civilization that predates the dwarves, the voidwalkers compose a secretive race that, for unexplained reasons, is motivated
+to perform periodical brief and brutal displays of power.
+
+Voidwalkers are hybrid insect-humanoid creatures with extremely powerful weapon technology.  They are meant to test the new technologies of the dwarves
+and push them to their limits.  More on the voidwalkers can be found in the lore_void.txt file, which is included with this mod.
+
+
+[CV4] The Lizardmen:
+
+Lizardmen are a young race of bipedal reptiles.  They are a primitive society, and are highly xenophobic.  The lizardmen perform ambushes
+and raids on other civilizations, but avoid open or prolonged conflicts, as they are badly outgeared by the organized militaries of other
+civilizations.  Lizardman settlements are conquered frequently, but seem to spring up anew within a few years of their destruction.  As
+these conquests yield little in the way of riches, most civilizations fight them defensively, repelling their ambushes and keeping
+watch over the borders of their lands.  More on the lizardmen in the lore_lizardmen.txt file, which is included with this mod.
+
+
+[CV5] The Nephilim:
+
+"Nephilim" is a hebrew word roughly meaning "the fallen."  As a race, the nephilim resemble the angels of Christianity - pale humanoid
+beings with feathered wings and long, flowing hair.  Nephilim are hostile to most of the more depraved races of the world, and are bound
+by their religion to exterminate those who are morally inferior to them.  The nephilim are decent fighters, with the knowledge
+of both the production of steel and flight. More on the nephilim in the lore_nephilim.txt file, which is included with this mod.
+
+
+[CV6] The Moroii:
+
+A nomadic tribal race that lives underground, the moroii resemble small, albino humanoids.  They speak a language unknown to outsiders and live
+minimalistic lives.  Their only possessions are a bit of clothing, weaponry, and "relics" that they find beneath the earth.  The origin of these 
+relics is not well understood, but the moroii treasure them above all else.  For more detail, consult the included lore_moroii.txt file.
+
+
+[CV7] The Shedim:
+
+A strange race of wrinkled creatures with distinctive, squid-like heads.  The shedim are a race that can only sustain itself with constant war, and have 
+no permanent settlements or artifacts (though they do, curiously, have their own language).  The shedim are enemies to all other races, and their wide 
+variety of castes and abilities make them a formiddable adversary.  The shedim have not been seen in significant numbers since the immensely successful 
+crusade against them by a coalition of nephilim and humans centuries prior to the earliest remaining recorded history, but military commanders are briefed 
+on their tactics and physiology even today, in case they should ever return.  One such briefing is included with this mod (lore_shedim.txt).
+
+
+-----
+
+[FC0] FRIENDLY CREATURES
+
+"Friendly" is a relative term.  These creatures are relatively harmless, and many of them have practical uses.  Some are annoying, but not
+by any means dangerous under normal circumstances.
+
+
+[FC1] - Tortoises:
+
+Tortoises are large but harmless reptiles that can be tamed as pets or used as mounts by some civilizations.  They graze infrequently, and
+move slowly, making them relatively ineffective in combat.  Tortoise shells are somewhat valuable, and tortoises are the only breeding 
+(non-vermin) source of shells in the game.
+
+[FC2] - Pegasoi (by elf-fondling human):
+
+Before any debate begins, pegasoi is, in fact, the correct Greek spelling of the plural of pegasus.  Pegasoi are creatures that can be found in some
+good forest and shrubland biomes.  They are large, winged horses with the ability to fly.  Some civilizations use them as mounts.  Pegasoi do not
+graze or trample grass.  Concept, statistics, and graphics for this creature were done by elf-fondling human of the bay12 forums.  Because permission has been 
+graciously given to use this in LFR, this creature uses its own creature file (modularity - it's a theme here).
+
+[FC3] - Cave Oysters:
+
+Originally developed for an odd forum request, I've decided that the flying cave oyster, ridiculous though it may be, belongs in this mod because
+it brings the pearl - a legendary material coded, but never seen in Dwarf Fortress - out of the shadows and into the game.  Flying cave oysters are, for
+lack of a better word, flying cave oysters.  They are shelled creatures who have evolved a pair of small wings to escape from predators in the caverns.
+Flying cave oysters can be shot down by marksdwarves, and while their shell typically breaks upon contact with the ground, they are known to drop
+"flying cave oyster pearls," which fulfill the requirements for the "decorate with pearl/ivory" reaction.  They can be found in the first cavern level.
+
+[FC4] - Will O' Wisps:
+
+Benign spirits that hum softly and inhabit the deep caverns.  The air around them is chilly, hovering at a temperature just above freezing.  Will o' wisps
+have a small chance of dropping a "will o' wisp heart," which can be used in an alchemical reaction.  Cheers, darkflagrance, for this idea.
+
+[FC5] - Pigeons:
+
+Pigeons are common above-ground birds.  They are fairly insignificant, but exist for immersion purposes (DF has a distinct lack of birds).  There is a highly
+amusing easter egg related to pigeons that will not significantly affect gameplay.  For this reason, pigeons are located in the creature_easter_egg.txt file.
+
+[FC6] - Carbuncles:
+
+Small, rabbit-sized creatures with outward-pointing ears.  They are considered to be good luck by several civilizations.  Breed them in proximity of a
+nest box, and maybe you'll find out why.
+
+[FC7] - Jackalopes:
+
+An alternative to cats, jackalopes are domestic horned rabbits that hunt small creatures, but do not adopt their owners and leave vermin remains where they are.
+
+[FC8] - Sabre-toothed Tigers
+
+sabre-toothed tigers, once thought to be extinct, were recently rediscovered in the first and second cavern levels, and their domestication by the dwarves for hunting and war purposes swiftly 
+followed.  They make excellent war animals.
+
+[FC9] - Dwarven Savants
+
+Very occasionally, a dwarf will be born with a learning disability.  While this hinders the dwarf's skill acquisition rates, these dwarves often have a single,
+extremely high nautral skill.  These "savants" are physically identical to normal dwarves, but have natural specializations.  Finding a child with an extremely
+high natural weaponsmithing skill is not unheard of.  Checking descriptions should give a clue as to when you've found a savant.
+
+[FCA] - Zingers
+
+Zingers are benign, simple creatures found in the shallow caverns that have been captured and bred by the Dwarves.  Zingers explode violently when killed, and so are often used as
+walking bombs for defensive purposes.  They must be bred and handled carefully.
+
+
+[FCB] - Ankylosaurs
+
+A rare species of desert reptile left over from ancient times, ankylosaurs are well-armored and make excellent, if expensive, war beasts.
+
+
+-----
+
+
+[DC0] DEADLY CREATURES
+
+Not all creatures are civilized, and this mod would not be complete without due attention to the forms of life not bound into
+organized civiliations.  Some of these creatures (from the previous section) are docile, but many of them are anything but.  This
+section describes the creatures of nightmares that dwarven legends are made of.  Hunting them can bring great risk or great reward.
+
+
+[DC1] - The Devourer of the Depths:
+
+Below the dwellings of the cave spiders and giant cave spiders are larger and even more dangerous arachnids.  These creatures
+live for over a hundred years, and are roughly ten times the size of the average giant cave spider.  Dubbed "devourers of the
+depths," colossal arachnids such as these spin webs of death and biologically synthesize deadly poisons in the dark and forbidden
+caverns just above the magma sea.  Devourers of the depths are formiddable foes, but rarely are seen in significant numbers.  Their
+webs are highly prized, as they are used in production of the finest silk in the known world.  Devourers avoid traps (sorry, you'll
+have to get creative if you want to farm their silk).
+
+A note - these things are TOUGH.  Tough enough to be evenly matched with as many as three or four damascus sentinels, or an entire squadron of 
+military dwarves.  It is advisable, if you must fight one, to do so at range and try to incapacitate it quickly before it has time to tear the limbs 
+off of your legendary axedwarf.
+
+[DC2] - Wyverns:
+
+Wyverns are a new type of megabeast.  They are brilliant red winged serpents, similar in size to dragons.  They also breathe dragonfire, and are
+immune to pain, fear, nausea, traps, and paralysis.  Unlike their puny dragon cousins, wyverns can fly.  Wyverns are meant to be more challenging
+than regular dragons - because of their immunities to pain, fear, and nausea, a lucky opening strike will not be as effective at stopping their 
+rampage.  Befitting of their legendary status, items made from the parts of a slain wyvern are extremely valuable.
+
+[DC3] - Leviathans:
+
+Leviathans are rare creatures that inhabit the dark underwater abyss.  They are sometimes brought to the surface by violent storms or volcanism.  Though
+they are not seen very often, leviathans are extremely dangerous foes that are capable of surviving for periods of time without water.  Many ships have been
+dragged down to a watery grave by these beasts.  Like those of wyverns, a leviathan's body parts are extraordinarily valuable.
+
+[DC4] - Damascus Sentinels:
+
+Scattered throughout the dark caverns of the world are isolated structures of unknown origin.  Though most of these structures are so ancient that they are nearly
+indistinguishable from natural features, they are sometimes guarded by mysterious living statues of damascus steel, which fervently defend the ruins of their masters.
+Nameless, ageless, and deathless, these constructs are oblivious to the fact that their purpose has long since been lost to time.  Periodically, these constructs will
+wander about the deep caverns, searching for enemies or resources that no longer exist.  If encountered, these creatures will fight tirelessly until their enemies are
+dead or until they no longer have the structural integrity to continue fighting.  As these sentinels are made of a high-strength steel alloy, destroying or disabling
+them is incredibly difficult.  They know no thought, no pain, no fear, no weakness, and no remorse.  Damascus sentinels are quite powerful, and vulnerable only
+to weapons made from the highest quality of metals, or creatures of extraordinary strength (i.e. devourers).
+
+Damascus sentinels are stronger and larger than iron men and are only found in the deepest cavern levels.  Like iron men, they emit gases when their outer shell is
+punctured, but these gases do not carry a syndrome.  A single sentinel will demolish anything without enough power to penetrate its shell, and a pair of these 
+constructs is a match for even an adept and well-geared squadron of soldiers.  Damascus Sentinels leave masterwork damascus steel clockwork pendants upon death, which
+is the only way that this unusual trade good can be obtained.
+
+There is a hidden feature related to these creatures, but I don't want to spoil too much of the fun.  Suffice to say, if you see a modified damascus sentinel with an
+unusual name, remember that great risk comes with great reward.
+
+[DC5] - Deep Wolves:
+
+A strange subspecies of wolf that lurks in the first and second cavern levels.  Deep wolves are small and weak individually, but attack and travel in large packs.
+Their sheer numbers are enough to overwhelm most trap systems or individual dwarves, though they are not immune to traps.  Deep wolves are easily frightened if their
+numerical advantage starts to dissipate.  A half-decent militia with full sets of mid-level equipment will easily dispatch a pack of these creatures, but they can
+cause mass hysteria if they catch dwarves off guard.  Deep wolves are not found on the third cavern level, presumably because they have no defense against damascus 
+sentinels or devourers.
+
+[DC6] - Behemoths:
+
+Behemoths are megabeasts nearly as large as dragons.  The earth shakes as they walk.  The first recorded sightings of these creatures were been in the deserts, but
+some have been known to wander great distances.  In addition to their powerful physical strength, behemoths give off a terrible stench under duress, which sickens 
+the stomach of most affected creatures.  These four-legged titans live for eons, unless slain.
+
+[DC7] - Aatxes:
+
+Aatxes (pronounced ah-chays) are bulls corrupted and twisted into enormous, pseudo-humanoid forms by malevolent spirits.  They are much larger than minotaurs, and
+much more massive and deadly.  They are semi-megabeasts that inhabit the gloomy caves of the world.  Aatxes are prone to mad rampages across vast territories,
+destroying anything in their path.
+
+[DC8] - Masters of Locusts:
+
+Humanoid creatures with bat-like wings, masters of locusts are a disorganized species without any known culture or settlements.  They are able to speak and learn 
+to equip weapons and items, but seem to have no desire to do anything other than wander their desert homelands.  Masters of locusts are named for the great swarms
+of biting insects they bring with them.  If attacked in combat, a master of locusts will use this cloud of insects to obscure, bite, and otherwise hinder attackers
+while the creature uses the commotion to mount its defense.  Locust bites are painful and can draw some blood.  While these creatures are able to sometimes overwhelm
+unprepared dwarves, they are vulnerable to ranged weapons, as the swarms of locusts do not stray far from their masters.
+
+[DC9] - Banshees:
+
+Banshees are very rare creatures that roam savage biomes.  They are vengeful spirits who have lost most of their influence over the material world, and wander around,
+shrieking, in search of forgotten enemies. Putting a banshee to rest will yield an ectoplasmic remnant, which is discussed in more detail in the alchemy section.
+
+[DCA] - Land Movers:
+
+Massive turtles the size of small islands, land movers carry all sorts of plant and small animal life around on their backs.  Though non-lethal on its own, their 
+blood carries a syndrome that makes them difficult to fight in direct combat.
+
+[DCB] - Incubi:
+
+Though unrelated to demons, these nightmarish creatures nevertheless resemble them.  It is said that the incubi once formed an advanced society in a time before time,
+but they have since devolved into feral creatures who attack in small groups.  Incubi only appear in evil biomes.  They avoid traps, can fly, and are quite dangerous
+in numbers to unarmed or untrained dwarves.  Incubi are divided into several castes based on size.
+
+[DCC] - Manticores:
+
+A massive lion-like predator with the wings of a bat.  Manticores are a dangerous new type of megabeast.  Fortunately, they won't bother you until your population
+hits 80, or if you generate a disproportionate amount of wealth before then.
+
+[DCD] - Megalania:
+
+Megalania are giant goannas (think monitor lizard, but bigger and badder) that inhabit the caverns.  While megalania are extremely dangerous creatures to run into, 
+easily able to overpower and kill unprepared dwarves, they are easy to train and domesticate if they can be captured.  Megalania make exceptional war beasts.
+
+[DCx] - Other Creatures:
+
+There are a few other creatures included in this mod which are not listed in this manual, though some are hinted at in the lore files.  Most of these creatures are
+extremely rare, "easter egg" type creatures deemed unneeded, overly unrealistic, or game-breaking if they were anything other than isolated encounters.  However, since
+some of these creatures were quite amusing, I have included them in a seperate file named creature_easter_egg.txt.  If you do not wish to include these creatures, this
+file can be safely removed without any effect on the rest of the mod.  However, if you do choose to include this file, all it does is allow for the possibility of
+encountering one of these extremely rare creatures from time to time, which shouldn't affect gameplay much, if at all.
+
+
+
+-----
+
+[NP0] PLANTS
+
+These are a variety of new plants aimed at broadening the spectrum and providing the always-desirable new forms of alcohol, food, thread, and wood.  Many of these
+plants are aimed at providing high-value materials and food, but carry inherent drawbacks or risks to offset these gains.
+
+
+[NP1] - Bluebells and Dwarven Whiskey:
+
+Bluebells are small, bright blue mushrooms that grow above ground year-round in most climates.  They can be eaten raw,
+cooked, or brewed into a special dwarven alcoholic delicacy: Uncle Urist's Old Number Nine whiskey - a relatively valuable type of
+booze.
+
+[NP2] - The Thyme Has Come:
+
+I couldn't resist that pun.  Thyme is another above-ground plant.  It grows year-round in most climates, but is considerably rarer than bluebells.
+Thyme cannot be eaten raw or brewed, but has a very high material value for a plant (10) and can be ground at a quern or millstone, 
+tripling its value and making it an excellent cooking ingredient.  Thyme is the first of the new "advanced cooking" ingredients that
+I plan to introduce.
+
+[NP3] - Widow's Tear:
+
+Widow's tear is an extremely dense underground tree, found starting in the second cavern level.  Its wood, when cut, reveals 
+intricate and mystifyingly complex patterns.  This wood makes unusually effective ammunition, considering that it is organic.
+
+[NP4] - Tonicbriar:
+
+Tonicbriar is an underground plant found on all cavern levels.  It cannot be eaten raw or cooked due to its foul taste, but brews into a mid-value
+form of alcohol known as bubbly briar tonic.  It grows in all seasons except for summer.
+
+[NP5] - Voracious Maw and Atrophic Bliss:
+
+Voracious maw is the anti - sun berry.  It can only be found in terrifying (SAVAGE and EVIL) biomes.  Though its growth cycle is 3 times 
+longer than most plants, it does grow year-round.  Voracious maw petals can be cooked, or the plant can be brewed into a strong
+liquor, equal in value to sunshine: "atrophic bliss."  However, despite its appeal to the senses, brewers of this spirit
+should be very careful with fire.  Boiling atrophic bliss, when inhaled, causes intense internal bleeding known
+as "atrophic aftershock," which is named for the dwarves and other mortals whose lives have wasted away from addiction
+to the drink or from inhalation of its dangerous vapors.  It is uncommon for a dwarf or other creature struck by atrophic
+aftershock to survive long enough to be diagnosed or treated - death is typically swift, messy, and excrucitating.
+
+Very bold dwarves have even considered weaponizined this drink, but have encountered staunch resistance from the legions of
+others who find its consumption value more appealing than its prospective defensive capabilities.
+
+[NP6] - Winding Spire:
+
+Winding spires are tall and twisted, but otherwise unremarkable mushrooms found on all cavern levels.  They can be eaten raw,
+cooked, or brewed into "spire draught," a low value alcoholic drink.  Winding spires can be "unwound" into thread, but this thread
+is rough in texture and less valuable than many other common textile crops.  Winding spires grow year-round.  They are extremely 
+versatile, able to be eaten raw or used in, cooking, thread, and alcohol, but sacrifice value for this versatility.
+
+[NP7] - Tatterstone's Buckle:
+
+Named for Avuz Tatterstone, the dwarven spelunker who is credited with its discovery, this plant grows only in the darkest depths of the world,
+far away from the warmth of the sun.  The square heads of this unusual plant give off a faint light in the depths.  Tatterstone made his fortune
+selling samples of these plants to dwarves, elves, men, and any others who would buy them.  The thread produced from the careful dissection of these
+plants is softer than velvet and cloth made from these fibers repels water, but allows air to pass through.  Because of its comfort, clothing made
+from Tatterstone's buckle fiber is extremely valuable - more so than any other plant-derived textile.  Garments and crafts of this cloth are considered
+lucky among some dwarves - though such luck did not seem to rub off on Tatterstone himself, who squandered away his fortune and died without a silver coin
+to show for his discovery.
+
+[NP8] - Pygmy Lime:
+
+A miniature lime tree that grows in most above-ground regions.  Its small fruits can be cooked or brewed into the mid-value spirit called "lime vodka."
+The tree is too small to yield any useable wood, but the fruits can be processed into pygmy lime zest, which is a valuable cooking ingredient in the 
+kitchens of the wealthy.  Pygmy limes, mostly because of their size, are an easy food source to many wandering herbavores.  As a result, undisturbed
+pygmy limes are uncommon in the wild, but can sometimes be found in small clusters during spring and summer months.  Once their seeds are obtained and
+cultivated, they become a much more viable resource.
+
+[NP9] - Prism Star:
+
+A rare plant that grows in savage biomes.  Prism star is a summer vine with large, white flowers which reflect and bend sunglight.  This unusual color can 
+be made into a high-value dye called "prismatic essence," which will transfer some of this unusual lustre to a piece of cloth.  Prismatic essence is
+much more valuable than any other dye.  Prism stars do not have seeds.
+
+[NPA] - Shankweed:
+
+A knife-shaped plant that collects dew in wet biomes.  Shankweed can be brewed into "moonshine," which is perhaps better described as "piss in a barrel."  Moonshine
+is the alcohol of the underbelly of Dwarven society.  If not brewed, shankweed can also be eaten raw, cooked, or ground into a fern green dye.  Shankweed grows
+very fast - three times faster than most other plants.  If you grow shankweed, you'll never run out of it - but if you have other plants, you might wish you did.
+
+[NPB] - Vine and Drops of Xanadu:
+
+The vine of xanadu is a plant of legends.  It can be found in savage-good biomes, and is quite rare, but has a striking yellow color which is hard to miss.  This rare
+plant brews into "drops of xanadu," the game's most valuable alcohol by an order of magnitude.  This plant takes many months to reach maturity.  Be very careful
+not to trample these, as their growth cycle is ten times longer than the average plant.  They can be grown in farms, but acquiring the seeds necessary for such
+an operation is quite a task.  Vines of xanadu can also be milled into a high value cooking ingredient, "heavenly seasoning."
+
+[NPC] - Herald's Horn:
+
+Herald's horn is another plant, which is also a high value but faster-growing version of the vine of xanadu.  It is still very rare, but does not require a 
+savage-good biome, and is instead found on the bottom cavern level.  Instead, it cannot be grown on farms - in order to get a hold of it, you'll have to go 
+into the deepest caverns and get it yourself.  With great risk comes... you get the idea.  Herald's horns are a brilliant light blue color.
+
+[NPD] - Courage Oak:
+
+A tree that seems to defy logic, flourishing only in biomes where animated corpses walk the earth.  This plant is slightly more valuable than other types of wood.
+
+[NPE] - Mousebulb:
+
+Mousebulb is a plant that was created as a joke and slipped into the raw folder of a friend to surprise (and confuse) them when brightly-colored mushrooms started 
+popping up everywhere.  Because I couldn't bear to leave it out of a mod that includes just about everything I've ever made for Dwarf Fortress, mousebulb is
+included in this mod.  It is identical to bluebells in everything but color and rarity (it's slightly less common), and produces a mid-value spirit called
+"rodent rum."
+
+-----
+
+
+[NB0] NOBILITY CHANGES
+
+A few tweaks to Dwarven nobility.
+
+
+
+[NB1] - the Champion:
+
+The champion is now appointed by the mayor.  He is no longer exempt from menial labors.  He also can now command a squad of "honor guards."
+
+
+[NB2] = the Dungeon Master:
+
+The dungeon master is, like the champion, now appointed by the mayor.
+
+
+[NB3] - the Local Legend:
+
+This new position is appointed as needed/desired by the player.  Dwarves in this position require only a bedroom and a cabinet.  The intention here
+was to make specific dwarves, like legendary craftsmen and fighters, easier to find without having to use the cluttered units page, while simultaneously
+allowing the player to "reward" exceptional dwarves for their contributions at leisure.  No duties or mandates are attached to this position, though they 
+are allowed to make a single demand.  Local legend title holders are exported into legends mode.
+
+If you don't like this feature, there is no downside to not appointing anyone to this position.  It is, however, available from the start.
+
+
+[NB4] - the High Priest:
+
+This position (as many as two) is appointed by the mayor.  Dwarves in this position require a bedroom, a chest, a cabinet, and a tomb, all of relatively modest quality.  
+Holders of this position are exported into legends mode.  High priests/priestesses currently have no duties, demands, or mandates assigned to them - this position is solely
+there to enhance the flavor of the ritual tree if you desire to use it.  High priests are, like the champion, allowed to command of squad consisting of themselves
+and two bodyguards (thanks Pan).
+
+If you don't like this feature, there is no downside to not appointing anyone to this position.
+
+-----
+
+[SC0] - DWARVEN SCIENCE AND CONSTRUCTION
+
+The principles of !!SCIENCE!! have been applied to new workshops with new reactions.  Now, your dwarves can do !!SCIENCE!! in your fortresses.
+
+
+[SC1] - the Foundry:
+
+Another new workshop aimed at making megaprojects easier.  Since the mason's workshop does not allow you to choose which stones are used for blocks (at least
+without mucking around with permissions), the foundry contains custom reactions for each type of stone blocks.  Note that the list of reactions is quite
+extensive, so it is probably easier to simply order the blocks you want via the manager.  The foundry is built with SHIFT+F in the workshop menu.
+
+Kipi from the Bay12 forums provided the idea, permission, and reaction raws for this building.
+
+
+[SC2] - the Display Case:
+
+Another Kipi original, the display case is a building that is constructed with blocks, a clear glass box, and any item (to be displayed).  This building can
+be used to display an artifact.
+
+
+[SC3] - the Metal Caster:
+
+A building that requires two fireproof build materials.  This workshop is used to cast javelins for the javelin thrower using the smelter skill.
+
+
+[SC4] - Dwarven Mechanical Advances (The "Tech Tree"):
+
+The tech tree includes a very large quantity of buildings and components staggered across several tiers of advancement.  To avoid any confusion, these buildings are 
+discussed in detail in their own lfr_mechanical_tree.txt file.
+
+[SC5] - the Crematorium:
+
+Not related to the tech tree, the crematorium is a fun little workshop which can be used to burn vermin remains, creating a single bar of ash.  If wood
+is unavailable or scarce, this workshop can be used to effectively replace it for the soap or fertilizer industries.
+
+[SC6] - the Loading and Unloading Stations:
+
+Borrowed with permission from bdog, these workshops utilize a new tool called the "wheelbarrow".  A loading station can be built, which can be used by dwarves to fill the wheelbarrows with either
+stone or wood, which will be hauled by other dwarves to an unloading station and dropped off there.  Useful for moving stone and wood for easier access.  Wheelbarrows can be constructed at the
+machine shop, which is unlocked early in the tech tree.
+
+-----
+
+[RT0] DWARVEN RITUAL AND SPIRITUALITY
+
+Not to be outmatched by dwarven !!SCIENCE!!, dwarven ties to the spirit world continue to evolve over time.  Your fortress can choose to invoke the blessings of the Old Gods through sacrifice,
+but risk their displeasure as well.  For more information on the old pantheon, see the lore_pantheon.txt file.
+
+
+Ritual buildings contain three archetypes of reactions.  "Prayers" do not require any reagents, and do not pose any threat to your dwarves, but their rewards are rare or small in scale.  
+"Rituals" generally deal with the conversion of resources to other resources.  They consume a few specific materials and can produce helpful or harmful products.  Finally, "ceremonies" 
+require significant investment, but offer some of the ritual tree's most exciting rewards (and risks, of course).  Ceremonies deal with the conversion of creatures to other creatures or 
+castes.  As of v0.14d, there are no functional "ceremony" type reactions (these are waiting for new features in the next release of DF).
+
+
+[RT1] - the Dwarven "Ritual Tree"
+
+The dwarven ritual tree, like the tech tree, is extensive and contains a large number of builings, items, and reactions.  To avoid any confusion, these components have been given their own 
+lfr_ritual_reference.txt file, where they are explained in more detail.
+
+
+-----
+
+[HB0] HYBRID BUILDINGS
+
+Hybrid buildings are structures that require an advancement in both the ritual and mechanical tech trees to unlock.
+
+
+[HB1] - the Fishing Pond
+
+The first "hybrid" building between the two trees, this building is quite large and requires a component from both the ritual and mechanical lines.  In order to keep the pond permanently
+stocked, an automatic feeding device must be installed in the form of a few advanced mechanisms.  To actually feed and supply the fish, you'll need "Kogut's magical fish food," which requires
+a special sacrifice at the altar.  Once the ritual and mechanical items are obtained, the pond can be constructed (it does not require water - this would have been a real pain in the ass
+for both myself and for players.  If that's bothering you, you can imagine that Kogut provides the water as part of his magical fish food starter kit).  The fish pond contains three reactions:
+fishing, lure-making, and fishing for the "big one."  Fishing has no requirement.  It is a reagent-free reaction with a low chance of producing a fish and it uses probability to emulate the
+variable amount of time required to catch a fish - better fisherdwarves will burn through the low-chance reactions faster, and will usually find a fish sooner than novices.  This reaction is 
+designed to be left on repeat once the natural fish run out (the downside: only one fisherdwarf can use it at a time).  The lure-making reaction uses the stonecrafting skill and takes a boulder
+and some thread to produce a lure.  The lure is used when fishing for "the big one," which consumes the lure and is not always successful (line break!), but lands a monster of a fish as a reward.
+
+
+[HB2] - the Temple of Fire
+
+This temple is constructed using torchbearer gargoyles (made at the shrine of victory from iron statues) and advanced mechanisms, plus a special object from documentation of alchemical
+research.  The temple of fire currently hosts a single prayer for flux stone and fuel ("prayer for industry").  More reactions are planned for this building in the future.
+
+
+[HB3] - the Exotic Cheesery
+
+This workshop can be unlocked by chance products of certain rituals at the sacrificial altar (rare), or it can unlocked later in the tech tree from experiments in the advanced alchemy lab.  
+The exotic cheesery can produce two types of cheese - Kogut's cheese is produced from a bar of ash and eggs, while the valuable "stonewall vintage" cheese is produced from stone and dimple 
+cups.
+
+
+-----
+
+
+
+
+
+[RC0] MANUAL COMPATABILITY FIXES
+
+
+ONLY use this guide if you cannot overwrite your entity_default or item_weapon files due to pre-existing modifications.
+If you have used this mod's replacement versions of these files, these changes have already been done for you.
+
+This section contains minor spoilers about a small number of mood weapons.
+
+
+[RC1] - required changes to entity_default.txt
+
+
+NOTE: If you are upgrading from any previous version to 0.14a, the reaction "ECTO_ALCHEMY_M" should be removed from the entity_default file (no longer exists).
+
+NOTE: The reaction "UNLOCK_ADV_CASTERS_M" was removed in v0.15a, and may cause errors if trying to convert older fortresses with DFWorldTinker.
+
+Add to dwarves ([ENTITY:MOUNTAIN]):
+
+	[AMMO:ITEM_AMMO_ARROWS]
+	[AMMO:ITEM_AMMO_BLOWDARTS]
+	[AMMO:ITEM_AMMO_JAVELINS_FOUR]
+	[SHIELD:ITEM_SHIELD_TOWER]
+	[HELM:ITEM_HELM_GREAT:COMMON]
+	[WEAPON:ITEM_WEAPON_JAVELIN_THROWER]
+	[WEAPON:ITEM_WEAPON_AXE_GREAT]
+	[WEAPON:ITEM_WEAPON_MAUL]
+	[WEAPON:ITEM_WEAPON_GLAIVE]
+	[WEAPON:ITEM_WEAPON_SWORD_LONG]
+	[TOOL:ITEM_TOOL_BAYONET_LFR]
+	[SELECT_SYMBOL:REMAINING:BADASS_LFR]
+	[PERMITTED_REACTION:REFINE_MITHRIL]
+	[PERMITTED_REACTION:SMELT_MITHRIL]
+	[PERMITTED_REACTION:SMELT_UNBIHEXIUM]
+	[PERMITTED_REACTION:MAKE_DAMASCUS]	
+	[PERMITTED_BUILDING:ALCHEMY_LAB_LFR]
+	[PERMITTED_REACTION:GOLD_SYNTHESIS]
+	[PERMITTED_REACTION:RANDOM_SYNTHESIS]
+	[PERMITTED_REACTION:ECTO_ALCHEMY]
+	[PERMITTED_REACTION:SALVAGE_CLOCKWORK]
+	[PERMITTED_REACTION:CORE_RESEARCH]
+	[PERMITTED_BUILDING:DISPLAY_CASE]
+	[PERMITTED_BUILDING:BLOCK_FACTORY]
+	[PERMITTED_REACTION:SANDSTONE_BLOCK]
+	[PERMITTED_REACTION:SILTSTONE_BLOCK]
+	[PERMITTED_REACTION:MUDSTONE_BLOCK]
+	[PERMITTED_REACTION:SHALE_BLOCK]
+	[PERMITTED_REACTION:CLAYSTONE_BLOCK]
+	[PERMITTED_REACTION:ROCK_SALT_BLOCK]
+	[PERMITTED_REACTION:LIMESTONE_BLOCK]
+	[PERMITTED_REACTION:CONGLOMERATE_BLOCK]
+	[PERMITTED_REACTION:DOLOMITE_BLOCK]
+	[PERMITTED_REACTION:CHERT_BLOCK]
+	[PERMITTED_REACTION:CHALK_BLOCK]
+	[PERMITTED_REACTION:GRANITE_BLOCK]
+	[PERMITTED_REACTION:DIORITE_BLOCK]
+	[PERMITTED_REACTION:GABRO_BLOCK]
+	[PERMITTED_REACTION:RHYOLITE_BLOCK]
+	[PERMITTED_REACTION:BASALT_BLOCK]
+	[PERMITTED_REACTION:ANDESITE_BLOCK]
+	[PERMITTED_REACTION:DACITE_BLOCK]
+	[PERMITTED_REACTION:OBSIDIAN_BLOCK]
+	[PERMITTED_REACTION:QUARTZITE_BLOCK]
+	[PERMITTED_REACTION:SLATE_BLOCK]
+	[PERMITTED_REACTION:PHYLLITE_BLOCK]
+	[PERMITTED_REACTION:SCHIST_BLOCK]
+	[PERMITTED_REACTION:GNEISS_BLOCK]
+	[PERMITTED_REACTION:MARBLE_BLOCK]
+	[PERMITTED_REACTION:TALC_BLOCK]
+	[PERMITTED_REACTION:JET_BLOCK]
+	[PERMITTED_REACTION:PUDDINSTONE_BLOCK]
+	[PERMITTED_REACTION:PETRIFIED_WOOD_BLOCK]
+	[PERMITTED_REACTION:GRAPHITE_BLOCK]
+	[PERMITTED_REACTION:KIMBERLITE_BLOCK]
+	[PERMITTED_REACTION:REALGAR_BLOCK]
+	[PERMITTED_REACTION:ORPIMENT_BLOCK]
+	[PERMITTED_REACTION:STIBNITE_BLOCK]
+	[PERMITTED_REACTION:MARCASITE_BLOCK]
+	[PERMITTED_REACTION:SYLVITE_BLOCK]
+	[PERMITTED_REACTION:CRYOLITE_BLOCK]
+	[PERMITTED_REACTION:PERICLASE_BLOCK]
+	[PERMITTED_REACTION:ILMENITE_BLOCK]
+	[PERMITTED_REACTION:RUTILE_BLOCK]
+	[PERMITTED_REACTION:CHROMITE_BLOCK]
+	[PERMITTED_REACTION:PYROLUSITE_BLOCK]
+	[PERMITTED_REACTION:PITCHBLENDE_BLOCK]
+	[PERMITTED_REACTION:BAUXITE_BLOCK]
+	[PERMITTED_REACTION:BORAX_BLOCK]
+	[PERMITTED_REACTION:OLIVINE_BLOCK]
+	[PERMITTED_REACTION:HORNBLENDE_BLOCK]
+	[PERMITTED_REACTION:KAOLINITE_BLOCK]
+	[PERMITTED_REACTION:SERPENTINE_BLOCK]
+	[PERMITTED_REACTION:ORTHOCLASE_BLOCK]
+	[PERMITTED_REACTION:MICROCLINE_BLOCK]
+	[PERMITTED_REACTION:MICA_BLOCK]
+	[PERMITTED_REACTION:CALCITE_BLOCK]
+	[PERMITTED_REACTION:SALTPETER_BLOCK]
+	[PERMITTED_REACTION:ALABASTER_BLOCK]
+	[PERMITTED_REACTION:SELENITE_BLOCK]
+	[PERMITTED_REACTION:SATINSPAR_BLOCK]
+	[PERMITTED_REACTION:ANHYDRITE_BLOCK]
+	[PERMITTED_REACTION:ALUNITE_BLOCK]
+	[PERMITTED_BUILDING:CASTER]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_COPPER]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_COPPER]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_COPPER]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_IRON]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_IRON]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IRON]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_STEEL]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_STEEL]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_MITHRIL]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_MITHRIL]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_STEEL]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_DAMASCUS]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_DAMASCUS]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_DAMASCUS]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_LEAD]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_SILVER]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_TUNGSTEN]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IOVIUM]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_GOLD]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_PLATINUM]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BRONZE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BRONZE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BRONZE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BISMUTH_BRONZE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BISMUTH_BRONZE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH_BRONZE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH]
+	[PERMITTED_BUILDING:ALCHEMY_LAB_MAGMA_LFR]
+	[PERMITTED_REACTION:RANDOM_SYNTHESIS_M]
+	[PERMITTED_REACTION:GOLD_SYNTHESIS_M]
+	[PERMITTED_REACTION:SALVAGE_CLOCKWORK_M]
+	[PERMITTED_REACTION:CORE_RESEARCH_M]	
+	[PERMITTED_REACTION:TRANSMUTE_PLANTS_M]
+	[PERMITTED_BUILDING:CASTER_MAGMA_LFR]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_COPPER_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_COPPER_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_COPPER_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_IRON_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_IRON_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IRON_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_STEEL_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_STEEL_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_MITHRIL_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_MITHRIL_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_STEEL_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_DAMASCUS_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_DAMASCUS_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_DAMASCUS_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_LEAD_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_SILVER_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_TUNGSTEN_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IOVIUM_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_GOLD_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_PLATINUM_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BRONZE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BRONZE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BRONZE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BISMUTH_BRONZE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BISMUTH_BRONZE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH_BRONZE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH_M]
+	[PERMITTED_REACTION:MAKE_WHITE_GOLD_LFR]
+	[PERMITTED_BUILDING:ADVANCED_MECHANICS_LFR]
+	[PERMITTED_REACTION:ORICHALCUM_TOOLS]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_GOLD]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_COPPER]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_SILVER]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_STERLING_SILVER]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_STEEL]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_STEEL_DAMASCUS]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_IRON]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_BRASS]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_ROSE_GOLD]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_MITHRIL]
+	[PERMITTED_REACTION:UNLOCK_TOOLS_IRON]
+	[PERMITTED_REACTION:UNLOCK_TOOLS_STEEL]
+	[PERMITTED_REACTION:UNLOCK_TOOLS_DAMASCUS]
+	[PERMITTED_REACTION:UNLOCK_TOOLS_MITHRIL]
+	[PERMITTED_BUILDING:CORONER_LFR]
+	[PERMITTED_REACTION:TRAIN_DIAGNOSIS]
+	[PERMITTED_BUILDING:MEDICAL_DUMMY_LFR]
+	[PERMITTED_REACTION:TRAIN_SURGERY]
+	[PERMITTED_REACTION:TRAIN_SUTURE]
+	[PERMITTED_REACTION:TRAIN_DRESSING]
+	[PERMITTED_REACTION:TRAIN_SETTING]
+	[PERMITTED_BUILDING:CREMATORIUM_LFR]
+	[PERMITTED_REACTION:BURN_VERMIN_REMAINS_LFR]
+	[PERMITTED_BUILDING:OBSTACLE_COURSE_LFR]
+	[PERMITTED_REACTION:TRAIN_DODGE]
+	[PERMITTED_REACTION:TRAIN_ARMOR]
+	[PERMITTED_REACTION:TRAIN_NINJA]
+	[PERMITTED_BUILDING:SPARRING_PARTNER_LFR]
+	[PERMITTED_REACTION:TRAIN_SPEAR]
+	[PERMITTED_REACTION:TRAIN_AXE]
+	[PERMITTED_REACTION:TRAIN_SWORD]
+	[PERMITTED_REACTION:TRAIN_STRIKER]
+	[PERMITTED_REACTION:TRAIN_KICK]
+	[PERMITTED_REACTION:TRAIN_WHIP]
+	[PERMITTED_REACTION:TRAIN_HAMMER]
+	[PERMITTED_REACTION:TRAIN_PIKE]
+	[PERMITTED_REACTION:TRAIN_MACE]
+	[PERMITTED_REACTION:TRAIN_DAGGER]
+	[PERMITTED_BUILDING:LUSTRUM_REFINERY_LFR]
+	[PERMITTED_REACTION:LUSTRUM_EXTRACTION]
+	[PERMITTED_REACTION:DOCUMENTATION_ALCH]
+	[PERMITTED_REACTION:DOCUMENTATION_ALCH_M]
+	[PERMITTED_REACTION:ECTO_WISP]
+	[PERMITTED_REACTION:ECTO_WISP_M]
+	[PERMITTED_REACTION:UNLOCK_EFFICIENT_JAVS_IRON]
+	[PERMITTED_REACTION:UNLOCK_EFFICIENT_JAVS_STEEL]
+	[PERMITTED_REACTION:UNLOCK_EFFICIENT_JAVS_DAMASCUS]
+	[PERMITTED_REACTION:UNLOCK_EFFICIENT_JAVS_MITHRIL]
+	[PERMITTED_REACTION:UNLOCK_EFFICIENT_JAVS_ORICH]
+	[PERMITTED_BUILDING:METAL_CASTER_ADV_LFR]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_COPPER_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_COPPER_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_COPPER_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_IRON_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_IRON_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IRON_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_STEEL_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_STEEL_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_MITHRIL_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_MITHRIL_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_STEEL_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_DAMASCUS_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_DAMASCUS_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_DAMASCUS_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_LEAD_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_SILVER_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_TUNGSTEN_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IOVIUM_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_GOLD_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_PLATINUM_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BRONZE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BRONZE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BRONZE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BISMUTH_BRONZE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BISMUTH_BRONZE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH_BRONZE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH_ADV]
+	[PERMITTED_REACTION:UNLOCK_ADV_CASTERS]
+	[PERMITTED_BUILDING:METAL_CASTER_ADV_LFR_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_COPPER_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_COPPER_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_COPPER_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_IRON_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_IRON_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IRON_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_STEEL_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_STEEL_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_MITHRIL_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_MITHRIL_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_STEEL_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_DAMASCUS_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_DAMASCUS_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_DAMASCUS_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_LEAD_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_SILVER_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_TUNGSTEN_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_IOVIUM_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_GOLD_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_PLATINUM_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BRONZE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BRONZE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BRONZE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_BISMUTH_BRONZE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_BISMUTH_BRONZE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH_BRONZE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE_BISMUTH_M_ADV]
+	[PERMITTED_BUILDING:EXMAT_LFR]
+	[PERMITTED_REACTION:UNLOCK_EXMATS]
+	[PERMITTED_REACTION:CREATE_HADRINE]
+	[PERMITTED_REACTION:EXTRACT_HADRINE_STRANDS]
+	[PERMITTED_REACTION:CREATE_HADRINE_MESH]
+	[PERMITTED_REACTION:CRAFT_HADRINE_PLATE]
+	[PERMITTED_REACTION:CRAFT_HADRINE_HELM]
+	[PERMITTED_BUILDING:EXWEP_LFR]
+	[PERMITTED_REACTION:UNLOCK_EXWEPS]
+	[PERMITTED_REACTION:COPPER_EXWEP_LFR]
+	[PERMITTED_REACTION:BRONZE_EXWEP_LFR]
+	[PERMITTED_REACTION:BISMUTH_BRONZE_EXWEP_LFR]
+	[PERMITTED_REACTION:SILVER_EXWEP_LFR]
+	[PERMITTED_REACTION:STEEL_EXWEP_LFR]
+	[PERMITTED_REACTION:DAMASCUS_EXWEP_LFR]
+	[PERMITTED_REACTION:MITHRIL_EXWEP_LFR]
+	[PERMITTED_REACTION:ADAMANTINE_EXWEP_LFR]
+	[PERMITTED_REACTION:TUNGSTEN_EXWEP_LFR]
+	[PERMITTED_REACTION:IOVIUM_EXWEP_LFR]
+	[PERMITTED_REACTION:IRON_EXWEP_LFR]
+	[PERMITTED_REACTION:VOIDSHARD_EXWEP_LFR]
+	[PERMITTED_REACTION:ETHER_EXWEP_LFR]
+	[PERMITTED_BUILDING:EXWEP_LFR_M]
+	[PERMITTED_REACTION:UNLOCK_EXWEPS_M]
+	[PERMITTED_REACTION:COPPER_EXWEP_LFR_M]
+	[PERMITTED_REACTION:BRONZE_EXWEP_LFR_M]
+	[PERMITTED_REACTION:BISMUTH_BRONZE_EXWEP_LFR_M]
+	[PERMITTED_REACTION:SILVER_EXWEP_LFR_M]
+	[PERMITTED_REACTION:STEEL_EXWEP_LFR_M]
+	[PERMITTED_REACTION:DAMASCUS_EXWEP_LFR_M]
+	[PERMITTED_REACTION:MITHRIL_EXWEP_LFR_M]
+	[PERMITTED_REACTION:ADAMANTINE_EXWEP_LFR_M]
+	[PERMITTED_REACTION:TUNGSTEN_EXWEP_LFR_M]
+	[PERMITTED_REACTION:IOVIUM_EXWEP_LFR_M]
+	[PERMITTED_REACTION:IRON_EXWEP_LFR_M]
+	[PERMITTED_REACTION:VOIDSHARD_EXWEP_LFR_M]
+	[PERMITTED_REACTION:ETHER_EXWEP_LFR_M]
+	[PERMITTED_BUILDING:ORRERY_LFR]
+	[PERMITTED_REACTION:TRAIN_TEACHER]
+	[PERMITTED_REACTION:TRAIN_OBSERVER]
+	[PERMITTED_REACTION:TRAIN_STUDENT]
+	[PERMITTED_REACTION:UNLOCK_ORRERY]
+	[PERMITTED_BUILDING:TRASH_COMPACTOR]
+	[PERMITTED_REACTION:COMPACT_SLAB1]
+	[PERMITTED_REACTION:COMPACT_SLAB2]
+	[PERMITTED_REACTION:COMPACT_SLAB3]
+	[PERMITTED_REACTION:COMPACT_SLAB4]
+	[PERMITTED_REACTION:COMPACT_SLAB5]
+	[PERMITTED_REACTION:COMPACT_SLAB6]
+	[PERMITTED_REACTION:COMPACT_SLAB7]
+	[PERMITTED_BUILDING:CRYSTAL_TANK_LFR]
+	[PERMITTED_REACTION:MAKE_CRYSTAL_RED]
+	[PERMITTED_REACTION:MAKE_CRYSTAL_BLUE]
+	[PERMITTED_REACTION:MAKE_CRYSTAL_WHITE]
+	[PERMITTED_REACTION:MAKE_CRYSTAL_GREEN]
+	[PERMITTED_REACTION:MAKE_CRYSTAL_YELLOW]
+	[PERMITTED_REACTION:MAKE_CRYSTAL_BLACK]
+	[PERMITTED_REACTION:MAKE_CRYSTAL_PURPLE]
+	[PERMITTED_REACTION:ETHER_SPHERE_MELT]
+	[PERMITTED_BUILDING:ALTAR_LFR]
+	[PERMITTED_REACTION:SAC_BASE_ONE]
+	[PERMITTED_REACTION:SAC_BASE_TWO]
+	[PERMITTED_REACTION:SAC_BASE_THREE]
+	[PERMITTED_REACTION:SAC_BASE_FOUR]
+	[PERMITTED_REACTION:SAC_BASE_FIVE]
+	[PERMITTED_REACTION:SAC_BASE_SIX]
+	[PERMITTED_REACTION:SAC_BASE_SEVEN]
+	[PERMITTED_REACTION:SAC_BASE_EIGHT]
+	[PERMITTED_REACTION:SAC_BASE_NINE]
+	[PERMITTED_REACTION:SAC_BASE_TEN]
+	[PERMITTED_BUILDING:TEMPLE_CONSTRUCT_LFR]
+	[PERMITTED_REACTION:SHRINE_COMP_ONE]
+	[PERMITTED_REACTION:SHRINE_COMP_TWO]
+	[PERMITTED_REACTION:SHRINE_COMP_THREE]
+	[PERMITTED_BUILDING:SHRINE_VICTORY_LFR]
+	[PERMITTED_REACTION:RITUAL_VICTORY_LFR]
+	[PERMITTED_REACTION:PRAYER_VICTORY_TWO_LFR]
+	[PERMITTED_REACTION:BLESS_VICTORY_LFR]
+	[PERMITTED_BUILDING:SHRINE_NATURE_LFR]
+	[PERMITTED_REACTION:RITUAL_NATURE_LFR]
+	[PERMITTED_REACTION:PRAYER_NATURE_ONE_LFR]
+	[PERMITTED_BUILDING:SHRINE_PROSPERITY_LFR]
+	[PERMITTED_REACTION:RITUAL_PROSPERITY_LFR]
+	[PERMITTED_REACTION:PRAYER_PROSPERITY_ONE_LFR]
+	[PERMITTED_REACTION:PRAYER_PROSPERITY_TWO_LFR]
+	[PERMITTED_BUILDING:FISH_POND_LFR]
+	[PERMITTED_REACTION:FISH_IN_POND_LFR]
+	[PERMITTED_REACTION:FISH_BIG_ONE_LFR]
+	[PERMITTED_REACTION:MAKE_LURE_LFR]
+	[PERMITTED_BUILDING:MACHINE_SHOP_LFR]
+	[PERMITTED_REACTION:STONE_BED_LFR]
+	[PERMITTED_REACTION:STONE_BIN_LFR]
+	[PERMITTED_BUILDING:TEMPLE_FIRE_LFR]
+	[PERMITTED_REACTION:PRAYER_FIRE_ONE_LFR]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_ADAMANTINE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_ADAMANTINE_M_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_ADAMANTINE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_ADAMANTINE_ADV]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_ADAMANTINE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_ADAMANTINE_M]
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE_ADAMANTINE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO_ADAMANTINE]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_WHITE_GOLD]
+	[PERMITTED_REACTION:TRAIN_DIAGNOSIS_TWO]
+	[PERMITTED_REACTION:CRAFT_HADRINE_SHIELD]
+	[PERMITTED_BUILDING:STATION_LOADING]
+	[PERMITTED_BUILDING:STATION_UNLOADING]
+	[PERMITTED_REACTION:LOAD_STONE]
+	[PERMITTED_REACTION:UNLOAD_STONE]
+	[PERMITTED_REACTION:LOAD_WOOD]
+	[PERMITTED_REACTION:UNLOAD_WOOD]
+	[GLOVES:ITEM_GLOVES_BRACERS_LFR:COMMON]
+	[PERMITTED_REACTION:MAKE_WHEELBARROW_LFR]
+	[PERMITTED_REACTION:UNLOCK_TOOLS_COBALT]
+	[PERMITTED_REACTION:ADVANCED_MECHANISMS_COBALT]
+	[PERMITTED_REACTION:REFINE_NEODYMIUM]
+	[PERMITTED_REACTION:REFINE_COBALT]
+	[PERMITTED_REACTION:REFINE_PALLADIUM]
+	[PERMITTED_REACTION:REFINE_RANDOM]
+
+	[PERMITTED_BUILDING:ADV_ALCHEMY_LAB_LFR]
+	[PERMITTED_REACTION:REVERSE_ENGINEER_CAPACITOR_LFR]
+	[PERMITTED_REACTION:UPGRADE_TOME_XBOW_ONE]
+	[PERMITTED_REACTION:UPGRADE_TOME_XBOW_TWO]
+	[PERMITTED_REACTION:UPGRADE_TOME_XBOW_THREE]
+	[PERMITTED_REACTION:UPGRADE_TOME_MAGDART_ONE]
+	[PERMITTED_REACTION:UPGRADE_TOME_MAGDART_TWO]
+	[PERMITTED_REACTION:UPGRADE_TOME_MAGDART_THREE]
+	[PERMITTED_REACTION:MAKE_CAPACITOR_LFR_ONE]
+	[PERMITTED_REACTION:MAKE_CAPACITOR_LFR_TWO]
+	[PERMITTED_REACTION:MAKE_CAPACITOR_LFR_THREE]
+	[PERMITTED_REACTION:SORT_ALGORITHM]
+	[PERMITTED_REACTION:MAKE_CATALYTIC_CONVERTER]
+	[PERMITTED_REACTION:ADV_ALCH_EXPERIMENT_LFR]
+	[PERMITTED_REACTION:ADV_ALCH_EXPERIMENT_SAFE_LFR]
+	[PERMITTED_REACTION:ADV_TRANSMUTE_LFR]
+	[PERMITTED_REACTION:MAKE_KNOCKOUT_COMPOUND]
+
+	[PERMITTED_BUILDING:SCIENTIFIC_LIBRARY_LFR]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_XBOW_ONE_ONE]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_XBOW_ONE_TWO]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_XBOW_ONE_THREE]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_XBOW_TWO_TWO]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_XBOW_TWO_THREE]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_XBOW_THREE_THREE]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_MAGDART_ONE_ONE]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_MAGDART_ONE_TWO]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_MAGDART_ONE_THREE]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_MAGDART_TWO_TWO]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_MAGDART_TWO_THREE]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_MAGDART_THREE_THREE]
+
+	[PERMITTED_BUILDING:PROTOTYPE_WORKBENCH_LFR]
+	[PERMITTED_REACTION:MAKE_MAGDART_LAUNCHER]
+	[PERMITTED_REACTION:ATTACH_CAPACITOR_MAGDART]
+	[PERMITTED_REACTION:MAKE_IRON_MAGDARTS]
+	[PERMITTED_REACTION:MAKE_STEEL_MAGDARTS]
+	[PERMITTED_REACTION:MAKE_DAMASCUS_STEEL_MAGDARTS]
+	[PERMITTED_REACTION:MAKE_COBALT_MAGDARTS]
+	[PERMITTED_REACTION:MAKE_MITHRIL_MAGDARTS]
+	[PERMITTED_REACTION:MAKE_TUNGSTEN_MAGDARTS]
+	[PERMITTED_REACTION:MAKE_VOIDSHARD_MAGDARTS]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_COPPER]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_IRON]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_BRONZE]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_BISMUTH_BRONZE]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_STEEL]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_DAMASCUS_STEEL]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_SILVER]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_TUNGSTEN]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_IOVIUM]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_MITHRIL]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_ETHER]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_VOIDSHARD]
+	[PERMITTED_REACTION:ATTACH_BAYONET_XBOW_ADAMANTINE]
+	[PERMITTED_REACTION:ATTACH_MECHANISM_XBOW]
+	[PERMITTED_REACTION:ATTACH_SPRING_XBOW]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_COPPER]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_IRON]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_BRONZE]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_BISMUTH_BRONZE]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_STEEL]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_DAMASCUS_STEEL]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_SILVER]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_TUNGSTEN]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_IOVIUM]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_MITHRIL]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_ETHER]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_VOIDSHARD]
+	[PERMITTED_REACTION:ATTACH_BAYONET_MAGDART_ADAMANTINE]
+	[PERMITTED_REACTION:ATTACH_CAPACITOR_MAGDART]
+
+	[PERMITTED_BUILDING:CHEESE_REACTOR_LFR]
+	[PERMITTED_REACTION:MAKE_KOGUT_CHEESE]
+	[PERMITTED_REACTION:MAKE_STONEWALL_VINTAGE]
+
+In the dwarven noble position raws, locate and change the following values:
+	
+
+	Under [POSITION:CHAMPION] ...
+
+	Delete the [MENIAL_WORK_EXEMPTION] tag.
+	Delete all of the the [APPOINTED_BY:DUKE/COUNT/BARON] tags, and in their place add the following lines:
+	
+	[SQUAD:3:honor guard:honor guards]
+	[APPOINTED_BY:MAYOR]
+
+
+	... Leave the other tags alone.
+
+	
+	Under [POSITION:DUNGEON_MASTER]...
+
+	Delete all of the the [APPOINTED_BY:DUKE/COUNT/BARON] tags, and in their place add the following line:
+
+	[APPOINTED_BY:MAYOR]
+
+
+	... Once again, leave the other tags alone.
+
+
+	Somewhere directly before a [POSITION] tag, or at the end of these listings, add the following lines:
+
+	
+	[POSITION:LOCAL_LEGEND]
+		[NAME:local legend:local legends]
+		[SITE]
+		[NUMBER:AS_NEEDED]
+		[ACCOUNT_EXEMPT]
+		[APPOINTED_BY:EXPEDITION_LEADER]
+		[APPOINTED_BY:MAYOR]
+		[PRECEDENCE:150]
+		[EXPORTED_IN_LEGENDS]
+		[DO_NOT_CULL]
+		[CHAT_WORTHY]
+		[COLOR:5:0:0]
+		[REQUIRED_BEDROOM:1]
+		[REQUIRED_CABINETS:1]
+		[DEMAND_MAX:1]
+	[POSITION:HIGH_PRIEST]
+		[NAME_MALE:high priest:high priests]
+		[NAME_FEMALE:high priestess:high priestesses]
+		[SITE]
+		[NUMBER:2]
+		[SQUAD:3:bodyguard:bodyguards]
+		[ACCOUNT_EXEMPT]
+		[APPOINTED_BY:MAYOR]
+		[PRECEDENCE:155]
+		[EXPORTED_IN_LEGENDS]
+		[DO_NOT_CULL]
+		[CHAT_WORTHY]
+		[COLOR:5:1:1]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
+		[REQUIRED_TOMB:100]
+
+	... Now you can move on to the next step.
+
+
+
+Add to the elves ([ENTITY:FOREST])
+	[WEAPON:ITEM_WEAPON_BOW_GREAT]
+	[WEAPON:ITEM_WEAPON_BOW_RECURVE]
+
+
+Add to the humans ([ENTITY:PLAINS])
+	[WEAPON:ITEM_WEAPON_CLUB]
+	[WEAPON:ITEM_WEAPON_MALLET]
+	[SHIELD:ITEM_SHIELD_TOWER]
+	[GLOVES:ITEM_GLOVES_BRACERS_LFR:COMMON]
+	[PANTS:ITEM_PANTS_PLATE_SKIRT]
+
+Add to the goblins ([ENTITY:EVIL])
+	[WEAPON:ITEM_WEAPON_PITCHFORK]
+	[GLOVES:ITEM_GLOVES_BRACERS_LFR:COMMON]
+
+Feel free to add weapons to any race you like, including other custom or mod races.  There are over 50 "mood weapons" to choose from, some of which are much
+more powerful than others.  The changes above, however, are the only ones I have included in the mod so far.
+
+
+
+
+[RC2] - required changes to item_weapon.txt
+
+	Locate the entries for... 
+	
+	[ITEM_WEAPON:ITEM_WEAPON_MAUL]
+	[ITEM_WEAPON:ITEM_WEAPON_SWORD_2H]
+	[ITEM_WEAPON:ITEM_WEAPON_AXE_GREAT]
+	
+	...under each of these entries, change [MINIMUM_SIZE:62500] to [MINIMUM_SIZE:#####]
+	In this entry, "#####" should be replaced by a number less than 60000 (I used 52500).
+
+	This will allow dwarves to wield these weapons, as an adult dwarf's size is 60000.
+	If you want to enable the wielding of other two-handed weapons as well (which I did),
+	also make this change for...
+
+	[ITEM_WEAPON:ITEM_WEAPON_HALBERD]
+	[ITEM_WEAPON:ITEM_WEAPON_PIKE]
+
+	To remove the ridiculous armor penetration from whips and flails, change their BLUNT token to EDGE.  Velocity modifiers over 2000 have been reduced to 2000.  
+	I have done this by default.
+
+
+[RC3] - required changes to creature_standard.txt
+
+	...Under [CREATURE:DWARF], locate the [CASTE:MALE] and [CASTE:FEMALE] tokens and subtokens.  Replace them with the following:
+
+	
+	[CASTE:FEMALE]
+		The gender tag lets it know how breeding works.
+		[FEMALE]
+		[MULTIPLE_LITTER_RARE]
+		To add beards, put square brackets around the following:
+		BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS
+		[POP_RATIO:100]
+	[CASTE:MALE]
+		[MALE]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[POP_RATIO:100]
+	[CASTE:WEAP_SAVANT_MALE]
+		[MALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry.  He is a bit simple-minded, but has a natural gift for creating weapons.]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:FORGE_WEAPON:12]
+		[CASTE_PROFESSION_NAME:WEAPONSMITH:weapon prodigy:weapon prodigies]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:FORGE_WEAPON:150]
+	[CASTE:WEAP_SAVANT_FEMALE]
+		[FEMALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry.  She is a bit simple-minded, but has a natural gift for creating weapons.]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_PROFESSION_NAME:ARMORER:weapon prodigy:weapon prodigies]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:FORGE_WEAPON:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:FORGE_WEAPON:150]
+	[CASTE:ARMOR_SAVANT_MALE]
+		[MALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry. He is a bit simple-minded, but has a natural gift for creating armor.]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[CASTE_PROFESSION_NAME:ARMORER:armor prodigy:armor prodigies]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:FORGE_ARMOR:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:FORGE_ARMOR:150]
+	[CASTE:ARMOR_SAVANT_FEMALE]
+		[FEMALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry.  She is a bit simple-minded, but has a natural gift for creating armor.]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_PROFESSION_NAME:ARMORER:armor prodigy:armor prodigies]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:FORGE_ARMOR:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:FORGE_ARMOR:150]
+	[CASTE:BOW_SAVANT_MALE]
+		[MALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry. He is a bit simple-minded, but has a natural gift for creating ranged weapons.]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[CASTE_PROFESSION_NAME:BOWYER:bowyer prodigy:bowyer prodigies]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:BOWYER:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:BOWYER:150]
+	[CASTE:BOW_SAVANT_FEMALE]
+		[FEMALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry.  She is a bit simple-minded, but has a natural gift for creating ranged weapons.]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_PROFESSION_NAME:BOWYER:bowyer prodigy:bowyer prodigies]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:BOWYER:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:BOWYER:150]
+	[CASTE:ALCHEMY_SAVANT_MALE]
+		[MALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry. He is a bit simple-minded, but likes to experiment and constantly mutters the word "enchantment."]  Dragon Age reference, for great justice.
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[CASTE_PROFESSION_NAME:ALCHEMIST:savant:savants]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:ALCHEMY:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:ALCHEMY:150]
+	[CASTE:ALCHEMY_SAVANT_FEMALE]
+		[FEMALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry.  She is a bit simple-minded, but likes to experiment.]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_PROFESSION_NAME:ALCHEMIST:savant:savants]
+		[POP_RATIO:1]
+		[NATURAL_SKILL:ALCHEMY:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:ALCHEMY:150]
+	[CASTE:FERTILE_FEMALE]
+		[FEMALE]
+		[LITTERSIZE:1:3]
+		[POP_RATIO:5]
+	[CASTE:SHEEN_MALE]
+		[MALE]
+		[POP_RATIO:1]
+		[DESCRIPTION:A short, sturdy creature fond of drink, industry, and WINNING.]
+		[NATURAL_SKILL:LYING:5]
+		[NATURAL_SKILL:BLOWGUN:5]
+		[CASTE_PROFESSION_NAME:STANDARD:bum:bums]
+		[SKILL_LEARN_RATE:COMEDY:0]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[CASTE:GLASS_SAVANT_MALE]
+		[MALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry.  He is a bit simple-minded, but likes to play with sand.]
+		[CASTE_PROFESSION_NAME:GLASSMAKER:glassmaker prodigy:glassmaker prodigies]
+		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[POP_RATIO:10]
+		[NATURAL_SKILL:GLASSMAKER:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:GLASSMAKER:150]
+	[CASTE:GLASS_SAVANT_FEMALE]
+		[FEMALE]
+		[DESCRIPTION:A short, sturdy creature fond of drink and industry.  She is a bit simple-minded, but likes to play with sand.]
+		[MULTIPLE_LITTER_RARE]
+		[CASTE_PROFESSION_NAME:GLASSMAKER:glassmaker prodigy:glassmaker prodigies]
+		[POP_RATIO:10]
+		[NATURAL_SKILL:GLASSMAKER:12]
+		[SLOW_LEARNER]
+      		[SKILL_LEARN_RATE:GLASSMAKER:150]
+
+
+
+	...Under [CREATURE:KOBOLD], paste the following:
+
+		[NO_EAT][NO_DRINK]
+
+
+
+	...under [CREATURE:DRAGON], replace the line:
+
+		[BODY_DETAIL_PLAN:STANDARD_TEMPLATE]
+
+	...with the line:
+
+		[BODY_DETAIL_PLAN:ENHANCED_BONE_STANDARD_TEMPLATE]	
+
+
+Assuming you moved all of the other text files with non-conflicting names into your RAWs, the mod should now function properly.
+
+
+
+
+
+
+
+
+
+
+
+-----
+
+
+
+
+
+
+
+
+[PQ0] Potential confusion section.
+
+
+This section contains some spoilers about mood weapons in order to clarify what attributes these weapons use.
+
+As some of these weapons seem to encompass multiple attributes, the attributes selected for weapons that do not clearly
+fit into Dwarf Fortress' categories are listed below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Scroll down if you still want to see.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To dispell any pending confusion:
+
+-The halberd, while not a new weapon, still uses its default axe skill.  It is a default weapon in item_weapon, and has not been modified apart from [MINIMUM_SIZE].
+-The lance is the only new pike.  The default pike has had its [MINIMUM_SIZE] reduced.  All other pike-like weapons use the spear skill.  
+-The lucerne polehammer uses the spear skill - NOT the hammer skill, as its name would suggest.
+-The butterfly knives and khukri use the dagger skill.
+-The machete uses the sword skill.
+-The only new mining weapon should be VERY obvious when it shows up.  It is not the battle pick.
+-The battle pick uses the mace skill - NOT the mining skill.
+-The jitte, as previously mentioned, uses the sword skill.
+-The club uses the hammer skill.
+-The kusari-gama uses the whip skill.
+-The claws use the dagger skill.
+-The arbalest uses regular bolts and the crossbow skill.  Its melee attack uses the hammer skill.
+-The urumi uses the whip skill - it's technically a sword, but its use is more akin to a whip, and I have too many swords already.
+-The keris uses the sword skill.
+-The cudgel uses the mace skill.
+-The mallet uses the hammer skill.
+-The cinquedea uses the dagger skill.
+-The giant fork uses the spear skill.
+-The giant spoon uses the hammer skill.
+-The gastraphetes uses the crossbow skill and arrows for its ranged attack, and the hammer skill for its melee attack.
+-The repeating crossbow (chu ko nu) is identical to the crossbow, but fires blowdarts.
+-The crowbar uses the mace skill.
+-The rake uses the spear skill.
+-The felling axe uses the axe skill and is two-handed.
+-The hurlbat uses the axe skill.
+-The knuckles are a two-handed weapon and use the striker skill.  They are currently the only weapon to do so.
+-The new bows, without exception, have "bow" in their name, use the bow skill, and use arrows.  If it doesn't have "bow" in the name, it isn't a bow.
+-The melee attacks for the new bows use the mace skill, except for the great bow which uses the spear skill instead.
+-The staff, quarterstaff, and the void hurling staff all use the spear skill.  The void hurling staff uses the spear skill for its ranged attack as well.
+-The void energy projector and the void hurling staff both use a new type of ammunition, which the dwarves cannot produce.
+-If the voidwalkers are removed from the game, your moody dwarves might still produce a void hurling staff or void energy projector.  These will still function
+properly, but the dwarves will not be able to acquire ammunition for them.
+-The other advanced versions of the crossbow, unlocked through the tech tree, use the spear skill.
+-The advanced versions of the magnetic dart launcher, unlocked through the tech tree, use the sword skill.
+-The regular (unenhanced) magnetic dart launcher uses the mace skill.

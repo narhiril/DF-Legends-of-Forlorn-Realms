@@ -1,0 +1,12 @@
+inorganic_other_narhiril
+
+[OBJECT:INORGANIC]
+
+[INORGANIC:FLYING_OYSTER_PEARL]
+	[USE_MATERIAL_TEMPLATE:STONE_TEMPLATE]
+	[STATE_NAME:ALL:flying cave oyster pearl]
+	[STATE_NAME_ADJ:ALL:flying cave oyster pearl]
+	[DISPLAY_COLOR:7:7:1][TILE:'o']
+	[SOLID_DENSITY:2787]
+	[PEARL]
+	[MATERIAL_VALUE:10]

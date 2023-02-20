@@ -1,0 +1,234 @@
+
+REJECTED (for now)
+
+[DCx] - Lava Gnomes:
+
+"Lava Gnomes" hail from the volcanic, cavernous regions of the world.  They are hostile to the dwarves, whose mining destroys their tunnels, often
+without even noticing.  Deep gnomes are a subterranean people who wander the second and third cavern levels.  Their unique ability to hurl balls
+of fire at enemies makes them particularly dangerous for creatures of their small size.  Lava gnomes typically travel in small groups.
+
+(reason for rejection: role filled by akuma, further plans for gnomes in the future)
+
+--
+
+ALCHEMY **** DONE ****
+A new workshop for alchemists
+Reactions using the new workshop
+	-turn stone into gold
+		-15:1 ratio
+	-turn vermin remains into gold (scrapped)
+		-15:1 ratio
+	-random synthesis
+		-takes ten stones and one fuel
+		-products:
+			-bar of gold - 20%
+			-bar of silver - 20%
+			-bar of damascus steel - 3%
+			-gem - 15%
+			-bar of mithril - 8%
+			-failed experiment - 10%
+			-catastrophic failure - 2%
+			-foul byproduct - 50%
+			-bar of iovium - 8%
+			-bar of copper - 35%
+			-ectoplasmic remnant - 2%
+			-bar of condensed ether - 1%
+	-last rites for a banshee
+		-takes ectoplasmic remnant and fuel
+		-produces an ethereal statue
+
+---
+
+v0.11
+
+
+More Alchemy
+
+Reactions
+
+Transmutation from Plants  *****DONE*****
+	-takes 8 random plants and produces random seeds.
+		-products:
+			-3 shankweed seeds - 20%
+			-3 bluebell spores - 10%
+			-2 sun berry seeds - 3%
+			-2 whip vine seeds - 7%
+			-2 dimple cup spores - 10%
+			-5 plump helmet spawns - 15%
+			-4 voracious maw seeds - 2%
+			-4 vine of xanadu seeds - 1%
+			-5 rock nuts - 5%
+			-2 mousebulb spores - 5%
+			-2 winding spire roots - 5%
+			-2 prism stars - 2%
+			-2 herald's horns - 1%
+			-2 thyme seeds - 4%
+			-2 pygmy lime seeds - 3%
+			-2 sweet pod seeds - 6%
+			-2 bloated tubers - 5%
+			-2 fisher berry seeds - 8%
+			-2 wild strawberry seeds - 7%
+			-2 rat weed seeds - 3%
+			-2 hide root seeds - 4%
+			-2 longland grass seeds - 9%
+			-a new foul byproduct - 25%
+			-a new major failure - 6%
+			-a new cataclysmic disaster - 1%
+				-a product that instantly bursts into flames
+					-high fixed temp, low boiling point
+			-a new "easter egg" product - 1%
+				-ideas:
+					-A wooden weapon with special properties
+					-An otherwise unavailable alcohol
+					-A deadly poison
+					-ether (kind of a cop-out)
+					
+Transmutation from Logs (cut)
+	-takes 3 random logs and produces random seeds
+			-same products and chances of transmutation from plants
+			-3 courage oak logs - 5%
+			-3 glumprong logs - 6%
+			-3 widow's tear logs - 2%
+
+
+A new template [STONE_VAPOR_TEMPLATE_LFR]  *****DONE*****
+	-back-apply this to flying oyster pearls, alchemical byproducts, banishment stone
+
+
+----
+
+v0.12
+
+Alchemy
+	-Orichalcum *****DONE****
+		-A rare metal of high value
+		-Orange color
+		-Mat value 65
+		-very fragile
+		-Used to produce advanced mechanics workshop
+	-New Buildings ("tech tree")  *****DONE*****
+		-Mechanical Sparring Partner
+		-Mechanical Obstacle Course
+		-Mechanical Surgical Dummy
+		-Coroner's Workshop
+		-Crematorium
+		-Advanced Mechanics Workshop
+
+Easter Eggs
+	-Rare Drops
+	-New Hats
+		-Beret
+		-Bandana
+		-Top Hat
+
+----
+
+v0.13
+
+
+-Tech Tree
+	-Advanced casters *****DONE*****
+	-ExMats *****DONE*****
+	-Weapons Concept Laboratory *****DONE*****
+
+-Rare Drops
+	-Will o' wisp hearts *****DONE*****
+	-Locust Scepters *****DONE*****
+
+-New Creatures
+	-Amarok (titanic wolf) *****DONE*****
+	-Carbuncle  *****DONE*****
+	-Djinn
+	-Humbaba (lion faced giant) *****DONE*****
+
+-Castes
+	-Prodigies/Savants  *****DONE*****
+	
+-Civ Tweaks
+	-Bog troll siege trigger moved back *****DONE*****
+
+-New Civ
+	-Possible names
+		-Almas (hairy subspecies of human)
+		-Lilim (Liliths)
+		-Mairu (pl. Mairuak, megalith-builders of Basque mythology)
+		-Moroi (pl. moroii, fem. moroaica, fem pl. moroaice)  *****DONE*****
+-Easter Eggs
+	-New Mood Weapons
+		-Curious Ritual Knife  *****DONE*****
+	-Greater Demon of Pestilence  *****DONE*****
+	-Lesser Demons
+
+---
+
+v0.14
+
+-Tech Tree
+	-Tier Two
+		-Orrery (uses theory and several mechanisms and advanced mechanisms)
+			-trains teacher and observer skills
+	-Tier Three Preview
+		-Crystal Growth Tank
+			-requires rainbow diamond and a barrel
+			-produces colored stone from mundane stone
+			-produces rainbow diamonds (expensive)
+	-Ritual Tech Tree, Tier One
+		-Altar of Life
+			-takes plants and logs for sacrifice
+			-possible returns 
+				-barrels of booze
+				-silver bars
+				-rainbow diamond (very rare, lavish sacrifice only)
+				-blinding judgment
+				-saintly hallmark (new tool for later advances)
+		-Altar of Death
+			-takes bones and skulls for sacrifice (possibly blood as well)
+				-possible returns
+					-unique weapons
+						-skull scepter
+						-iron scythe of the deathbringer (very rare)
+						-menacing iron spike
+					-ominous candles (new tool for later advances)
+					-iron bars
+					-plague
+					-instant death
+					-rune of the encroaching darkness (new tool for later advances)
+		-Altar of Wealth
+			-takes coins for sacrifice
+				-possible returns
+					-gold bars
+					-platinum bars
+					-orichalcum bars
+					-extreme long-lasting pain
+			-offer golden statue
+				-possible returns
+					-gold bars
+					-pure mithril bars
+					-ethereal statue (uncommon)
+		-Altar of Wisdom
+			-takes specialty slabs
+			-possible returns
+				-gem (random, rare)
+				-soap (rare)
+
+	-Ritual Tech Tree, Tier Two Preview
+		-Shrine of Life
+			-requires 12 saintly hallmarks and a table
+				-ritual of light
+					-takes one rune of the encroaching darkness or ominous candle
+					-produces ash
+		-Shrine of Death
+			-requires 8 ominous candles and one rune of the encroaching darkness
+				-ritual of darkness
+					-takes one saintly hallmark
+					-produces obsidian stone
+		-Shrine of Wealth
+			-requires 1 ethereal statue and 4 gold statues
+				-ritual of wealth
+					-takes gold coins
+					-produces gems (random)
+		-Shrine of Flame (tie-in with mechanical tree)
+			-requires treatise, 3 iron bins, 1 iron table, 1 iron chair, 2 iron mechanisms
+				-ritual of flame
+					-takes mundane stone (5)
+					-produces flux stone (1)

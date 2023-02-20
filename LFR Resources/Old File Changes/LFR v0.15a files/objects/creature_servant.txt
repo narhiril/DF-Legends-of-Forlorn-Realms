@@ -1,0 +1,159 @@
+creature_servant
+
+[OBJECT:CREATURE]
+
+[CREATURE:HAND_OF_ARMOK_LFR]
+	[NAME:hand of Armok:hands of Armok:hand]
+	[CASTE_NAME:hand of Armok:hands of Armok:hand]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:blood lust]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:LACERATOR_LFR]
+	[NAME:lacerator:lacerators:lacerator] 
+	[CASTE_NAME:lacerator:lacerators:lacerator]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:bloodletting] warhammer reference
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:PARAGON_OF_VISTHEL_LFR]
+	[NAME:paragon of Visthel:paragons of Visthel:paragon]
+	[CASTE_NAME:paragon of Visthel:paragons of Visthel:paragon]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:kind hearts]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:BRINGER_OF_MERCY_LFR]
+	[NAME:bringer of mercy:bringers of mercy:amnesty's]
+	[CASTE_NAME:bringer of mercy:bringers of mercy:amnesty's]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:aura of justice]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:FAVORED_OF_VORUK_LFR]
+	[NAME:favored of Voruk:Voruk's favored:favored]
+	[CASTE_NAME:favored of Voruk:Voruk's favored:favored]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:riches]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:FAT_RAT_LFR]
+	[NAME:fat rat:fat rats:fat rat] Voruk has a sick sense of humor
+	[CASTE_NAME:fat rat:fat rats:fat rat]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:obesity]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:GARY_OAK_LFR]
+	[NAME:garrioke:garriokes:garrioke] I couldn't resist throwing this in here as a "mythical beast" a la pokemans.
+	[CASTE_NAME:garrioke:garriokes:garrioke] Taking a page from Guild Wars to make the reference subtle.
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST] This will show up in someone's engraving someday and they'll shit their pants.  Maybe.
+	[PREFSTRING:girth] LOL
+	[CASTE:MALE]
+		[MALE]
+
+[CREATURE:HERALD_OF_KOGUT_LFR]
+	[NAME:herald of Kogut:heralds of Kogut:heraldic] back to business
+	[CASTE_NAME:herald of Kogut:heralds of Kogut:heraldic]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:loud proclamations]
+	[USE_MATERIAL_TEMPLATE:CHEESE_ONE:CREATURE_CHEESE_TEMPLATE]
+			[MATERIAL_VALUE:3]
+			[STATE_NAME:SOLID:Kogut's cheese]
+			[STATE_ADJ:SOLID:Kogut's cheese]
+			[STATE_NAME:SOLID_POWDER:Kogut's cheese powder]
+			[STATE_ADJ:SOLID_POWDER:Kogut's cheese powder]
+			[STATE_NAME:LIQUID:melted Kogut's cheese]
+			[STATE_ADJ:LIQUID:melted Kogut's cheese]
+			[STATE_NAME:GAS:boiling Kogut's cheese]
+			[STATE_ADJ:GAS:boiling Kogut's cheese]
+			[PREFIX:NONE]
+	[USE_MATERIAL_TEMPLATE:CHEESE_TWO:CREATURE_CHEESE_TEMPLATE]
+			[STATE_NAME_ADJ:SOLID:stonewall vintage cheese]
+			[STATE_NAME_ADJ:LIQUID:melted stonewall vintage cheese]
+			[STATE_NAME_ADJ:GAS:boiling stonewall vintage cheese]
+			[STATE_COLOR:ALL_SOLID:RED]
+			[MATERIAL_VALUE:10]
+			[PREFIX:NONE]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:DRUNKEN_GNOME_LFR]
+	[NAME:drunken gnome:drunken gnomes:malodorous gnome] Kogut's lesser servants aren't good for much else
+	[CASTE_NAME:drunken gnome:drunken gnomes:malodorous gnome]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:odd noises]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:VOICE_OF_PEL_LFR]
+	[NAME:voice of Pel:voices of Pel:Pel's voice's]
+	[CASTE_NAME:voice of Pel:voices of Pel:Pel's voice's]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:deep devotion]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+
+[CREATURE:EYE_OF_PEL_LFR]
+	[NAME:eye of Pel:eyes of Pel:Pel's eye's]
+	[CASTE_NAME:eye of Pel:eyes of Pel:Pel's eye's]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:scrutiny]
+	[CASTE:MALE]
+		[MALE]
+	[CASTE:FEMALE]
+		[FEMALE]
+
+[CREATURE:MONOLITH_2K1] 2001 reference
+	[NAME:monolith:monoliths:monolithic]
+	[CASTE_NAME:monolith:monoliths:monolithic]
+	[ARENA_RESTRICTED]
+	[DOES_NOT_EXIST]
+	[PREFSTRING:perfect proportions]
+	[PREFSTRING:featureless beauty]
+	[CASTE:GENERIC]
+		[MALE]

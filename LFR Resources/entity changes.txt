@@ -1,0 +1,297 @@
+TO DO
+
+Keepers of Keys
+Adventure mode prayers
+GDoB
+GDoR
+GDoI
+Tarantulas and gfx
+
+Possible new creatures: duah, dignonek, hellhound, kelpie, wendigo
+
+Adventure mode runesmithing
+
+Mythical weapon manual entries
+
+
+--
+Replaced shields for dwarves with "runic defenders."  Added racial weapon bonuses.  Added mythical weapons.
+
+
+--
+
+Mithril and tungsten can now be made into anvils.  Added new descriptors.  Added damascus sentinel drone hosts.  Added the Temple of Origin, paragons, and associated reactions.  
+Fixed an issue preventing slimers from reproducing in fortress mode.  Fully integrated DFHack and associated plugins.  As a result, ritual unit reactions will no longer fail - 
+their costs have been modified to compensate for this.  Mechanical constructs will no longer fail - costs for these have not been modified.  Added the runesmith's workshop 
+and associated reactions.  Prayers for favor will once again only produce one symbol of favor at a time.
+
+	[PERMITTED_BUILDING:TEMPLE_OF_ORIGIN_LFR]
+	[PERMITTED_REACTION:CREATE_IDOL_VISTHEL]
+	[PERMITTED_REACTION:CEREMONY_VISTHEL_ORIGIN]
+
+
+
+
+--
+Fixed an issue preventing prisms of light from being craftable (thanks lukstra).  Removed annoying spam text associated with a certain combo interaction.  Significantly increased the chance of 
+success for the "evaluate research findings" reaction.  Doubled the chance of success of prayers for favor, and also made these reactions produce symbols of favor two at a time.  Fixed a number 
+of incorrect plural forms of custom tool items.  Added "LFR_NODEMON_MAXFPS" worldgen parameters, which will create a world with very short history and condensed cavern levels.
+
+NOTE: This version does not require a new world for changes to take effect.  To update an 0.19b save to 0.19c, drag the files modified by this release into the desired data/save/region folder.
+
+
+
+--
+Fixed an issue preventing stonekin and zephyrs from being able to buff other ritual units in some cases.  The obstacle course has received a much-needed makeover.  The meowkin can now use and 
+manufacture iron products.  Removed all prior material costs for ceremonial transformations - these reactions will now use "symbols" of favor, which can be obtained from new prayer reactions at 
+each temple.  Added iron dwarven spiders.  Added slimers - a benign domestic creature that will be used as a transformation platform for more advanced dwarven mechanical constructs.  Removed the 
+reaction to prepare the "ceremonial bath of Temanat," as it is now obsolete.  The "prayer for ritual metals" has been renamed simply to the "prayer for metals."  The "prayer for ritual gems" 
+has been renamed to the "prayer for glass," and has had its products altered accordingly.  Added the Temple of Light.  Added the Temple of Shadows.  The cost for producing dwarven spider control 
+modules has been reduced to require fewer lustrum rocks and capacitors.  Voidwalker mistshrouds can now block incoming debuffs 1/4th of the time.  Added lizardman mystics, which can block incoming 
+debuffs as well.  Magnetic dart launcher and upgraded crossbow production reactions now use the bowyer skill instead of the weaponsmithing skill.  Magnetic dart production reactions now use the 
+furnace operator skill rather than the weaponsmithing skill (same as javelins).  Fixed a few typos here and there (thanks katana for the help).  ALchemical experiments have had their number of 
+reagents reduced to three, due to changes to stone availability.  Gold synthesis has had its number of reagents reduced to five for the same reasons.  Golden obelisks for the Temple of the 
+Orphan have had their stone requirements lowered from ten to three.
+
+Added iron dwarven mantises, and associated research/transcription reactions.  Added dwarven umbrals and radiant priests.
+
+
+	[PERMITTED_REACTION:UPGRADE_TOME_CONSTRUCT_ONE]
+	[PERMITTED_REACTION:MAKE_IRON_MANTIS_CHASSIS_LFR]
+	[PERMITTED_REACTION:MAKE_IRON_MANTIS_FA_LFR]
+	[PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_TWO_ONE]
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_TWO_TWO
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_TWO_THREE
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_TWO_FOUR
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_THREE_TWO
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_FOUR_THREE
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_FOUR_FOUR
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_SPEC_THREE
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_SPEC_FOUR
+	PERMITTED_REACTION:TRANSCRIBE_BLUEPRINTS_CONSTRUCT_FIVE_FOUR
+
+
+	[PERMITTED_BUILDING:TEMPLE_LIGHT_LFR]
+	[PERMITTED_BUILDING:TEMPLE_SHADOW_LFR]
+	[PERMITTED_REACTION:ASSEMBLY_LIGHT_LFR]
+	[PERMITTED_REACTION:ASSEMBLY_SHADOW_LFR]
+	[PERMITTED_REACTION:PRAYER_SYMBOL_FIRE_LFR]
+	[PERMITTED_REACTION:PRAYER_SYMBOL_WATER_LFR]
+	[PERMITTED_REACTION:PRAYER_SYMBOL_EARTH_LFR]
+	[PERMITTED_REACTION:PRAYER_SYMBOL_WIND_LFR]
+	[PERMITTED_REACTION:PRAYER_SYMBOL_LIGHTNING_LFR]
+	[PERMITTED_REACTION:PRAYER_SYMBOL_LIGHT_LFR]
+	[PERMITTED_REACTION:PRAYER_SYMBOL_SHADOW_LFR]
+	[PERMITTED_REACTION:CEREMONY_OF_SHADOWS_LFR]
+	[PERMITTED_REACTION:CEREMONY_OF_LIGHT_LFR]
+
+	[PERMITTED_REACTION:MAKE_IRON_SPIDER_CHASSIS_LFR]
+	[PERMITTED_REACTION:MAKE_DEPLOYMENT_KIT_IRON_SPIDER]
+	[PERMITTED_REACTION:ASSEMBLE_IRON_SPIDER_LFR]
+
+
+--
+Rakshasa illusions will no longer drop rib bones on death.
+
+
+
+--
+
+Added dwarven tempests.  Added the Temple of the Orphan.  Added wavebreaker and zephyr "cross-combo" abilities with tempests.  Added the ability for voidwalker mistshrouds to block this 
+new combo.  Added jagged crystal dragons.  Emberlight warriors can now safely swim, stand, see, and fight in magma.  Added a new regional interaction to terrifying swamp biomes.  Added 
+the (tier 4 tech) mechanized defense laboratory and associated reactions.  Added dwarven spider constructs.  Added the shedim as a new, universally hostile race.  Added priceless vanguard 
+artifacts (VERY rare).  Changed "prayer for elemental ritual materials" at the Temple of the Twins to "prayer for ritual metals," and removed the gem products.  Added "prayer for ritual 
+gems" to make up for this at the new Temple of the Orphan.  Cleaned up some overlapping hotkeys at the Temple of the Twins.  The fishing pond will now produce raw rainbow trout in addition 
+to the "trout of Kogut" meat it already produces - percentage products have been adjusted so that yield is not much different.  The "big catch" reaction at the fishing pond is now a bit 
+more worthwhile and has been given an easter egg.  The meowkin will now sell "mech parts caches" that can be "unpacked" at the new tier 4 tech building for a random assortment of related 
+parts.  Added the dwarven spider deployment hub.  Added the ability to manufacture your own experimental weapons in adventure mode.  Added an underground plant that will start to appear once 
+you breach the magma layer.  Revised mill/brew reactions to give them a chance to produce multiple seeds.  Removed an erroneous reaction reference to a prism star seed (does not exist). 
+Added the greater demon of cowardice.  Added the rakshasa.  Added two new secrets.  Re-implemented frigid zingers.  Added ice dragons and ice wyverns.  Added shedim corpse devouring.  Added 
+shedim ah kirals and ah haleels.  Added giant cannon beetles (thanks monk321654).  Fixed an issue with hellions causing them to use the wrong graphic.  Vastly simplified zinger anatomy.  
+Added a new graphic for the new zinger anatomy.  Added prayers for metalcrafting and blacksmithing to the Temple of Fire (thanks Pan).  Changed the hotkey for the "prayer for industry" from 
+"p" to "i."  Fixed an issue preventing watchers from reproducing.  Turning stones into gold now requires 15 stones instead of 10 (I hate to be the bearer of the nerf bat, but it really 
+had to be done here).  Added a large number of graphics for vanilla creatures (BIG thanks to Meph on this one).
+
+
+
+--
+
+Added missing mannerism tokens to voidwalkers.  The reaction to produce "stonewall vintage" cheese at the exotic cheesery will now correctly produce dimple cup seeds in addition to its 
+usual product.  Re-mapped the hotkey for the aforementioned reaction to "v."  Re-mapped the hotkey for the weapons concept lab to "x" (it was overlapping with the wood furnace).  Fixed 
+an issue where the greater demon of famine's giant claw was too easily severable.  Added meowkin intermediaries (trade representatives).  Added missing IS_STONE token to vanguard rubble. 
+The "create torchbearer gargoyle" reaction has been moved to the temple component foundry (it makes more sense).  Added framework for the Temple of the Orphan.
+
+
+
+--
+
+Balance tweaks: fixed an issue causing the ritual of victory to preserve its reagents.  Changed the "prayer for ritual metals" to "prayer for ritual materials," and added ritual-related gems 
+as possible products.  Reverted high priests to previous settings (limit of 2, no class requirement), but left their new squad sizes intact.  
+
+
+
+
+--
+
+Fixed an issue preventing spirit binders from working properly outside of arena mode.  Added dwarven saboteurs and "watchers" - a new creature to counter them.  Added voidwalker mistshrouds.
+Added the Temple of the Twins and associated reactions.  Added dwarven stonekin and zephyrs.  Added custom weather effects and a manual section to explain them.  Increased the high priest's 
+squad from three members to five.  Gave bog trolls access to the felling axe.
+
+Added animal training savants and naturally gifted warriors (thanks Atlan) - naturally gifted warriors do not have a natural skill, but learn military skills 
+much faster than normal dwarves.  Unlike all other savant castes, naturally gifted warriors CAN be used in ceremonial transformations, but will lose their enhanced learning rate, so train them 
+before you transform them!
+
+
+--
+
+
+Fixed an issue with a missing text file in the raw-only release.  Removed the plant requirement for building the potted plant (it was decaying and destroying the building).  Fixed an issue with 
+documentation where the upgraded crossbows were erroneously referred to as dart launchers.  Significantly weakened empyrean carbuncle's hidden ability.  Significantly increased 
+empyrean carbuncle's defense.  Corrosive zingers are a lot more dangerous now.  Fixed an issue preventing the metal caster from working properly (thanks simonthedwarf).  Significantly 
+increased the cost of wavebreaker transformations.
+
+
+--
+
+
+Fixed a typo with bayonet crossbow blueprints.  Added custom secrets and curses.  Added framework for additional creature developments.  Revised description for exiled rift wardens.  Revised 
+graphic for exiled rift wardens.  Added graphics for hellions.  Added the temple of water and associated reactions.  Lowered success rate for the prayer for celebration at the shrine of 
+prosperity.  Added exiled rift wardens to worldgen as rare megabeasts.  Fixed an issue with Visthel's embrace that was causing it to be used by metalsmithing moods.  Fixed an issue with 
+dwarf caste descriptors.  Added the ability to make wooden wheelbarrows at the machine shop.  Added the archaeologist's lab and associated reactions.  Added vanguard ruins.  Orichalcum can 
+now be found in vanguard ruins in additional to its usual locations.  Fixed an issue with the graphic for the greater demon of pestilence.  Fixed an issue causing the potted plant to accept 
+non-empty pots.  Removed caste-level appearance modifiers for emberlight warriors until the crash issue is resolved.  Renamed the reward from sentinel core research so as not to be confused 
+with the crossbow upgrades from the tech tree.
+
+---
+
+
+Fixed an issue causing the rare mineral cooperite to refine to cobalt instead of palladium.  Fixed an issue with metal javelin throwers requiring an obscene number of bars.  Fixed an issue 
+preventing empyrean carbuncles from using their most powerful ability on their own.  Fixed an issue preventing a rare (non-savant) caste of dwarves from being able to undergo the emberlight 
+warrior transformation.  Added additional framework for future creature developments.  Updated LFR for compatability with DF v0.34.03.
+
+TO DO
+
+Add framework for throwing weapons
+Voidwalker armor layer
+Lizardman venom spit
+
+
+
+
+
+----
+
+
+Added missing token for allowing mithril strands to be woven into cloth.  Prayers of the armor and weapon apprentices at the temple of fire now require a ceremonial urn (preserved), which is 
+made from two silver bars at the temple component foundry.  Fixed an issue causing specific brew reactions to kick out generic "drinks" instead of the alcohol they were supposed to.  Restored 
+missing unlock reaction to the lustrum energy extractor.  Fixed an issue causing orichalcum precision tools not to be available at magma-powered alchemy labs.  Requirements and products for the 
+greater ritual of sustinence have been changed - it now requires ash instead of a live creature, and can produce fireproof backpacks.  Cooldown for emberlight warriors' fireballs has been 
+substantially reduced.  Percentage chance for emberlight warrior transformation from appropriate reaction has been increased.  Fixed an issue causing every caste of zinger to bleed acid instead 
+of just the corrosive ones.  As originally intended, emberlight warriors are now immune to fire, while regular dwarves are not (UGH, most irritating bug ever).  High priests have been changed - 
+dwarves must now be blessed servants of an old god before they can hold that position.  Removed the cap on the number of high priests.  Fixed a bug preventing the reaction to unlock the fishing 
+pond from showing up.  Fixed a bug preventing the "crush stones" reaction from appearing at the trash compactor.  Female emberlight warriors are now sterile (no more giving birth to a very 
+unfotunate baby in the midst of a conflagration).  Simplified clothing plug-in will now include shoes for dwarves only.  Fixed a graphics glitch with the experimental materials and weapons 
+concept workshops.
+
+
+
+---
+
+
+[PERMITTED_BUILDING:TEMPLE_EARTH_WIND_LFR]
+[PERMITTED_REACTION:CEREMONY_OF_EARTH_LFR]
+[PERMITTED_REACTION:CEREMONY_OF_WIND_LFR]
+[PERMITTED_REACTION:PRAYER_EARTH_ONE_LFR]
+[PERMITTED_REACTION:PRAYER_EARTH_TWO_LFR]
+[PERMITTED_REACTION:PRAYER_WIND_ONE_LFR]
+[PERMITTED_REACTION:ASSEMBLY_EARTH_WIND_LFR]
+
+
+
+
+---
+15f
+
+[PERMITTED_BUILDING:ARCHAEOLOGY_LAB_LFR]
+[PERMITTED_REACTION:SORT_RUBBLE_LFR]
+[PERMITTED_REACTION:SORT_ARTIFACT_LFR]
+[PERMITTED_REACTION:SORT_PRECIOUS_ARTIFACT_LFR]
+
+[PERMITTED_BUILDING:TEMPLE_WATER_LFR]
+[PERMITTED_REACTION:BLESS_WATER_LFR]
+[PERMITTED_REACTION:ASSEMBLY_WATER_LFR]
+[PERMITTED_REACTION:PRAYER_WATER_ONE_LFR]
+[PERMITTED_REACTION:CEREMONY_OF_WATER_LFR]
+[PERMITTED_REACTION:BLESSING_WATER_LFR]
+
+
+
+
+	[SELECT_CASTE:EMBERLIGHT_WARRIOR_FEMALE]
+	  [SELECT_ADDITIONAL_CASTE:EMBERLIGHT_WARRIOR_MALE]
+		[FIREIMMUNE_SUPER]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+		[TL_COLOR_MODIFIER:BROWN:1:BURNT_UMBER:1:BLACK:1]
+			[TLCM_NOUN:skin:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:EYE:EYE]
+			[TL_COLOR_MODIFIER:IRIS_EYE_RED:1]
+			[TLCM_NOUN:eyes:PLURAL]
+
+
+-----
+
+
+=(tier break)=
+
+
+[U9] CONCOCTORS (KOGUT - lesser)
+
+Placeholder entry.
+
+
+[U10] EYES OF PEL (PEL - lesser)
+
+Placeholder entry.
+
+
+[U11] FAVORED (VORUK - lesser)
+
+Placeholder entry. 
+
+
+[U12] PARAGONS (VISTHEL - lesser)
+
+Placeholder entry. 
+
+
+[U13] LACERATORS (ARMOK - lesser)
+
+Placeholder entry.
+
+
+=(tier break)=
+
+
+[U14] HERALDS (KOGUT - greater)
+
+Placeholder entry.
+
+
+[U15] VOICES OF PEL (PEL - greater)
+
+Placeholder entry.
+
+
+[U16] PROSPEROUS (VORUK - greater)
+
+Placeholder entry. 
+
+
+[U17] BRINGERS OF MERCY (VISTHEL - greater)
+
+Placeholder entry. 
+
+
+[U18] HANDS OF ARMOK (ARMOK - greater)
+
+Placeholder entry.

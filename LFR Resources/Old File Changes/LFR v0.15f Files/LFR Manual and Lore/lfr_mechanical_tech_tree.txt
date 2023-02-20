@@ -1,0 +1,337 @@
+THE DWARVEN MECHANICAL TECHNOLOGY TREE
+
+
+
+[0.0] Table of contents
+[1.0] Introduction to the mechanical tech tree
+[2.0] Starting out - alchemy, javelin throwers, and metal casters
+	[2.1] Metal casters and javelin throwers
+	[2.1] Alchemical experiments
+	[2.2] Transmutation
+	[2.3] Turning stones into gold
+	[2.4] ADVANCEMENT - Orichalcum
+	[2.5] Other Alchemical Reactions
+[3.0] Tier one - advanced mechanisms and training workshops
+	[3.1] The advanced mechanics workshop
+	[3.2] Training Workshops
+	[3.3] The Machine Shop
+	[3.4] ADVANCEMENT - Documentation
+	[3.5] The Trash Compactor
+	[3.6] The Archaeology Lab
+[4.0] Tier two - exotic weapons, armor, and energy sources
+	[4.1] Efficient casters
+	[4.2] Energy from lustrum
+	[4.3] The weapons concept laboratory
+	[4.4] The orrery
+	[4.5] ADVANCEMENT - The experimental materials workshop
+	[4.6] Reactive armor
+[5.0] Tier three - hybrid weapons and some serious science
+	[5.1] The crystal growth tank
+	[5.2] The advanced alchemy lab
+	[5.3] Weapon upgrades
+	[5.4] The scientific library
+	[5.5] The prototype workbench
+
+--
+
+[1.0] INTRODUCTION TO THE MECHANICAL TECH TREE
+
+The Dwarven mechanical technology tree is based on reason, experimentation, and advancement of dwarven capabilities.  None of the elements of this tree are required to create a working fortress, 
+but are there to enhance your capabilities and keep the game fresh for a much longer period of time.  
+
+-------------
+
+
+[2.0] STARTING OUT - ALCHEMY, JAVELIN THROWERS, AND METAL CASTERS
+
+Right off the bat, the dwarves have access to three new technologies from the mechanical tree ("tier zero").  The dwarves can build alchemy labs and metal casters.  Alchemy labs are extremely 
+fun (and by "fun" I mean "dangerous and unpredictable") workshops with a variety of functions which will be explained at length, and metal casters exist to create javelins.  Both of these
+workshops have magma-powered versions, which do not require fuel.
+
+--
+
+[2.1] METAL CASTERS AND JAVELIN THROWERS
+
+Metal casters require five metal bars to forge a stack of fifteen javelins.  Javelins come in three varieties, all of which can be fired from javelin throwers, which can be created at 
+the bowyer's workshop (from bone or wood) or a forge (from metal).  Javelin throwers are extremely powerful ranged weapons that use the crossbow skill, but their ammunition is extremely 
+expensive.  Javelin throwers can be manufactured in the same ways as crossbows.
+
+--
+
+[2.2] ALCHEMICAL EXPERIMENTS
+
+The alchemy lab has several functions, all relating to dwarven scientific advancement.  Alchemical experiments take ten non-economic stones and some fuel, and can produce any number of 
+products.  Possible outcomes of this reaction...
+
+
+COMMON
+
+Copper bars
+Gold bars
+Silver bars
+Bismuth bars
+Thick alchemical vapors (causes your alchemist to become dizzy for a short period of time)
+
+
+UNCOMMON
+
+Lustrum rocks
+Hazardous radiation (causes your alchemist to vomit for a short period of time, can VERY RARELY cause more severe complications)
+
+
+RARE
+
+Ethereal spheres (can be processed and melted down into ether bars at a smelter)
+Mithril bars
+Ectoplasmic remnant (used by the sacrificial altar in the ritual tree)
+Corrosive energies (causes severe, moderate duration blistering all over your alchemist's body)
+Intense heat (can light nearby objects on fire)
+
+--
+
+[2.2] TRANSMUTATION
+
+The alchemy lab can also perform a "plant transmutation experiment."  This reaction takes six seeds and some fuel to produce a random assortment of plants.  This reaction is useful for 
+increasing the variety of plants at your disposal, but also carries some risks.  Side effects, in order of increasing severity, may include drowsiness, temporary blindness, and spontaneous 
+combustion.
+
+
+--
+
+[2.3] TURNING STONES INTO GOLD
+
+Of course, the primary goal of alchemists everywhere is to advance the scientific knowledge of the Dwarven race, but increasing the standard of living is a close second.  Alchemists can take 
+ten mundane stones and some fuel to produce a single gold bar.  This reaction does not carry the risks associated with the alchemical experiments, but does not allow for the other rewards, either.
+
+--
+
+[2.4] ORICHALCUM
+
+The way to advance to the next tier of the mechanical tech tree, you'll need to get your hands on some precision tools.  In all but the rarest of cases, this means you're going to be after some 
+orichalcum - a rare metal that occurs primarily in microcline and orthoclase deposits.  Do whatever you have to do to get ahold of this material - you only need a single bar in order to fashion 
+the first set of precision tools at the alchemy lab.  Either dig around (explore the caverns) or trade for some orichalcum with the dwarven caravan.  Once you have a bar of the stuff, it can be 
+fashioned into a precision tool kit at the alchemy lab (no fuel is required).
+
+
+--
+
+[2.5] OTHER ALCHEMY LAB REACTIONS
+
+A small number of other reactions are present at the alchemy lab.  "Document alchemical research" will be covered in section 3, and the other two reactions involve very rare reagents that you may 
+come across in the deeper caverns.  They provide some reward for these discoveries, but are not essential to advancing the tech tree.
+
+
+
+-------------
+
+
+[3.0] TIER ONE - ADVANCED MECHANISMS AND TRAINING WORKSHOPS
+
+After striking orichalcum, or (rarely) coming across precision tools by other means in the caverns, you will have the component you need to build the first "tier one" workshop.
+
+--
+
+[3.1] THE ADVANCED MECHANICS WORKSHOP
+
+This building is constructed with the precision tools that you have.  It has several functions, but the two most basic are to produce more precision tools (which it can do from several 
+more common metals) and to produce advanced mechanisms from a variety of metals.  The advanced mechanics workshop has some other reactions involving efficient casters and reactive 
+armor, but these are not used until later tiers, and will be discussed in detail as they are unlocked.
+
+--
+
+[3.2] TRAINING WORKSHOPS
+
+Using certain combinations of furniture, advanced mechanisms, and precision tools, you can now create "training workshops" for dwarves to advance medical and military skills.
+
+The mechanical sparring partner can be constructed using advanced mechanisms and some other, more common components.  Dwarves can train any melee weapon skill here.  This 
+small workshop is a great way to get your military up and running, and to more rapidly train replacements.
+
+The mechanical obstacle course allows dwarves to safely train armor, dodge, and sneak skills.  This workshop can be used to train military dwarves, hunters, or even civilians, who can 
+benefit from dodging skill.
+
+The morgue requires precision tools to construct.  This workshop can perform mock autopsies, which train the diagnose skill.  Performing an autopsy on a vermin corpse is also possible, and 
+advances the skill a bit faster, consuming the remains.
+
+The medical training dummy requires precision tools and advanced mechanisms to construct, and can train suturing, surgery, wound dressing, and bone setting.  Combined with the morgue, this 
+workshop makes it possible to train up a pretty sharp medical staff even in times of peace.
+
+All training workshops produce a "slab of accreditation" every time they are used.  The game does not advance a skill unless a reaction produces a product, so these exist for logistical purposes. 
+As you might imagine, these build up and clutter your training sites rather quickly.  Fortunately, there's an easy and rewarding way to get rid of them, which is discussed next.
+
+--
+
+[3.3] THE MACHINE SHOP
+
+Constructed from advanced mechanisms, precision tools, and some metal chains, the machine shop allows the dwarves to make precision cuts in stone for more complicated assembly.  This building 
+allows you to create stone beds, stone bins, and stone wheelbarrows, which can be used in tandem with the loading and unloading stations to move large amounts of stone and wood.
+
+--
+
+[3.4] DOCUMENTATION
+
+The alchemy lab has a reaction called "document alchemical research."  Since the recent advent of dwarven science, alchemists are quick to conduct their experiments, but are less eager to 
+sit down and pore over the theories and implications of their discoveries.  What better way is there to document this research than to use the annoying slabs that keep popping up at training 
+workshops?  Two birds, one slab.  This reaction removes slabs of accreditation from the game, ten at a time, and trains the organizer skill.  More importantly, this reaction has a small chance 
+every time it is performed of producing a scientific discovery, in the form of an item.  In other words, the more you use the training workshops, the more slabs you get.  The more slabs you get, 
+the more documentation reactions you can perform, and the faster you can advance to the next tier.
+
+Objects to look for popping up after documentation reactions...
+
+"Hastily chiseled image of an exotic-looking weapon" - the dwarf sorting through the slabs of accreditation got bored and started doodling.  Hours later, they realized that the weapon they were 
+drawing might actually be a pretty sweet idea.
+
+"Inscribed slab documenting an expanded theory on celestial mechanics" - while poring over previous experiments an logging their results, the dwarf performing the documentation stumbles upon a 
+trend, which they expand into a new, better theory on the inner workings of the universe.
+
+"Carved treatise on the effects of gasoline on fire" - the dwarf accidentally spills some leftover alchemical compounds onto their light source, causing it to flare up slightly.  The dwarf makes 
+a note of this reaction for future reference.
+
+"Perplexing slab detailing the experimental synthesis of hadrine" - the dwarf, examining experimental results on material properties, comes up with a formula for a new alloy.
+
+"Detailed slab showing the experimental extraction of energy from lustrum" - the dwarf combines some new chemical research to produce a theoretical method for creating coal from an energy-bearing 
+material.
+
+"Carved blueprints for a more efficient javelin caster" - the dwarven alchemical documents reveal that the current method for casting javelins can be significantly improved.
+
+
+--
+
+[3.5] THE TRASH COMPACTOR
+
+This building exists to clean up the clutter left from documentation reactions.  SInce you'll likely be using the training workshops long after unlocking all of the possible advances from 
+documenting alchemical research, this workshop can efficiently take either slabs of accreditation or leftover advancement items and crush them into a dense stone called "amalgamite," which 
+is unremarkable, but colorful.  The trash compactor can also destroy stones, if you so desire.
+
+
+--
+
+[3.6] THE ARCHAEOLOGY LAB
+
+The archaeology lab is constructed using a set of precision tools, an advanced mechanism, a table, a chair, a cabinet, and some building materials.  This building is used to process vanguard 
+artifacts, which you will occassionally find underground.
+
+
+
+-------------
+
+
+[4.0] TIER TWO - EXOTIC WEAPONS, ARMOR, AND ENERGY SOURCES
+
+Unlike tier one, tier two of the tech tree is non-linear.  Each of the possible products of documentation unlocks a different building in tier two of the tech tree.  Once built, these 
+buildings can create more of these items at any time and at no cost, essentially "unlocking" them permanently.  The order in which these technologies will become available to you is based 
+on what items your documentation reactions create first, which is random and adds to the fun.  Don't worry, you'll have them all unlocked pretty quickly (and there is a safeguard in tier three
+in case you happen to be miss one or two).
+
+--
+
+[4.1] EFFICIENT CASTERS
+
+Using the "carved blueprints for a more efficient javelin caster" and an "efficient casting device" from the advanced mechanics workshop, a more efficient metal caster can be built.  This 
+building is identical to the metal caster, but only consumes three bars when producing a stack of 15 javelins (as opposed to five).  Like the metal caster, a magma version is available.
+
+--
+
+[4.2] ENERGY FROM LUSTRUM
+
+The experimental lustrum energy extractor is constructed using the "detailed slab showing the experimental extraction of energy from lustrum."  It can take lustrum rocks and convert them into 
+refined coal (three coal per rock) as a high-yield fuel source.  Lustrum extraction is known to take a toll on the workers, however, and prolonged exposure to lustrum energies can result in 
+fevers and severe coughing fits, which tend to improve after the extraction process is finished.
+
+--
+
+[4.3] THE WEAPONS CONCEPT LABORATORY
+
+The "hastily chiseled image of an exotic-looking weapon" is used to construct the weapons concept lab, which can take three of any weapons-grade bar and produce a random weapon, often of a 
+unique and powerful design.  Though the process does not always bear fruit, it can allow for your arsenal to include some otherwise unavailable weapons, many of which are quite powerful.  This 
+workshop has a magma-powered version as well.  You never know what you're going to get when you fire this workshop up, but I'm sure you'll have a lot of fun with it.
+
+--
+
+[4.4] THE ORRERY
+
+Using the "inscribed slab documenting an expanded theory on celestial mechanics," the orrery can be constructed.  The orrery is one additional training workshop, which can train the student, 
+observer, and teacher skills to make military demonstrations more effective.  Like the tier one training workshops, it produces slabs of accreditation when used.
+
+--
+
+[4.5] THE EXPERIMENTAL MATERIALS WORKSHOP
+
+In order to advance to tier three of the tech tree, you need to acquire a rainbow diamond.  There are two ways of doing this - the easier of the two is through the experimental materials workshop.  
+The experimental materials workshop is created using the "perplexing slab detailing the experimental synthesis of hadrine."  Hadrine is manufactured here in blocks made from mithril, steel, ash, 
+and tungsten.  While manufacturing a block of hadrine, there is a 50% chance of producing a rainbow diamond as a byproduct.  Rainbow diamonds can also be found by acquiring a very rare and 
+powerful creature, which lays them as eggs from time to time.
+
+Hadrine blocks, once synthesized, can be extracted into hadrine strands, which can then be woven into a "woven hadrine mesh."  This item is used in the production of reactive armor.
+
+The experimental materials workshop also has the ability to refine monazite, cooperite, and cobaltite into palladium, neodymium, and cobalt.  These metals will be used in tier three.
+If these ores are unavailable, the "search for trace elements" reaction consumes a few mundane stones for a chance at producing these three bars as well.  None of these reactions require fuel. 
+In addition, neodymium, cobalt, and palladium can all be requested from the dwarven caravan.
+
+--
+
+[4.6] REACTIVE ARMOR
+
+Using hadrine, it is possible for the dwarves to combine advanced materials and mechanisms to create massive, bulky, immensely protective pieces of armor.  Hadrine can be used to fashion a helm, 
+a breastplate, and a shield.  All of these are assembled at the advanced mechanics workshop, and are extremely heavy, but offer unparalleled protection.
+
+-------------
+
+
+[5.0] TIER THREE - HYBRID WEAPONS AND SOME SERIOUS SCIENCE
+
+Once you get a rainbow diamond, you can advance into tier three of the tech tree.
+
+
+--
+
+[5.1] THE CRYSTAL GROWTH TANK
+
+The first tier three building you will be putting up is the crystal growth tank, using a few clear glass boxes and a rainbow diamond.  This workshop can convert mundane stones into colorful 
+crystalline blocks and gems.  In addition to being fun and useful items for construction projects, these colored blocks are required in small quantities for the advanced alchemy lab and 
+prototype workbench.
+
+--
+
+[5.2] THE ADVANCED ALCHEMY LAB
+
+once you have crystalline blocks of the appropriate colors, you can construct an advanced alchemy lab.  Generally, the first thing you want to do with this workshop is to develop a 
+"sorting algorithm," which is a free reaction that unlocks the scientific library.  The advanced alchemy lab performs more specialized versions of the alchemy experiments and transmutation 
+experiments of the original alchemy lab, complete with dangerous byproducts and new rewards.
+
+--
+
+[5.3] WEAPONS UPGRADES
+
+Besides the basic experiment reactions, the advanced alchemy lab can also perform research to improve existing dwarven weapons, or to create new ones entirely.  There are currently two possible 
+paths of advancement, which are completely independent of each other - crossbow advances and magnetic dart advances.
+
+Crossbows are nothing new to Dwarf Fortress, but upgrades are.  Research on crossbows will produce a "tome," which is used at the scientific library to make blueprints for upgrading weapons.  As 
+the tome is advanced from "apprentice" level to "journeyman" and "master," more upgrades become possible for the dwarven crossbow.  At the apprentice level, a bayonet can be attached to a 
+crossbow, giving the weapon an effective stabbing attack.  At journeyman level, the bayonet crossbow can be outfitted with an advanced high-tension mechanism, increasing its ranged power.  
+Finally, at the master level, the mechanized bayonet crossbow can be outfitted with a spring to add additional punch to its bayonet attack.  Tomes are used in the reactions to unlock better 
+tomes, but they are not consumed, as these research reactions are not always successful the first time around.  Bayonet crossbows use the spear skill for their melee attacks.
+
+Researching magnetic projectiles will produce another "tome" for the magnetic dart launcher.  This tome is used at the scientific library to manufacture blueprints for magnetic dart launchers, a 
+new weapon for the dwarven arsenal.  Tomes are also used for the creation of capacitors at the advanced alchemy lab, which are used in dart launcher construction.  The apprentice level tome can 
+be unlocked either through research or by reverse-engineering a rare "bioelectric capacitor," which you might happen to find if a certain special creature dies nearby.  Researching and advancing 
+to the journeyman level allows you to mount a bayonet on the dart launcher, giving it a more useful melee attack.  Advancing again to master level allows you to mount additional capacitors onto 
+the bayonet dart launcher, increasing its ranged power.
+
+The advanced alchemy lab only unlocks these advances and manufactures some of their components.  Actual upgrading of weapons takes place at the prototype workbench, which will be discussed very 
+shortly.
+
+
+--
+
+[5.4] THE SCIENTIFIC LIBRARY
+
+Created from some various furniture and a sorting algorithm from the advanced alchemy lab, this workshop uses the tomes produced in advanced alchemical research to transcribe blueprints for the 
+actual upgrading of weapons.  The scientific library can also create the necessary items for all of the tier two tech tree workshops, in case you happened to miss one or two on the way here.
+
+--
+
+[5.5] THE PROTOTYPE WORKBENCH
+
+Using the blueprints from the scientific library and a handful of components (which vary depending on the weapon), this workshop upgrades crossbows, manufactures and upgrades magnetic dart 
+launchers, and manufactures magnetic darts.  Magnetic darts must be made of a ferromagnetic metal - namely iron, steel, damascus steel, cobalt, or mithril.  Tungsten and voidshard can also be 
+used for magnetic darts, but iron is required in the production of darts of these two metals.  Magnetic darts are produced in stacks of sixty.

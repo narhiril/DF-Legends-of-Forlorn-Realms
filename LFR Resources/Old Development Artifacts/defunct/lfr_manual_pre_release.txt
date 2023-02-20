@@ -1,0 +1,1383 @@
+LEGENDS OF FORGOTTEN REALMS
+
+Version 0.07
+
+-----
+
+[CR0] CREDITS AND LEGAL MUMBO JUMBO
+
+This modification was designed and written by narhiril of the bay12 forums, for Dwarf Fortress.  Please do not
+redistribute this mod in its entirety or any individual features of this mod without consent.  As many of the included
+features of this mod are inspired by other high fantasy universes and real-life technologies, some resemblance to other
+mods is both inevitable and entirely coincidental.
+
+I would like to give special thanks to the following:
+
+From Bay12 forums:
+
+-Ironhand, who taught me everything I know about graphics in DF.
+-Kipi, who graciously provided permissions, raws for the display case, and reaction raws for the foundry (block factory).
+-elf-fondling human, who graciously allowed me to include the pegasoi in this mod and provided the graphics and raws for them.
+-darkflagrance, whose Fortress Defense mod provided me with a frame of reference when writing my own raws.
+-all others who answered questions and provided feedback during my time of exploration with modding DF.
+-Toady One, of course, who made this game possible.
+
+
+Others:
+
+-Josh and Joann, the food service people who made me burritos while I worked on this mod.
+
+
+Questions and comments can be directed to narhiril (bay12forums), or x_narhiril_x@yahoo.com (I check this every couple of days).
+
+
+-----
+
+[TC0] CONTENTS:
+
+[CR0] - credits and legal mumbo jumbo.
+[TC0] - this table of contents.
+[KI0] - known issues.
+[CL0] - change log / version history header.
+	[CL8] - v0.10
+	[CL7] - v0.07
+	[CL6] - v0.06
+	[CL5] - v0.05
+	[CL4] - v0.04
+	[CL3] - v0.03
+	[CL2] - v0.02
+	[CL1] - v0.01
+[IN0] - installation header.
+	[IN1] - notes about balance
+	[IN2] - basic installation instructions
+[NM0] - new metals section header.
+	[NM1] - mithril [0.05a]
+	[NM2] - tungsten
+	[NM3] - iovium and abyssal eyes
+	[NM4] - vanadium and damascus steel
+	[NM5] - shards of the void
+	[NM6] - ether
+[WA0] - new weapons section header.
+	[WA1] - the dwarven javelin thrower
+	[WA2] - javelins (ammo)
+	[WA3] - two-handed weapons
+	[WA4] - other combat tweaks
+	[WA5] - "mood weapons"
+[AR0] - new armor section header.
+	[AR1] - shields
+	[AR2] - body armor
+	[AR3] - leg armor
+	[AR4] - gloves and boots
+	[AR5] - helms
+	[AR6] - clothing
+[CV0] - civilizations section header.
+	[CV1] - the meowkin
+	[CV2] - the bog trolls
+	[CV3] - the voidwalkers
+	[CV4] - the lizardmen
+	[CV5] - the nephilim
+[FC0] - friendly creatures section header.
+	[FC1] - tortoises
+	[FC2] - pegasoi (by elf-fondling human)
+	[FC3] - cave oysters
+	[FC4] - will o' wisps
+[DC0] - deadly creatures section header.
+	[DC1] - the devourer of the depths
+	[DC2] - wyverns
+	[DC3] - leviathans
+	[DC4] - damascus sentinels
+	[DC5] - deep wolves
+	[DC6] - behemoths
+	[DC7] - aatxes
+	[DC8] - masters of locusts
+	[DC9] - banshees
+[NP0] - new plants section header.
+	[NP1] - bluebells and dwarven whiskey
+	[NP2] - the thyme has come
+	[NP3] - widow's tear
+	[NP4] - tonicbriar
+	[NP5] - voracious maw and atrophic bliss
+	[NP6] - winding spire
+	[NP7] - tatterstone's buckle
+	[NP8] - pygmy lime
+	[NP9] - prism star
+	[NPA] - shankweed
+	[NPB] - vine and drops of xanadu
+	[NPC] - herald's horn
+	[NPD] - courage oak
+	[NPE] - mousebulb
+[NB0] - changes to dwarven nobility header.
+	[NB1] - the champion
+	[NB2] - the dungeon master
+	[NB3] - the local legend
+[SC0] - dwarven science and construction section header.
+	[SC1] - the alchemy lab
+	[SC2] - random synthesis
+	[SC3] - reverse engineering
+	[SC4] - other alchemy reactions
+	[SC5] - the foundry
+	[SC6] - the display case
+[RC0] - manual compatability fixes header.
+	[RC1] - changes to the entity_default file for proper functionality. 
+	[RC2] -	changes to the item_weapon file for proper functionality.
+[PQ0] - FAQ about mood weapon attributes.
+
+
+------
+
+[KI0] KNOWN ISSUES
+
+Tiles for minerals, items, etc. do not play nicely with graphics sets other than Ironhand's.  I will work to resolve this issue once I have tested all of the
+actual features and released a stable version.
+
+The syndrome associated with ethereal weapons does not work.  This is due to the fact that [SYN_CONTACT] requires the material to be a contaminant in order
+to work.  Until this is changed or a new token introduced, the idea will have to be shelved for now.
+
+
+------
+
+
+[CL0] CHANGE LOG / VERSION HISTORY
+
+This log will be numbered in reverse, with the most recent changes on top.
+
+[CLx] v0.0x
+
+--
+
+[CL8] v0.10 (upcoming)
+
+First public release on Bay12 forums.  Fixed a bug with sentinel core research reaction that was preventing the products from showing up.  Added meowkin
+merchant guards.  Tweaked bog troll and voidwalker ethics.  Changed the unpicked color of mousebulb to yellow to differentiate from bluebells (oversight).
+Finalized entity lore files.  Tweaked lizardmen to make them show up more often (they were starting in a relatively rare biome not present in all worlds).
+
+Note: Because of difficulties with diplomatic relations, voidwalkers carry the [ITEM_THIEF] token, meaning that a lone voidwalker will periodically show up
+(stealthed) and try to steal something.  This is inconsistant with the lore files, which imply that the voidwalkers have nothing to gain from stealing dwarven
+stuff, but I needed a token that would force hostilities.
+
+Added Files:
+
+(none)
+
+
+Modified Files:
+
+lfr_manual.txt
+entity_meow.txt
+entity_bog.txt
+entity_void.txt
+entity_lizardmen.txt
+reaction_alchemy_narhiril.txt
+plant_narhiril.txt
+lore_nephilim.txt
+
+--
+
+[CL7] v0.07
+
+Added the long-overdue graphics for voidwalkers.  Added child graphics to meowkin and lizardmen.  Added two new reactions to alchemy lab.
+Pre-production is now complete.  This version will undergo a little more testing before being released as v0.10.
+
+Ether, unfortunately, is showing up in caravans a lot more often than intended.  The importing of large quantities of this metal are limited by its extremely
+high value, but seeing every dwarf merchant stride in with an entire company of ethereal spears is detrimental to the mod's intentions and immersion factor.
+For this reason, ether will likely be the target of a drastic re-working sometime in the near future.
+
+Added Files:
+
+lfr_voidwalkers.png
+
+Modified Files:
+
+lfr_meowkin.png
+lfr_lizardmen.png
+graphics_lfr_custom.txt
+reaction_alchemy_narhiril.txt
+
+--
+
+[CL6] v0.06
+
+Added alchemy and associated files.  Added banshees and will o' wisps.  Added Kipi's block factory (renamed "foundry") and display case.
+Added nephilim graphics.  Tweaked a few frequency values for creatures.  Added new noble position and graphics for bog trolls.  Moved a
+spoiler-related creature to the creature_easter_egg.txt file (from creature_legendary_narhiril.txt).  Added a spoiler-related new helmet.  
+Added graphics for all non-entity creatures.  Removed placeholder graphics for all creatures that used them.
+
+Added Files:
+
+reaction_alchemy_narhiril.txt
+building_alchemy_narhiril.txt
+building_foundry_kipi.txt
+building_display_case_kipi.txt
+reaction_foundry_kipi.txt
+lfr_nephilim.png
+lfr_bog_trolls.png
+lfr_assorted_creatures.png
+lfr_tortoise.png
+
+Modified Files:
+
+creature_narhiril.txt
+entity_default.txt
+entity_bog.txt
+creature_bog.txt
+creature_easter_egg.txt
+creature_legendary_narhiril.txt
+graphics_lfr_custom.txt
+graphics_lfr_easter_egg.txt
+item_weapon_narhiril.txt
+
+
+
+--
+
+[CL5] v0.05
+
+Fixed a bug with lizardmen and bog trolls that was causing them to die out during worldgen.  Lizardmen can now breathe underwater as well.
+Nephilim will now build castles in adventure mode.  Axes and associated graphics have been added to lizardmen and meowkin to allow them to
+cut wood for fuel.  Added a new creature, the master of locusts.  Added stones and metal associated with alchemy (will have no effect without
+alchemy lab, which will be in the next version).  Updated to compatability with DF v0.31.25.
+
+Added Files:
+
+(none)
+
+Modified Files:
+
+entity_bog.txt
+entity_lizardmen.txt
+entity_meow.txt
+creature_lizardmen.txt
+creature_bog_troll.txt
+entity_nephilim.txt
+lfr_meowkin.png
+lfr_lizardmen.png
+graphics_custom_lfr.txt
+creature_deep_narhiril.txt
+inorganic_metal_narhiril.txt
+inorganic_stone_mineral_narhiril.txt
+
+--
+
+[CL4] v0.04
+
+Added nephilim civilization and associated other files.  Added several new plants.  Also added graphics for meowkin, behemoths, and
+damascus sentinels.
+
+
+Added files:
+
+lore_nephilim.txt
+creature_nephilim.txt
+entity_nephilim.txt
+item_toy_nephilim.txt
+item_instrument_nephilim.txt
+lfr_sentinel.png
+lfr_behemoth.png
+lfr_meowkin.png
+spoiler_lfr folder and associated image files.
+graphics_lfr_easter_egg.txt
+inorganic_other_narhiril.txt
+
+Modified files:
+
+creature_lizardmen.txt
+graphics_lfr_custom.txt
+creature_legendary_narhiril.txt
+creature_narhiril.txt
+entity_meow.txt
+plant_narhiril.txt
+item_weapon_narhiril.txt
+
+--
+
+[CL3] v0.03
+
+Added elf-fondling human's pegasoi as a friendly creature.  Graphics and RAWs created by elf-fondling
+human - all I did was integration.  Added graphics for lizardmen and graphical support for bog trolls
+with Ironhand's graphics pack.  If there ends up being demand for it, I may do unique graphics for bog trolls.
+
+Added files:
+
+item_armor_narhiril.txt
+item_toy_special.txt
+creature_pegasus_efhuman.txt
+graphics_pegasus.txt
+graphics_lfr.txt
+graphics_lfr_custom.txt
+pegasus.bmp
+lfr_lizardmen.png
+creature_easter_egg.txt
+
+Modified files:
+
+(too many to accurately list)
+
+--
+
+[CL2] v0.02
+
+Updated files for compatability with v0.31.21.
+Note that new changes and tokens will make this incompatable with any versions prior to v0.31.19.
+
+Fixed an issue with meowkin and voidwalker nobility not being appointed properly.
+
+Added files:
+
+language_VOID.txt
+creature_lizardmen.txt
+entity_lizardmen.txt
+lore_lizardmen.txt
+
+Modified files:
+
+entity_void.txt
+entity_meow.txt
+item_weapon_narhiril.txt
+most of the lore files
+
+
+--
+
+[CL1] v0.01
+
+First version :)
+
+
+-----
+
+
+
+[IN0] INSTALLATION:
+
+
+
+
+[IN1] Notes:
+
+A few new races (some friendly, some not so much) are included as a feature of this mod.  They are included by default, but can
+be easily removed by removing their associated entity and creature files (all should be clearly labelled).
+
+If you elect to remove any of these new races (particularly the more hostile ones), the game may become considerably
+easier for you.  The new features of the mod are meant to expand and diversify the dwarven civiliation, and the new races are
+meant to prevent these additions from becoming overly powerful.  Yes, your dwarves may be able to hack apart goblin ambushes
+a little more effortlessly with this mod, but wait until your fortress gets rushed by bog trolls or a damascus sentinel strolls
+in from below.  If you live long enough, you might even find yourself on the recieving end of challenges far greater and full of
+surprises that no kobold abductor could hope to match.
+
+Suffice to say, certain races won't take kindly to your amassment of riches, booze, and power, and some of these races
+have considerably nastier toys than your average goblin mischief maker.
+
+Much of this mod was tested alongside the Fortress Defense mod.  While it does not include or require/use
+any of Fortress Defense's features or races,  I have written the file names and code so as not to conflict with anything 
+in Fortress Defense.  This mod can safely be installed on top of FD, or vice versa.  For those who haven't checked out 
+darkflagrance's Fortress Defense, I highly recommend it.
+
+It has come to my attention that the tile numbers I have used for plants, metals, etc are only compatable with Ironhand's graphics pack.  While the
+mod will still work with other graphics (or no graphics), things might appear differently than intended.  I will try to get modified versions of this
+mod to work compatably with both default ASCII tiles and other popular graphics packs, but this may take me some time and testing/bugfixing is a higher
+priority at the moment.
+
+
+[IN2] The Actual Installation:
+
+overwrite "entity_default.txt" and "item_weapon.txt" with the provided versions.
+
+If you are using another mod that already modifies one or both of these files, you can still use this mod, 
+but it will require some manual file editing on your part.  If this is the case, see section [RC1] and/or [RC2].
+
+
+If you have overwritten the default files with those provided, you can safely ignore sections [RC1] and [RC2].
+
+
+
+
+------
+
+
+[NM0] METALS
+
+A few new ores and alloys with several goals: to weaken the necessity for Dwarves to embark on flux,
+to add more options for effective blunt weapons, and to bridge the massive power gap between steel and "cotton candy."
+
+
+[NM1] Mithril:
+
+Mithril, previously released as a stand-alone mini-mod, is back with only minor changes.
+Mithril in its mineral form, "raw mithril," can be found as small clusters within any igneous rock,
+or as the rare mithril vein within obsidian.  Mithril, in its smelted form, is brittle and useless for
+just about everything, but can be refined at a smelter, taking four bars of low-grade mithril and 
+producing a single bar of mithril in its pure form, which is comparable to steel in effectiveness,
+but slightly lighter and without the prerequisite of flux stone.  Mithril is a brilliant red color.
+It has a material value of 20 (low-grade) or 70 (refined).
+
+Changes to Mithril from v0.04b:
+
+A few changes to wording.  Items made from impure mithril are called "impure mithril (item)." Reactions have been changed 
+to "smelt mithril ore" and "refine impure mithril bars."
+
+Mithril's density has been lowered from 7850 (identical to steel) to 5850.  This will make mithril armor and weapons lighter,
+and is meant to differentiate mithril from the new damascus steel (discussed later).
+
+
+
+[NM2] Tungsten:
+
+TUngsten is an uncommon metal found on Earth as a mineral called "wolframite," from which it derives
+its IUPAC symbol on the periodic table ("W").  Wolfamite is a natural compound of iron, manganese, and
+tungsten, which can be broken down into its constituent parts by sufficient heat (magma forge) or in the
+presence of carbon (coke) at a lower relative temperature.  Manganese is another metal I hope to include for
+alloying purposes later.
+
+Wolframite occurs naturally in a variety of minerals - most notably quartz.  In this mod, attempting to 
+find some balance between rarity and real-life occurance, wolframite is found as veins within quartz and mica,
+and as small clusters within microcline and orthoclase.  Smelting wolframite will produce a tungsten bar, and
+has an additional (10%) chance of producing an iron bar as well.
+
+Tungsten is notable for its density and its hardness.  It is magma-safe and makes a better bludgeoning weapon than
+silver, though it isn't very effective for blades or armor.  Tungsten is used in modern-day applications for its hard and 
+heat-resistant properties, including lightbulb filaments, kinetic projectiles (as a non-pyrophoric substitute for depleted uranium), 
+and in alloys such as tungsten carbide.  Tungsten carbide can be used effectively in blades but is, unfortunately, beyond 
+the technology level of the dwarves to synthesize (it requires molten tungsten, which requires a temperature of
+over 16000 urists, whereas magma is only 12000).
+
+Tungsten is meant to be a metal used for bludgeoning weapons and as a moderate value (15) decoration, as well
+as in magma-safe components.
+
+
+
+
+[NM3] Iovium and Abyssal Eyes:
+
+Prepare for some !!SCIENCE!!
+
+Iovium is meant to be the end-game metal for bludgeoning weapons, from the Latin word for Zeus ("Iovis").  Iovium is a fictional 
+name given to a theoretical element, unbihexium (element 126), which is of interest in the scientific community due to its position 
+right in the middle of the theorized "island of stability," where the number of protons and neutrons are though to be such that the shape 
+of the nucleus will be spherical and thus, will be much less radioactive than other superheavy elements.  The properties of Iovium are
+a combination of theorized and fictional numbers.  In Dwarf Fortress, it is roughly 5 times the density of silver, and carries a molar
+mass of 310000 (310.000, based on the most stable theoretical isotope).  The half-life of Unbihexium-310 has been theorized as anywhere from
+a few minutes to millions of years, and the only attempt to synthesize it in a laboratory thus far has been unsuccessful.  In this representation,
+I am assuming that its half life is long enough and its chain of decay harmless enough not to cause any syndromes.  In Dwarf Fortress, it is simply
+a super-heavy (though not nearly as heavy as slade) weapon material meant for hammers, mauls, and a few new weapons (see weapons section).
+
+Iovium ore ("iovite") can be found only as small clusters within bauxite, granite, cinnabar, and jet.  Because it is very rare,
+Iouvium carries a material value of 100 - second only to the 300 of "cotton candy."  This is meant to limit importing of large
+quantities of the metal from the Dwarven caravan.  Iovium clusters sometimes contain vibrant gemstones called "abyssal eyes," which
+carry a material value of 150 - the highest value of any gemstone.
+
+Smelting iovite requires an additional unit of fuel, for both regular and magma forges.
+
+Unlike tungsten, iovium is not magma safe.
+
+
+
+[NM4] Vanadium and Damascus Steel:
+
+Meant to be an upgrade to steel, damascus steel is inspired by the lost art of middle-eastern swordsmiths.  It is characterized by the unusual
+wave-like patterns contained within it - a byproduct of the forging process.
+
+Examination of weapons forged from damascus steel under electron microscopes has revealed that the forging process was actually capable of creating 
+nanocarbon rods within the blades. While the original art of production has been lost, damascus steel is thought to be an alloy of high-carbon 
+steel and vanadium, forged in a crucible and hammered and folded extensively.  In this mod, damascus steel is an alloy of one part steel, one part coke, 
+and one part vanadium.
+
+Vanadium is found as an ore called patronite (which is found in quartz) or as ferrovanadium, a natural alloy with iron, within gabbro.  Smelting
+patronite will yield a bar of vanadium.  Smelting ferrovanadium will yield a bar of vanadium and a bar of iron.  Vanadium is magma-safe, but an
+unfit material for weapons, armor, and ammunition.  It can be used for low value furniture or craft production, or for damascus steel production.
+
+Damascus steel is magma-safe.  It is slightly more dense than steel, but also stronger (~20%) and more valuable.  Its material value is 45 - 
+ever so slightly greater than the sum of its parts.
+
+
+
+[NM5] - Shards of the Void:
+
+Shards of the Void are small, semi-organic slivers which compose a metal of unknown origin called "voidshard".  No ore of voidshard is known to exist, 
+and its properties are inconsistant with any alloys of any known metals.  As such, it is impossible for dwarves to obtain or create this metal directly.  
+The only confirmed weapons and armor made of voidshard are in the hands of the voidwalkers (discussed in civilizations section).  How these unusual
+beings came to possess this material is veiled in secrecy - what is known is that the voidwalkers are not afraid to strike down anyone of any
+race who would attempt to glean their secrets.  Due to the magnificent properties of their metal of choice, they are able to do this with
+unparalleled efficiency.
+
+Dwarves can not acquire voidshard without defeating a voidwalker extermination attempt, which is a herculean task in and of itself.  Voidshard
+salvaged from the battlefield can be melted down into voidshard bars, which can be used to forge weapons and armor of obscene power and value.
+Though adamantine forges better blades and armor, voidshard is a relatively close second.  The glimmering black armor and weapons of a voidwalker 
+extermination force are feared by even the most powerful of creatures and civilizations.
+
+Voidshard, for all of its mythical properties, is not magma safe.  In fact, it violently explodes in extreme temperatures.  The otherworldy vapors
+produced in this reaction are as deadly and feared as any weapon.
+
+
+[NM6] - Ether
+
+Ether is a fabled substance thought to exist in the space between the known world and the realm of the gods.  Ether has supernatural properties.  It is
+the second lightest material in the game - only about four times the density of adamantine, and able to hold an edge not quite as sharp, but statistically 
+comparable to voidshard.  Ether cannot be mined - instead, it must be synthesized by an alchemist in a dangerous procedure with an extremely low success rate.
+Ether is magma-safe.
+
+NOTE: Ether was supposed to cause a syndrome upon contact with certain creatures, but this idea had to be scrapped due to technical difficulties.  The remnants
+of this code have not been removed from the raws, but should not affect anything.
+
+-----
+
+
+[WA0] WEAPONS
+
+A variety of weapons have been added to the game, with properties derived from their real-life counterparts.
+Some of these weapons are available from the get-go, but others are considerably more difficult to obtain.
+
+
+
+[WA1] The Javelin Thrower:
+
+The javelin thrower is a new breakthrough in Dwarven technology.  After losing several remote outposts to
+the bog trolls (discussed later), who absorbed massive amounts of crossbow fire without even flinching,
+the Dwarves realized that they needed a ranged weapon that packed more of a punch.  The resulting years of methodical
+!!SCIENCE!! produced a great number of mangled corpses,  severed limbs, inexplicable burning wreckage, and the
+javelin thrower.  
+
+The javelin thrower is a two-handed crossbow of enormous size, meant solely for the purpose of
+hurling a special ammunition at enemies with a dangerous amount of force.  While the crossbow was
+designed to allow for hunters to kill animals without ruining the valuable meat and body parts, the
+javelin thrower has no qualms about rendering enemies unrecognizable.  The javelin thrower uses javelins,
+which are cast at a smelter (for technical reasons) out of metal bars, but are quite expensive - one bar
+only produces three javelins, as opposed to the 25 crossbow bolts produced per bar at a forge.  The size of javelins
+also prohibits rangers from carrying as many of them in their quivers.  This weapon is designed as a weapon to be
+fired from the battlements to help break a siege, with a nearby ammo stockpile.  Novice marksmen are probably
+better off using a crossbow, while master crossbowmen will make these precious few shots much more effective.
+
+The Javelin Thrower is meant to function as an in-between to the crossbow and the ballista siege engine.  Since the
+ballista cannot, regrettably, fire across z-levels, I felt inclined to design something more powerful than a crossbow
+that could.  The javelin thrower, unlike the ballista, does NOT strike multiple targets.
+
+
+[WA2] Types of Javelins:
+
+Javelins, furthermore, are divided into three subtypes.
+
+Broadhead javelins (the most fun, in my opinion), are javelins with a broad, sharpened cutting head.
+These are designed to open arteries, cut tendons, and even sever limbs.  Full decapitation is not unheard of.
+
+Piercing javelins are more traditional javelins, focusing all of their kinetic energy to a sharp point.  These
+are made to pierce tough hides and strike vital organs, and are the most effective javelins against large
+foes and megabeasts.  These javelins were designed to kill bog trolls, but have found themselves useful against
+a variety of targets.
+
+Hammerhead javelins are blunt javelins, which are most effective when cast out of high-density metals not suitable
+for other types of javelin (i.e. lead).  They are designed to smash through armor - and skulls.  
+
+
+
+[WA3] The Age of the Two-Hander:
+
+Two-handed weapons previously unavailable to Dwarves have had their [MINIMUM_SIZE] fields reduced below 60000.
+This requires either replacing item_weapon.txt with the version included in this mod (easy), or modifying the file 
+manually if compatibility is a concern (also easy, but harder than just replacing - this is covered in a later section).
+
+Dwarves have been tweaked in the entity_default file to allow manufacture of the maul, greataxe, and two handed sword.  This allows
+dwarves to sacrifice their shield-carrying ability for more damage, although this tends to be a more worthwhile sacrifice for more skilled 
+combatants, who can make up for this newfound weakness with dodging and parrying.
+
+Dwarves also have a new weapon in their arsenal - the glaive: a massive, two-handed spear with both a point and a substantial cutting edge.
+
+
+
+[WA4] Other Tweaks:
+
+Dwarves can now produce arrows and blowdarts (you will still need to acquire bows and blowguns by normal means).
+
+The short sword has been renamed the "gladius."  Its [ITEM_WEAPON] identification tag has not been changed.
+
+The long sword has also been added to the Dwarven arsenal.
+
+The goblins have been given a new spear-type weapon (it isn't the glaive).
+
+Elves have been given two of the three new types of bow.
+
+Humans have been given two new types of blunt weapon.
+
+
+
+[WA5] Mood Weapons:
+
+"Mood weapons" are specialty weapons.  With only a few exceptions (ten or so, I think), they are not used by any races.  They are called "mood weapons" for two 
+reasons.  The first is that, if you like, you can add them to any race's arsenal, depending entirely on your own preferences.  The second is that 
+the only way to acquire these weapons is by a dwarf in a strange mood.  "Mood weapons" use existing skills, but add some new attacks and 
+styles to combat.  An example is the jitte - a sword that deals blunt damage.  Some of these weapons are considerably
+more powerful than their normal counterparts, adding new attacks and (sometimes) combat log wording befitting of their status
+as legendary artifact weapons. One example is the serrated axe, which is basically an axe with an additional and very powerful
+attack using its sawtoothed blade.  Other weapons are full of even more surprises.  I don't wish to give too much more away, but 
+there are a substantial number of these weapons added to the RAWs.  If you want to ruin the surprise for yourself, peek into the item_weapon_narhiril file.
+
+One thing is clear.  EXPECT NEW LEVELS OF BRUTALITY.
+
+There are currently well over sixty different types of these "mood weapons," mostly based on real weapons from middle-age
+cultures around the world, and these use a wide variety of combat attributes.  This list does not include the javelin thrower or the glaive, and
+50(ish) of these weapons are not currently used by any civilizations (but feel free to add them as you wish).
+
+This list includes...
+19 new types of sword.
+11 new types of spear.
+4 new types of whip.
+7 new types of dagger.
+5 new types of axe.
+1 new type of mining weapon.
+5 new types of hammer.
+4 new types of mace.
+6 new types of crossbow.
+3 new types of bow.
+1 new type of pike.
+1 new "punching" weapon.
+
+5 of these new weapons are actually "dual" weapons.
+
+Dual weapons are considered small two-handed weapons.  Strikes in the combat log with left and right weapons are simply different attacks.  These weapons,
+currently, cannot be split and are considered one two-handed item ("pair of (weapon name)s").  They also are utterly vicious in combat
+
+Watching a weaponsmith produce "Kolshmistar (made up name), a mithril pitchfork" will hopefully surprise and excite you as much as it does me.
+
+The FAQ/spoiler section and/or a typical Google search should tell you all you need to know about any weapon types you don't recognize.
+
+Ok, I promise I won't give any more away now.
+
+
+
+
+-----
+
+
+[AR0] ARMOR
+
+The advancement of Dwarven weapons technology, along with the advent of the bog trolls, has not occured without similar developments in
+the field of personal protection.  While the two-handed weapons attempt to steal the spotlight on the battlefield, new types of armor and
+shields have been developed in the interest of - well, veriety, for one, because that's fun - and for keeping the dwarf in the spotlight
+alive to fight another day.
+
+
+[AR1] Shields:
+
+The tower shield has been added to the dwarven arsenal.  A massive, weighty shield, it provides more protection and block rate for those who
+elect to use one-handed weapons.  The humans have developed a similar design.
+
+A new civilization carries two unique types of shield.  The aegis and the bastion are powerful shields which vary slightly - the aegis has slightly better 
+protection, while the bastion has slightly better block rate.  Both are significantly more advanced than even the dwarven tower shield, due in no small part 
+to the mysterious technologies of their creators.  If you are very lucky, a dwarf in a strange mood may take inspiration from these designs and fashion a 
+similar, powerful piece of armor for your civilization.
+
+In the spirit of "mood weapons," a few (currently 4) additional types of shield have been added to the game and left unused (for now, anyways).  One of these 
+shields is slightly superior to the buckler, one is slightly superior to the default shield, and two are slightly superior to the tower shield.
+
+
+[AR2] Body Armor:
+
+A new civilization uses a special, ornate kind of chain armor that is statistically identical to regular chainmail.  However, since these items are "large,"
+they cannot be worn if they are taken from an invasion force.  Dwarves can, however, produce similar dwarf-sized items in strange moods.
+
+
+[AR3] Leg Armor:
+
+Humans have been given the plate skirt, which is a 33% more protective variant of the greaves with slightly (10%) poorer coverage.  In other words, it absorbs
+impacts a bit better due to having room to yield, but it has a big hole in the bottom.  Dwarves can produce similar, dwarf-sized items in strange moods.
+
+
+[AR4] Gloves and Boots:
+
+A new civilization uses a new type of glove and boot that are statistically identical to the gauntlet and high boot.  However, since these items are "large,"
+they cannot be worn if they are taken from an invasion force.  Dwarves can, however, produce similar dwarf-sized items in strange moods.
+
+
+[AR5] Helms:
+
+Dwarves can produce the "great helm," a helm that is much larger than the typical helmet.  This helmet is meant to be an indicator of military
+authority, and to better protect the head of an important military dwarf.  This helm requires three bars of armor-grade metal to forge.
+
+A new civilization uses two new types of helm that are statistically identical to the dwarven helm.  However, since these items are "large,"
+they cannot be worn if they are taken from an invasion force.  Dwarves can, however, produce similar dwarf-sized items in strange moods.
+
+
+[AR6] Clothing:
+
+Two of the new civilizations use unique articles of clothing.  Similar clothing may be produced my dwarves in strange moods.  This clothing is meant
+to add diversity to civilizations, and should not have a significant effect on combat.
+
+
+
+-----
+
+
+[CV0] CIVILIZATIONS
+
+With armor and weapons augmented, civilizations seemed the next logical aspect to expand upon.  These new civilizations borrow some
+ideas both original and from other fantasy universes and attempt to weave them together into a world of societies which is both unique 
+and diverse.
+
+[CV1] The Meowkin:
+
+The meowkin are inspired by four concepts.  They are, in no particular order, kittens, mittens, weird japanese anime,
+and crossdressing, The meowkin are a friendly (albeit slightly perverse) humanoid race with feline ears, paws, tails, and 
+whiskers.  They will trade with your civilization and have a particular affinity for toys and cages - and they are not
+always clear on the distinctions between the two.  More on the meowkin in the lore_meow.txt file, which is
+included with this mod.
+
+NOTE: I did not make a "yarn ball" toy for the meowkin.  My own cat nearly died from playing with a yarn ball at a young age, so I refuse
+to make one on principle.  If you REALLY want a yarn ball, I think the guys over on the S.L.A.D.E. mod ought to be able to help you, just
+remember to add it to the entity file.
+
+[CV2] The Bog Trolls:
+
+The bog trolls are a subspecies of troll that live independantly from the goblins.  They are large, muscular creatures who love to
+fight and have caused considerable disruptions to civilizations and trade routes in the past.  More on the bog trolls in the 
+lore_bog_troll.txt file, which is included with this mod.
+
+[CV3] The Voidwalkers:
+
+An ancient civilization that predates the dwarves, the voidwalkers compose a secretive race that, for unexplained reasons, is motivated
+to perform periodical brief and brutal displays of power.
+
+Voidwalkers are hybrid insect-humanoid creatures with extremely powerful weapon technology.  They are meant to test the new technologies of the dwarves
+and push them to their limits.  More on the voidwalkers can be found in the lore_void.txt file, which is included with this mod.
+
+[CV4] The Lizardmen:
+
+Lizardmen are a young race of bipedal reptiles.  They are a primitive society, and are highly xenophobic.  The lizardmen perform ambushes
+and raids on other civilizations, but avoid open or prolonged conflicts, as they are badly outgeared by the organized militaries of other
+civilizations.  Lizardman settlements are conquered frequently, but seem to spring up anew within a few years of their destruction.  As
+these conquests yield little in the way of riches, most civilizations fight them defensively, repelling their ambushes and keeping
+watch over the borders of their lands.  More on the lizardmen in the lore_lizardmen.txt file, which is included with this mod.
+
+[CV5] The Nephilim:
+
+"Nephilim" is a hebrew word roughly meaning "the fallen."  As a race, the nephilim resemble the angels of Christianity - pale humanoid
+beings with feathered wings and long, flowing hair.  Nephilim are hostile to most of the other races of the world, and are bound
+by their religion to exterminate those who are morally inferior to them.  The nephilim are decent fighters, with the knowledge
+of both the production of steel and flight.  If you share a region of the world with them, Nephilim "crusades" will begin against you 
+when your population exceeds 50 dwarves.  More on the nephilim in the lore_nephilim.txt file, which is included with this mod.
+
+-----
+
+[FC0] FRIENDLY CREATURES
+
+"Friendly" is a relative term.  These creatures are relatively harmless, and many of them have practical uses.  Some are annoying, but not
+by any means dangerous under normal circumstances.
+
+
+[FC1] - Tortoises:
+
+Tortoises are large but harmless reptiles that can be tamed as pets or used as mounts by some civilizations.  They graze infrequently, and
+move slowly, making them relatively ineffective in combat.  Tortoise shells are somewhat valuable, and tortoises are the only breeding 
+(non-vermin) source of shells in the game.
+
+[FC2] - Pegasoi (by elf-fondling human):
+
+Before any debate begins, pegasoi is, in fact, the correct Greek spelling of the plural of pegasus.  Pegasoi are creatures that can be found in some
+good forest and shrubland biomes.  They are large, winged horses with the ability to fly.  Some civilizations use them as mounts.  Pegasoi do not
+graze or trample grass.  Concept, statistics, and graphics for this creature were done by elf-fondling human of the bay12 forums.  Because permission has been 
+graciously given to use this in LFR, this creature uses its own creature file (modularity - it's a theme here).
+
+[FC3] - Cave Oysters:
+
+Originally developed for an odd forum request, I've decided that the flying cave oyster, ridiculous though it may be, belongs in this mod because
+it brings the pearl - a legendary material coded, but never seen in Dwarf Fortress - out of the shadows and into the game.  Flying cave oysters are, for
+lack of a better word, flying cave oysters.  They are shelled creatures who have evolved a pair of small wings to escape from predators in the caverns.
+Flying cave oysters can be shot down by marksdwarves, and while their shell typically breaks upon contact with the ground, they are known to drop
+"flying cave oyster pearls," which fulfill the requirements for the "decorate with pearl/ivory" reaction.  They can be found in the first cavern level.
+
+[FC4] - Will O' Wisps:
+
+Benign spirits that hum softly and inhabit the deep caverns.  The air around them is chilly, hovering at a temperature just above freezing.  Will o' wisps
+don't really serve a purpose - I was intending to give them a low chance to drop ectoplasmic remnants (discussed later), but the [ITEMCORPSE] token does not
+have a probability modifier - it's all or nothing for now.
+
+
+-----
+
+
+[DC0] DEADLY CREATURES
+
+Not all creatures are civilized, and this mod would not be complete without due attention to the forms of life not bound into
+organized civiliations.  Some of these creatures (from the previous section) are docile, but many of them are anything but.  This
+section describes the creatures of nightmares that dwarven legends are made of.  Hunting them can bring great risk or great reward.
+
+
+[DC1] - The Devourer of the Depths:
+
+Below the dwellings of the cave spiders and giant cave spiders are larger and even more dangerous arachnids.  These creatures
+live for over a hundred years, and are roughly ten times the size of the average giant cave spider.  Dubbed "devourers of the
+depths," colossal arachnids such as these spin webs of death and biologically synthesize deadly poisons in the dark and forbidden
+caverns just above the magma sea.  Devourers of the depths are formiddable foes, but rarely are seen in significant numbers.  Their
+webs are highly prized, as they are used in production of the finest silk in the known world.  Devourers avoid traps (sorry, you'll
+have to get creative if you want to farm their silk).
+
+A note - these things are TOUGH.  Tough enough to be evenly matched with as many as three or four damascus sentinels, or an entire squadron of 
+military dwarves.  It is advisable, if you must fight one, to do so at range and try to incapacitate it quickly before it has time to tear the limbs 
+off of your legendary axedwarf.
+
+[DC2] - Wyverns:
+
+Wyverns are a new type of megabeast.  They are brilliant red winged serpents, similar in size to dragons.  They also breathe dragonfire, and are
+immune to pain, fear, nausea, traps, and paralysis.  Unlike their puny dragon cousins, wyverns can fly.  Wyverns are meant to be more challenging
+than regular dragons - because of their immunities to pain, fear, and nausea, a lucky opening strike will not be as effective at stopping their 
+rampage.  Befitting of their legendary status, items made from the parts of a slain wyvern are extremely valuable.
+
+[DC3] - Leviathans:
+
+Leviathans are rare creatures that inhabit the dark underwater abyss.  They are sometimes brought to the surface by violent storms or volcanism.  Though
+they are not seen very often, leviathans are extremely dangerous foes that are capable of surviving for periods of time without water.  Many ships have been
+dragged down to a watery grave by these beasts.  Like those of wyverns, a leviathan's body parts are extraordinarily valuable.
+
+[DC4] - Damascus Sentinels:
+
+Scattered throughout the dark caverns of the world are isolated structures of unknown origin.  Though most of these structures are so ancient that they are nearly
+indistinguishable from natural features, they are sometimes guarded by mysterious living statues of damascus steel, which fervently defend the ruins of their masters.
+Nameless, ageless, and deathless, these constructs are oblivious to the fact that their purpose has long since been lost to time.  Periodically, these constructs will
+wander about the deep caverns, searching for enemies or resources that no longer exist.  If encountered, these creatures will fight tirelessly until their enemies are
+dead or until they no longer have the structural integrity to continue fighting.  As these sentinels are made of a high-strength steel alloy, destroying or disabling
+them is incredibly difficult.  They know no thought, no pain, no fear, no weakness, and no remorse.  Damascus sentinels are quite powerful, and vulnerable only
+to weapons made from the highest quality of metals, or creatures of extraordinary strength (i.e. devourers).
+
+Damascus sentinels are stronger and larger than iron men and are only found in the deepest cavern levels.  Like iron men, they emit gases when their outer shell is
+punctured, but these gases do not carry a syndrome.  A single sentinel will demolish anything without enough power to penetrate its shell, and a pair of these 
+constructs is a match for even an adept and well-geared squadron of soldiers.  Damascus Sentinels leave masterwork damascus steel clockwork pendants upon death, which
+is the only way that this unusual trade good can be obtained.
+
+There is a hidden feature related to these creatures, but I don't want to spoil too much of the fun.  Suffice to say, if you see a modified damascus sentinel with an
+unusual name, remember that great risk comes with great reward.
+
+[DC5] - Deep Wolves:
+
+A strange subspecies of wolf that lurks in the first and second cavern levels.  Deep wolves are small and weak individually, but attack and travel in large packs.
+Their sheer numbers are enough to overwhelm most trap systems or individual dwarves, though they are not immune to traps.  Deep wolves are easily frightened if their
+numerical advantage starts to dissipate.  A half-decent militia with full sets of mid-level equipment will easily dispatch a pack of these creatures, but they can
+cause mass hysteria if they catch dwarves off guard.  Deep wolves are not found on the third cavern level, presumably because they have no defense against damascus 
+sentinels or devourers.
+
+[DC6] - Behemoths:
+
+Behemoths are megabeasts nearly as large as dragons.  The earth shakes as they walk.  The first recorded sightings of these creatures were been in the deserts, but
+some have been known to wander great distances.  In addition to their powerful physical strength, behemoths give off a terrible stench under duress, which sickens 
+the stomach of most affected creatures.  These four-legged titans live for eons, unless slain.
+
+[DC7] - Aatxes:
+
+Aatxes (pronounced ah-chays) are bulls corrupted and twisted into enormous, pseudo-humanoid forms by malevolent spirits.  They are much larger than minotaurs, and
+much more massive and deadly.  They are semi-megabeasts that inhabit the gloomy caves of the world.  Aatxes are prone to mad rampages across vast territories,
+destroying anything in their path.
+
+[DC8] - Masters of Locusts:
+
+Humanoid creatures with bat-like wings, masters of locusts are a disorganized species without any known culture or settlements.  They are able to speak and learn 
+to equip weapons and items, but seem to have no desire to do anything other than wander their desert homelands.  Masters of locusts are named for the great swarms
+of biting insects they bring with them.  If attacked in combat, a master of locusts will use this cloud of insects to obscure, bite, and otherwise hinder attackers
+while the creature uses the commotion to mount its defense.  Locust bites are painful and can draw some blood.  While these creatures are able to sometimes overwhelm
+unprepared dwarves, they are vulnerable to ranged weapons, as the swarms of locusts do not stray far from their masters.
+
+[DC9] - Banshees:
+
+Banshees are very rare creatures that roam savage biomes.  They are vengeful spirits who have lost most of their influence over the material world, and wander around,
+shrieking, in search of forgotten enemies. Putting a banshee to rest will yield an ectoplasmic remnant, which is discussed in more detail in the alchemy section.
+
+[DCx] - Other Creatures:
+
+There are a few other creatures included in this mod which are not listed in this manual, though some are hinted at in the lore files.  Most of these creatures are
+extremely rare, "easter egg" type creatures deemed unneeded, overly unrealistic, or game-breaking if they were anything other than isolated encounters.  However, since
+some of these creatures were quite amusing, I have included them in a seperate file named creature_easter_egg.txt.  If you do not wish to include these creatures, this
+file can be safely removed without any effect on the rest of the mod.  However, if you do choose to include this file, all it does is allow for the possibility of
+encountering one of these extremely rare creatures from time to time, which shouldn't affect gameplay much, if at all.
+
+
+
+-----
+
+[NP0] PLANTS
+
+These are a variety of new plants aimed at broadening the spectrum and providing the always-desirable new forms of alcohol, food, thread, and wood.  Many of these
+plants are aimed at providing high-value materials and food, but carry inherent drawbacks or risks to offset these gains.
+
+
+[NP1] - Bluebells and Dwarven Whiskey:
+
+Bluebells are small, bright blue mushrooms that grow above ground year-round in most climates.  They can be eaten raw,
+cooked, or brewed into a special dwarven alcoholic delicacy: Uncle Urist's Old Number Nine whiskey - a relatively valuable type of
+booze.
+
+[NP2] - The Thyme Has Come:
+
+I couldn't resist that pun.  Thyme is another above-ground plant.  It grows year-round in most climates, but is considerably rarer than bluebells.
+Thyme cannot be eaten raw or brewed, but has a very high material value for a plant (10) and can be ground at a quern or millstone, 
+tripling its value and making it an excellent cooking ingredient.  Thyme is the first of the new "advanced cooking" ingredients that
+I plan to introduce.
+
+[NP3] - Widow's Tear:
+
+Widow's tear is an extremely dense underground tree, found starting in the second cavern level.  Its wood, when cut, reveals 
+intricate and mystifyingly complex patterns.  This wood makes unusually effective ammunition, considering that it is organic.
+
+[NP4] - Tonicbriar:
+
+Tonicbriar is an underground plant found on all cavern levels.  It cannot be eaten raw or cooked due to its foul taste, but brews into a mid-value
+form of alcohol known as bubbly briar tonic.  It grows in all seasons except for summer.
+
+[NP5] - Voracious Maw and Atrophic Bliss:
+
+Voracious maw is the anti - sun berry.  It can only be found in terrifying (SAVAGE and EVIL) biomes.  Though its growth cycle is 3 times 
+longer than most plants, it does grow year-round.  Voracious maw petals can be cooked, or the plant can be brewed into a strong
+liquor, equal in value to sunshine: "atrophic bliss."  However, despite its appeal to the senses, brewers of this spirit
+should be very careful with fire.  Boiling atrophic bliss, when inhaled, causes intense internal bleeding known
+as "atrophic aftershock," which is named for the dwarves and other mortals whose lives have wasted away from addiction
+to the drink or from inhalation of its dangerous vapors.  It is uncommon for a dwarf or other creature struck by atrophic
+aftershock to survive long enough to be diagnosed or treated - death is typically swift, messy, and excrucitating.
+
+Very bold dwarves have even considered weaponizined this drink, but have encountered staunch resistance from the legions of
+others who find its consumption value more appealing than its prospective defensive capabilities.
+
+[NP6] - Winding Spire:
+
+Winding spires are tall and twisted, but otherwise unremarkable mushrooms found on all cavern levels.  They can be eaten raw,
+cooked, or brewed into "spire draught," a low value alcoholic drink.  Winding spires can be "unwound" into thread, but this thread
+is rough in texture and less valuable than many other common textile crops.  Winding spires grow year-round.  They are extremely 
+versatile, able to be eaten raw or used in, cooking, thread, and alcohol, but sacrifice value for this versatility.
+
+[NP7] - Tatterstone's Buckle:
+
+Named for Avuz Tatterstone, the dwarven spelunker who is credited with its discovery, this plant grows only in the darkest depths of the world,
+far away from the warmth of the sun.  The square heads of this unusual plant give off a faint light in the depths.  Tatterstone made his fortune
+selling samples of these plants to dwarves, elves, men, and any others who would buy them.  The thread produced from the careful dissection of these
+plants is softer than velvet and cloth made from these fibers repels water, but allows air to pass through.  Because of its comfort, clothing made
+from Tatterstone's buckle fiber is extremely valuable - more so than any other plant-derived textile.  Garments and crafts of this cloth are considered
+lucky among some dwarves - though such luck did not seem to rub off on Tatterstone himself, who squandered away his fortune and died without a silver coin
+to show for his discovery.
+
+[NP8] - Pygmy Lime:
+
+A miniature lime tree that grows in most above-ground regions.  Its small fruits can be cooked or brewed into the mid-value spirit called "lime vodka."
+The tree is too small to yield any useable wood, but the fruits can be processed into pygmy lime zest, which is a valuable cooking ingredient in the 
+kitchens of the wealthy.  Pygmy limes, mostly because of their size, are an easy food source to many wandering herbavores.  As a result, undisturbed
+pygmy limes are uncommon in the wild, but can sometimes be found in small clusters during spring and summer months.  Once their seeds are obtained and
+cultivated, they become a much more viable resource.
+
+[NP9] - Prism Star:
+
+A rare plant that grows in savage biomes.  Prism star is a summer vine with large, white flowers which reflect and bend sunglight.  This unusual color can 
+be made into a high-value dye called "prismatic essence," which will transfer some of this unusual lustre to a piece of cloth.  Prismatic essence is
+much more valuable than any other dye.
+
+[NPA] - Shankweed:
+
+A knife-shaped plant that collects dew in wet biomes.  Shankweed can be brewed into "moonshine," which is perhaps better described as "piss in a barrel."  Moonshine
+is the alcohol of the underbelly of Dwarven society.  If not brewed, shankweed can also be eaten raw, cooked, or ground into a fern green dye.  Shankweed grows
+very fast - three times faster than most other plants.  If you grow shankweed, you'll never run out of it - but if you have other plants, you might wish you did.
+
+[NPB] - Vine and Drops of Xanadu:
+
+The vine of xanadu is a plant of legends.  It can be found in savage-good biomes, and is quite rare, but has a striking yellow color which is hard to miss.  This rare
+plant brews into "drops of xanadu," the game's most valuable alcohol by an order of magnitude.  This plant takes many months to reach maturity.  Be very careful
+not to trample these, as their growth cycle is ten times longer than the average plant.  They can be grown in farms, but acquiring the seeds necessary for such
+an operation is quite a task.
+
+[NPC] - Herald's Horn:
+
+Herald's horn is another plant, which is also a high value but faster-growing version of the vine of xanadu.  It is still very rare, but does not require a 
+savage-good biome, and is instead found on the bottom cavern level.  Instead, it cannot be grown on farms - in order to get a hold of it, you'll have to go 
+into the deepest caverns and get it yourself.  With great risk comes... you get the idea.  Herald's horns are a brilliant light blue color.
+
+[NPD] - Courage Oak:
+
+A tree that seems to defy logic, flourishing only in biomes where animated corpses walk the earth.  This plant is slightly more valuable than other types of wood.
+
+[NPE] - Mousebulb:
+
+Mousebulb is a plant that was created as a joke and slipped into the raw folder of a friend to surprise (and confuse) them when brightly-colored mushrooms started 
+popping up everywhere.  Because I couldn't bear to leave it out of a mod that includes just about everything I've ever made for Dwarf Fortress, mousebulb is
+included in this mod.  It is identical to bluebells in everything but color and rarity (it's slightly less common), and produces a mid-value spirit called
+"rodent rum."
+
+
+-----
+
+
+[NB0] NOBILITY CHANGES
+
+A few tweaks to Dwarven nobility.
+
+
+
+[NB1] - the Champion:
+
+The champion is now appointed by the Mayor.  He is no longer exempt from menial labors.  He also can now command a mini-squad of "honor guards."
+
+
+[NB2] = the Dungeon Master:
+
+The dungeon master is, like the champion, now appointed by the mayor.
+
+
+[NB3] - the Local Legend:
+
+This new position is appointed as needed/desired by the player.  Dwarves in this position require only a bedroom and a cabinet.  The intention here
+was to make specific dwarves, like legendary craftsmen and fighters, easier to find without having to use the cluttered units page.  No duties, mandates,
+or demands are attached to this position.  Local legend title holders are exported into legends mode.
+
+If you don't like this feature, there is no downside to not appointing anyone to this position.  It is, however, available from the start.
+
+
+
+-----
+
+[SC0] - DWARVEN SCIENCE AND CONSTRUCTION
+
+The principles of !!SCIENCE!! have been applied to new workshops with new reactions.  Now, your dwarves can do !!SCIENCE!! in your fortresses.
+
+[SC1] - the Alchemy Lab:
+
+The alchemy lab is a new building designed by the finest dwarven scientists.  The alchemy lab can be built with SHIFT+L in the workshop menu, and requires
+a bucket and any building material.  It is probably best if you build this workshop somewhere secluded.  You've been warned.
+
+[SC2] - Random Synthesis:
+
+The alchemy lab can be used to conduct alchemical experiments.  In these experiments, an alchemist takes ten stones and a single unit of fuel, and goes to the
+alchemy lab.  The resulting experiment has a plethora of possible results.  It can produce bars of gold, silver, copper, pig iron, or the extremely rare
+ethereal bar, a new metal only available through this reaction.  Ectoplasmic residue is also known to sometimes come out of these reactions.
+
+However, as great risk comes with great reward - great reward also comes with great risk.  Alchemy is the most dangerous job a dwarf can perform, as the experiments
+can go very wrong, producing anything from fairly harmless foul-smelling gas to potentially lethal clouds of energy and radiation.  Your alchemists will keep your
+healthcare industry busy during times of peace.
+
+[SC3] - Reverse Engineering:
+
+Reverse engineering is surrently composed of two reactions.  "Salvage clockwork pendant" will produce between one and three damascus steel (magma-safe) 
+mechanisms from a clockwork pendant, which is dropped by damascus sentinels.  Unlike all other reactions at the alchemy lab, this one does not require fuel.
+"Conduct sentinel core research" requires something much rarer, related to the special variant of the damascus sentinel mentioned in the deadly creatures section.  
+This reaction is much riskier, and can produce a beautiful weapon of a unique design, or a highly dangerous byproduct.
+
+[SC4] - Other Alchemy Reactions:
+
+There are two other alchemical reactions that can be conducted at the alchemy lab, which aren't nearly as dangerous.  The first is to turn ten worthless stones
+into a single bar of gold (95% success rate - alchemy isn't a perfect science).  The second involves ectoplasmic residue left by banshees when they die, or
+very rarely created in a random synthesis reaction.  By returning the drained soul of a banshee to the ether, the freed spirit will reward a successful
+alchemist with a highly valuable token of its thanks.
+
+[SC5] - the Foundry:
+
+Another new workshop aimed at making megaprojects easier.  Since the mason's workshop does not allow you to choose which stones are used for blocks (at least
+without mucking around with permissions), the foundry contains custom reactions for each type of stone blocks.  Note that the list of reactions is quite
+extensive, so it is probably easier to simply order the blocks you want via the manager.  The foundry is built with SHIFT+F in the workshop menu.
+
+Kipi from the Bay12 forums provided the idea, permission, and reaction raws for this building.
+
+
+[SC6] - the Display Case:
+
+Another Kipi original, the display case is a building that is constructed with blocks, a clear glass box, and any item (to be displayed).  This building can
+be used to display an artifact.
+
+-----
+
+
+
+
+[RC0] MANUAL COMPATABILITY FIXES
+
+
+ONLY use this guide if you cannot overwrite your entity_default or item_weapon files due to pre-existing modifications.
+If you have used this mod's replacement versions of these files, these changes have already been done for you.
+
+This section contains minor spoilers about a small number of mood weapons.
+
+
+[RC1] required changes to entity_default.txt
+
+Add to dwarves ([ENTITY:MOUNTAIN]):
+
+	[AMMO:ITEM_AMMO_ARROWS]
+	[AMMO:ITEM_AMMO_BLOWDARTS]
+	[SHIELD:ITEM_SHIELD_TOWER]
+	[HELM:ITEM_HELM_GREAT:COMMON]
+	[WEAPON:ITEM_WEAPON_JAVELIN_THROWER]
+	[WEAPON:ITEM_WEAPON_AXE_GREAT]
+	[WEAPON:ITEM_WEAPON_MAUL]
+	[WEAPON:ITEM_WEAPON_GLAIVE]
+	[WEAPON:ITEM_WEAPON_SWORD_LONG]	
+	[PERMITTED_REACTION:REFINE_MITHRIL]
+	[PERMITTED_REACTION:SMELT_MITHRIL]
+	[PERMITTED_REACTION:SMELT_UNBIHEXIUM]
+	[PERMITTED_REACTION:MAKE_DAMASCUS]	
+	[PERMITTED_REACTION:MAKE_JAVELINS_ONE]
+	[PERMITTED_REACTION:MAKE_JAVELINS_TWO]
+	[PERMITTED_REACTION:MAKE_JAVELINS_THREE]
+	[PERMITTED_BUILDING:ALCHEMY_LAB_LFR]
+	[PERMITTED_REACTION:GOLD_SYNTHESIS]
+	[PERMITTED_REACTION:RANDOM_SYNTHESIS]
+	[PERMITTED_REACTION:ECTO_ALCHEMY]
+	[PERMITTED_REACTION:SALVAGE_CLOCKWORK]
+	[PERMITTED_REACTION:CORE_RESEARCH]
+	[PERMITTED_BUILDING:DISPLAY_CASE]
+	[PERMITTED_BUILDING:BLOCK_FACTORY]
+	[PERMITTED_REACTION:SANDSTONE_BLOCK]
+	[PERMITTED_REACTION:SILTSTONE_BLOCK]
+	[PERMITTED_REACTION:MUDSTONE_BLOCK]
+	[PERMITTED_REACTION:SHALE_BLOCK]
+	[PERMITTED_REACTION:CLAYSTONE_BLOCK]
+	[PERMITTED_REACTION:ROCK_SALT_BLOCK]
+	[PERMITTED_REACTION:LIMESTONE_BLOCK]
+	[PERMITTED_REACTION:CONGLOMERATE_BLOCK]
+	[PERMITTED_REACTION:DOLOMITE_BLOCK]
+	[PERMITTED_REACTION:CHERT_BLOCK]
+	[PERMITTED_REACTION:CHALK_BLOCK]
+	[PERMITTED_REACTION:GRANITE_BLOCK]
+	[PERMITTED_REACTION:DIORITE_BLOCK]
+	[PERMITTED_REACTION:GABRO_BLOCK]
+	[PERMITTED_REACTION:RHYOLITE_BLOCK]
+	[PERMITTED_REACTION:BASALT_BLOCK]
+	[PERMITTED_REACTION:ANDESITE_BLOCK]
+	[PERMITTED_REACTION:DACITE_BLOCK]
+	[PERMITTED_REACTION:OBSIDIAN_BLOCK]
+	[PERMITTED_REACTION:QUARTZITE_BLOCK]
+	[PERMITTED_REACTION:SLATE_BLOCK]
+	[PERMITTED_REACTION:PHYLLITE_BLOCK]
+	[PERMITTED_REACTION:SCHIST_BLOCK]
+	[PERMITTED_REACTION:GNEISS_BLOCK]
+	[PERMITTED_REACTION:MARBLE_BLOCK]
+	[PERMITTED_REACTION:TALC_BLOCK]
+	[PERMITTED_REACTION:JET_BLOCK]
+	[PERMITTED_REACTION:PUDDINSTONE_BLOCK]
+	[PERMITTED_REACTION:PETRIFIED_WOOD_BLOCK]
+	[PERMITTED_REACTION:GRAPHITE_BLOCK]
+	[PERMITTED_REACTION:KIMBERLITE_BLOCK]
+	[PERMITTED_REACTION:REALGAR_BLOCK]
+	[PERMITTED_REACTION:ORPIMENT_BLOCK]
+	[PERMITTED_REACTION:STIBNITE_BLOCK]
+	[PERMITTED_REACTION:MARCASITE_BLOCK]
+	[PERMITTED_REACTION:SYLVITE_BLOCK]
+	[PERMITTED_REACTION:CRYOLITE_BLOCK]
+	[PERMITTED_REACTION:PERICLASE_BLOCK]
+	[PERMITTED_REACTION:ILMENITE_BLOCK]
+	[PERMITTED_REACTION:RUTILE_BLOCK]
+	[PERMITTED_REACTION:CHROMITE_BLOCK]
+	[PERMITTED_REACTION:PYROLUSITE_BLOCK]
+	[PERMITTED_REACTION:PITCHBLENDE_BLOCK]
+	[PERMITTED_REACTION:BAUXITE_BLOCK]
+	[PERMITTED_REACTION:BORAX_BLOCK]
+	[PERMITTED_REACTION:OLIVINE_BLOCK]
+	[PERMITTED_REACTION:HORNBLENDE_BLOCK]
+	[PERMITTED_REACTION:KAOLINITE_BLOCK]
+	[PERMITTED_REACTION:SERPENTINE_BLOCK]
+	[PERMITTED_REACTION:ORTHOCLASE_BLOCK]
+	[PERMITTED_REACTION:MICROCLINE_BLOCK]
+	[PERMITTED_REACTION:MICA_BLOCK]
+	[PERMITTED_REACTION:CALCITE_BLOCK]
+	[PERMITTED_REACTION:SALTPETER_BLOCK]
+	[PERMITTED_REACTION:ALABASTER_BLOCK]
+	[PERMITTED_REACTION:SELENITE_BLOCK]
+	[PERMITTED_REACTION:SATINSPAR_BLOCK]
+	[PERMITTED_REACTION:ANHYDRITE_BLOCK]
+	[PERMITTED_REACTION:ALUNITE_BLOCK]
+
+In the dwarven noble position raws, locate and change the following values:
+	
+
+	Under [POSITION:CHAMPION] ...
+
+	Delete the [MENIAL_WORK_EXEMPTION] tag.
+	Delete all of the the [APPOINTED_BY:DUKE/COUNT/BARON] tags, and in their place add the following lines:
+	
+	[SQUAD:3:honor guard:honor guards]
+	[APPOINTED_BY:MAYOR]
+
+
+	... Leave the other tags alone.
+
+	
+	Under [POSITION:DUNGEON_MASTER]...
+
+	Delete all of the the [APPOINTED_BY:DUKE/COUNT/BARON] tags, and in their place add the following line:
+
+	[APPOINTED_BY:MAYOR]
+
+
+	... Once again, leave the other tags alone.
+
+
+	Somewhere directly before a [POSITION] tag, or at the end of these listings, add the following lines:
+
+	
+	[POSITION:LOCAL_LEGEND]
+		[NAME:local legend:local legends]
+		[SITE]
+		[NUMBER:AS_NEEDED]
+		[ACCOUNT_EXEMPT]
+		[APPOINTED_BY:EXPEDITION_LEADER]
+		[APPOINTED_BY:MAYOR]
+		[PRECEDENCE:150]
+		[EXPORTED_IN_LEGENDS]
+		[DO_NOT_CULL]
+		[CHAT_WORTHY]
+		[COLOR:5:0:0]
+		[REQUIRED_BEDROOM:1]
+		[REQUIRED_CABINETS:1]
+
+
+	... Now you can move on to the next step.
+
+
+
+Add to the elves ([ENTITY:FOREST])
+	[WEAPON:ITEM_WEAPON_BOW_GREAT]
+	[WEAPON:ITEM_WEAPON_BOW_RECURVE]
+
+
+Add to the humans ([ENTITY:PLAINS])
+	[WEAPON:ITEM_WEAPON_CLUB]
+	[WEAPON:ITEM_WEAPON_MALLET]
+	[SHIELD:ITEM_SHIELD_TOWER]
+	[PANTS:ITEM_PANTS_PLATE_SKIRT]
+
+Add to the goblins ([ENTITY:EVIL)]
+	[WEAPON:ITEM_WEAPON_PITCHFORK]
+
+Feel free to add weapons to any race you like, including other custom or mod races.  There are over 50 "mood weapons" to choose from, some of which are much
+more powerful than others.  The changes above, however, are the only ones I have included in the mod so far.
+
+
+
+
+[RC2] required changes to item_weapons.txt
+
+	locate the entries for.. 
+	
+	[ITEM_WEAPON:ITEM_WEAPON_MAUL]
+	[ITEM_WEAPON:ITEM_WEAPON_SWORD_2H]
+	[ITEM_WEAPON:ITEM_WEAPON_AXE_GREAT]
+	
+	...under each of these entries, change [MINIMUM_SIZE:62500] to [MINIMUM_SIZE:#####]
+	In this entry, "#####" should be replaced by a number less than 60000 (I used 52500).
+
+	This will allow dwarves to wield these weapons, as an adult dwarf's size is 60000.
+	If you want to enable the wielding of other two-handed weapons as well (which I did),
+	also make this change for...
+
+	[ITEM_WEAPON:ITEM_WEAPON_HALBERD]
+	[ITEM_WEAPON:ITEM_WEAPON_PIKE]
+
+
+
+
+Assuming you moved all of the other text files with non-conflicting names into your RAWs, the mod should now function properly.
+
+
+
+
+
+
+
+
+
+
+
+-----
+
+
+
+
+
+
+
+
+[PQ0] Potential confusion section.
+
+
+This section contains some spoilers about mood weapons in order to clarify what attributes these weapons use.
+
+As some of these weapons seem to encompass multiple attributes, the attributes selected for weapons that do not clearly
+fit into Dwarf Fortress' categories are listed below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Scroll down if you still want to see.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To dispell any pending confusion:
+
+-The halberd, while not a new weapon, still uses its default axe skill.  It is a default weapon in item_weapon, and has not been modified apart from [MINIMUM_SIZE].
+-The lance is the only new pike.  The default pike has had its [MINIMUM_SIZE] reduced.  All other pike-like weapons use the spear skill.  
+-The lucerne polehammer uses the spear skill - NOT the hammer skill, as its name would suggest.
+-The butterfly knives and khukri use the dagger skill.
+-The machete uses the sword skill.
+-The only new mining weapon should be VERY obvious when it shows up.  It is not the battle pick.
+-The battle pick uses the mace skill - NOT the mining skill.
+-The jitte, as previously mentioned, uses the sword skill.
+-The club uses the hammer skill.
+-The kusari-gama uses the whip skill.
+-The claws use the dagger skill.
+-The arbalest uses regular bolts and the crossbow skill.  Its melee attack uses the hammer skill.
+-The urumi uses the whip skill - it's technically a sword, but its use is more akin to a whip, and I have too many swords already.
+-The keris uses the sword skill.
+-The cudgel uses the mace skill.
+-The mallet uses the hammer skill.
+-The cinquedea uses the dagger skill.
+-The giant fork uses the spear skill.
+-The giant spoon uses the hammer skill.
+-The gastraphetes uses the crossbow skill and arrows for its ranged attack, and the hammer skill for its melee attack.
+-The repeating crossbow (chu ko nu) is identical to the crossbow, but fires blowdarts.
+-The crowbar uses the mace skill.
+-The rake uses the spear skill.
+-The knuckles are a two-handed weapon and use the striker skill.  They are currently the only weapon to do so.
+-The new bows, without exception, have "bow" in their name, use the bow skill, and use arrows.  If it doesn't have "bow" in the name, it isn't a bow.
+-The melee attacks for the new bows use the mace skill, except for the great bow which uses the spear skill instead.
+-The staff, quarterstaff, and the void hurling staff all use the spear skill.  The void hurling staff uses the spear skill for its ranged attack as well.
+-The void energy projector and the void hurling staff both use a new type of ammunition, which the dwarves cannot produce.
+-If the voidwalkers are removed from the game, your moody dwarves might still produce a void hurling staff or void energy projector.  These will still function
+properly, but the dwarves will not be able to forge ammunition for them.

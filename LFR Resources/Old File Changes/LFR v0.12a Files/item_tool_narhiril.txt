@@ -1,0 +1,48 @@
+item_tool_narhiril
+
+[OBJECT:ITEM]
+
+[ITEM_TOOL:ITEM_TOOL_ADVMECH_LFR]
+[NAME:mechanisms:mechanisms]
+[ADJECTIVE:advanced]
+[VALUE:30]
+[METAL_MAT]
+[TILE:128]
+[SIZE:100]
+[MATERIAL_SIZE:1]
+
+[ITEM_TOOL:ITEM_TOOL_TREATISE_LFR]
+[NAME:treatise on the effects of gasoline on fire:treatises on the effects of gasoline on fire] yes, this is a homestarrunner reference
+[ADJECTIVE:carved]
+[VALUE:80]
+[HARD_MAT]
+[TILE:128]
+[SIZE:1000]
+[MATERIAL_SIZE:2]
+
+[ITEM_TOOL:ITEM_TOOL_THEORY_LFR]
+[NAME:slab documenting an expanded theory on celestial mechanics:slabs documenting expanded theories on celestial mechanics]
+[ADJECTIVE:inscribed]
+[VALUE:120]
+[HARD_MAT]
+[TILE:1000]
+[SIZE:25]
+[MATERIAL_SIZE:2]
+
+[ITEM_TOOL:ITEM_TOOL_HADRINE_UNLOCK_LFR]
+[NAME:slab detailing the experimental synthesis of hadrine:slabs detailing the experimental synthesis of hadrine]
+[ADJECTIVE:perplexing]
+[VALUE:250]
+[HARD_MAT]
+[TILE:128]
+[SIZE:1000]
+[MATERIAL_SIZE:2]
+
+[ITEM_TOOL:ITEM_TOOL_LUSTRUM_UNLOCK_LFR]
+[NAME:slab showing the experimental extraction of energy from lustrum:slabs showing the experimental extraction of energy from lustrum]
+[ADJECTIVE:detailed]
+[VALUE:250]
+[HARD_MAT]
+[TILE:128]
+[SIZE:1000]
+[MATERIAL_SIZE:2]

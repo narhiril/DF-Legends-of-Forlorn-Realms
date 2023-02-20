@@ -1,0 +1,110 @@
+A quick reference guide for current reactions in the LFR ritual tree.
+
+For more detail on religion in LFR and the gods to whom these reactions and buildings are dedicated, consult the lore_pantheon.txt file.
+
+----
+Contents
+
+[B1] TEMPLE COMPONENT FOUNDRY
+[B2] SACRIFICIAL ALTAR
+[B3] SHRINE OF PROSPERITY
+[B4] SHRINE OF VICTORY
+[B5] SHRINE OF NATURE
+[B6] TEMPLE OF FIRE
+
+----
+
+[B1] TEMPLE COMPONENT FOUNDRY
+
+Requirements:
+No special requirements
+
+Reactions:
+
+Create overgrown pedestals - takes 1 stone and 1 plant
+Create enormous gold goblets - takes 6 gold bars
+Create studded silver candelabra of conquest - takes 5 silver bars and 2 rough gems
+
+
+--
+[B2] SACRIFICIAL ALTAR
+
+Requirements:
+No special requirements
+
+NOTE: All rituals at this building except for the banshee funeral rite have a chance of producing a harmful byproduct (more likely with lesser rituals).
+
+
+Reactions
+
+Banshee funeral rite - takes an ectoplasmic remnant, produces a phantasmal statue
+
+Lesser ritual of shelter - takes 5 plants, can produce shields, helmets, gems, and logs
+Greater ritual of shelter - takes 15 plants, can produce better shields, great helms, and a unique weapon in addition to larger quantities of the items from the lesser ritual.
+
+Lesser ritual of sustinance - no consumed reagent, fills a bucket with water...  sometimes.
+Greater ritual of sustinance - takes a live vermin, fills a bucket with water.
+
+Lesser ritual of power - takes a totem, can produce bolts, gems, and a unique blunt weapon.
+Greater ritual of power - takes 3 totems, can produce better bolts, gems, javelins, a unique blunt weapon, a unique bladed weapon, and a unique trap component.
+
+Lesser ritual of wealth - takes 500 coins, can produce arrows, blowdarts, gems, or a unique weapon.
+Greater ritual of wealth - takes 1500 coins, can produce white gold bars and crafts in addition to the products of the lesser ritual at a greater frequency.
+
+Lesser ritual of knowledge - takes 3 cloth, can produce magma-safe barrels, buckets, and mechanisms.
+Greater ritual of knowledge - takes 10 cloth, can produce magma-safe barrels, bins, buckets, mechanisms, a recipe for cheese (very rarely), and precision tools (very rarely).
+
+Kogut's first sacrifice - takes 1 overgrown pedestal, 1 enormous gold goblet, and 1 silver candelabra of conquest, produces Kogut's magical fish food.
+
+--
+
+[B3] SHRINE OF PROSPERITY
+
+Requirements:
+4 enormous gold goblets
+
+Reactions:
+
+Prayer for celebration - no consumed reagent, fills an empty barrel or pot with high-value alcohol (occasionally).
+Prayer for fortune - no reagent, produces bars of economic alloys (occasionally).
+Ritual of prosperity - takes 5 gold crafts, produces three flux stones (~ half of the time), can produce high-value gems rarely.
+
+---
+
+[B4] SHRINE OF VICTORY
+
+Requirements:
+4 studded silver candelabras of conquest
+
+Reactions:
+
+Prayer for fortitude - no reagent, produces iron bars (occasionally).
+Ritual of victory - takes 8 goblets, produces an anvil.
+Create torchbearer gargoyle - takes an iron statue, produces an iron torchbearer gargoyle.
+
+---
+
+[B5] SHRINE OF NATURE
+
+Requirements:
+4 overgrown pedestals
+
+Reactions:
+
+Prayer for amnesty - no reagents, produces a unique type of soap (occasionally)
+Ritual of nature - takes 5 seeds, can produce wooden bolts, wooden javelins, potash, and shields.
+
+---
+
+[B6] TEMPLE OF FIRE*
+
+Requirements:
+4 torchbearer gargoyles (see shrine of victory), carved treatise on the effects of gasoline on fire*, advanced mechanisms*
+
+NOTE: Because this is a hybrid building, some of these components come from the mechanical tree.  It is listed here because it behaves like other ritual buildings.
+
+Reactions:
+
+Prayer for industry - no reagents, produces flux stones or coal (occasionally).
+
+---

@@ -1,0 +1,60 @@
+A quick reference guide to the more complex armor upgrade and construct creation reactions in LFR's tech tree.  This file is provided to assist those of you who are in tier four and up, as the 
+game does not do a particularly good job of letting you know exactly how many resources are required for each reaction.
+
+For more information on the tech tree, including earier tiers, consult the lfr_mechanical_tech_tree.txt file.
+
+----
+
+Contents
+
+[B1] MECHANIZED DEFENSE LABORATORY
+[B2] DWARVEN SPIDER DEPLOYMENT HUB
+
+----
+
+
+[B1] MECHANIZED DEFENSE LABORATORY
+
+This building is the main hub for mechanized construct development and assembly.
+
+
+Requirements:
+
+Four capacitors
+A sorting algorithm
+Two catalytic converters
+Three advanced mechanisms
+A precision tool kit
+A table
+A chair
+An anvil
+
+
+
+Reactions:
+
+Fabricate bronze spider chassis - takes 2 bronze bars, produces a bronze spider chassis.
+Fabricate spider control module - takes a copper bar, two advanced mechanisms, two capacitors, and two lustrum rocks, produces a spider control module.
+Fabricate mechanical spider eye - takes a copper bar, two advanced mechanisms, and a piece of raw clear glass, produces a mechanical spider eye.
+Assemble bronze spider deployment kit - takes a mechanical spider eye, spider control module, bronze pipe section, and bronze spider chassis, produces a bronze spider deployment kit.
+
+Search cache for viable construction components - takes a mech parts cache, can produce random parts and components used in constructs.
+
+---
+
+[B2] DWARVEN SPIDER DEPLOYMENT HUB
+
+This building is used as a base for assembling and stationing spiders.  It should be placed where you want to set up a spider swarm, as spiders cannot be penned/pastured.
+
+
+Requirements:
+
+One capacitor
+
+
+Reactions:
+
+Assemble bronze spider - takes a bronze spider deployment kit, produces a dwarven bronze spider*.
+
+*NOTE: this reaction cannot be successfully performed by a dwarf with an active transformation (i.e. any ritual units).  Bear this in mind when you choose your mechanic!
+*NOTE: this reaction is not always successful (due to the unreliable nature of inhaled syndromes).

@@ -1,0 +1,9 @@
+item_weapon_rift_lfr
+
+[OBJECT:ITEM]
+
+ITEM_WEAPON:ITEM_WEAPON_PENDULUM_AXE
+NAME:pendulum axe:pendulum axes
+
+ITEM_WEAPON:ITEM_WEAPON_DEMON_RIPPER
+NAME:blessed scythe:blessed scythes

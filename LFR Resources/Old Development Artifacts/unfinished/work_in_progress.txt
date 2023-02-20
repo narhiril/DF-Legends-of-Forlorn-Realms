@@ -1,0 +1,30 @@
+[CREATURE:KEEPER_OF_KEYS_LFR]
+[DESCRIPTION:A small, timid, humanoid creature.  It darts from hiding place to hiding place in the deep caverns, trying to protect a key to an unknown lock.]
+[NAME:keeper of keys:keepers of keys:keeper]
+[ITEMCORPSE:
+
+[CREATURE:SIREN_LFR]
+[DOES_NOT_EXIST]
+[FANCIFUL]
+[DESCRIPTION:A semi-divine being in the legends of sailors, said to lure enthralled captives to their inevitable doom.]
+[NAME:siren:sirens:siren]
+
+[CREATURE:CRYSTAL_DRAGON_LFR]
+[DESCRIPTION:An ancient dragon whose hide has hosted jagged crystal formation due to its long slumber in a deep cavern.  Awoken and provoked, this creature is a formiddable adversary.]
+[NAME:crystal dragon:crystal dragons:draconic]
+
+[CREATURE:GIANT_SQUID_LFR]
+[DESCRIPTION:A huge, white squid that rarely sees sunlight.  Mariners have reported sightings of these while fishing and in storms, but such sightings had been largely discredited until very recently.]
+[NAME:giant squid:giant squids:giant squid]
+
+
+[CREATURE:
+
+[PLANT:
+
+[ARMOR:ITEM_ARMOR_BODICE]
+[NAME:bodice:bodices]
+
+[WEAPON:ITEM_WEAPON_TORCH]
+[NAME:torch:torches]
+

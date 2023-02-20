@@ -1,0 +1,81 @@
+(b) = block
+(e) = exclusive
+
+--
+HEXES
+
+class 1 (HEX_LFR)
+	Temanat's rust hex
+	Mind burn
+	Headwind
+	Earth's grasp
+	Rock tomb
+	Thunder wave
+	Umbral darkness
+	Disturb calm
+	Rakshasa stun
+	Cowardice
+class rift (RIFT_HEX_LFR)
+	temporal distortion field
+class block1 (HEX_IMMUNITY)
+	hex immunity
+	paragon immunity
+	void aegis
+	chant of purity
+class none
+	Thunderclap
+	void mist inhalation
+	other material effects
+	Undead bane
+
+PLAGUES
+
+class 1 (PLAGUE_LFR_CLASS1)
+
+
+--
+BUFFS
+
+class 1
+	dwarf steadfast
+	dwarf stone skin
+	dwarf jet stream agility
+class 2
+	dwarf tailwind
+	dwarf dark barrier
+	dwarf shadow cloak
+class 3
+	void aegis
+	reflective scales
+	chant of purity
+	visthel's shield
+class morale
+	(e) nephilim morale boost
+	(e) rift warden will break
+class none
+	mist form
+	void mist empowerment
+	other material effects
+
+--
+ABILITIES
+
+class 1 (ABILITY_LFR_CLASS1)
+	crystal dragon shards
+	calm before the storm
+	visage of a dark power
+class 2 (ABLITY_LFR_CLASS2)
+	secret of growth
+	paragon immunity
+	rakshasa illusions
+class emp (EMP_LFR)
+	(b) emp
+	(b) rune anti-machine effect
+	maintain power
+	drone launch
+	drone host self-repair
+class block1 (ABILITY_BLOCK_CLASS1)
+	(b) disturb calm class 1
+	(b) rune dampening
+class block2 (ABILITY_BLOCK_CLASS2)
+	(b) rune dampening

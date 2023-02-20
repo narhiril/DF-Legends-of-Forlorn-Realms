@@ -1,0 +1,208 @@
+A quick reference guide for current reactions in the LFR ritual tree.
+
+For more detail on religion in LFR and the gods to whom these reactions and buildings are dedicated, consult the lore_pantheon.txt file.
+
+----
+Contents
+
+[B1] TEMPLE COMPONENT FOUNDRY
+[B2] SACRIFICIAL ALTAR
+[B3] SHRINE OF PROSPERITY
+[B4] SHRINE OF VICTORY
+[B5] SHRINE OF NATURE
+[B6] TEMPLE OF FIRE
+[B7] TEMPLE OF WATER
+[B8] TEMPLE OF THE TWINS
+
+[U1] EMBERLIGHT WARRIORS
+[U3] WAVEBREAKERS
+[U4] ZEPHYRS
+[U5] STONEKIN
+
+
+----
+
+[B1] TEMPLE COMPONENT FOUNDRY
+
+Requirements:
+No special requirements
+
+Reactions:
+
+Create overgrown pedestals - takes 1 stone and 1 plant, produces an overgrown pedestal.
+Create enormous gold goblets - takes 6 gold bars, produces an enormous gold goblet.
+Create studded silver candelabra of conquest - takes 5 silver bars and 2 rough gems, produces a studded silver candelabra of conquest.
+Create silver ceremonial urn - takes 2 silver bars, produces a silver ceremonial urn.
+Create altar of windswept earth - takes 2 silver bars, 5 rough gems, and a stone, produces an altar of windswept earth.
+Create torchbearer gargoyle - takes an iron statue, produces an iron torchbearer gargoyle.
+
+Gather materials for Temanat's sacred pool - takes 15 stones, a cobalt bar, and a bucket of water, produces a set of pool construction materials.  Note that this must 
+be consecrated at the shrine of nature before it can be used to build the temple of water.
+
+--
+[B2] SACRIFICIAL ALTAR
+
+Requirements:
+No special requirements
+
+NOTE: All rituals at this building except for the banshee funeral rite have a chance of producing a harmful byproduct (more likely with lesser rituals).
+
+
+Reactions
+
+Banshee funeral rite - takes an ectoplasmic remnant, produces a phantasmal statue
+
+Lesser ritual of shelter - takes 5 plants, can produce shields, helmets, gems, and logs
+Greater ritual of shelter - takes 15 plants, can produce better shields, great helms, and a unique weapon in addition to larger quantities of the items from the lesser ritual.
+
+Lesser ritual of sustinance - no consumed reagent, fills a bucket with water...  sometimes.
+Greater ritual of sustinance - takes a live vermin, fills a bucket with water.
+
+Lesser ritual of power - takes a totem, can produce bolts, gems, and a unique blunt weapon.
+Greater ritual of power - takes 3 totems, can produce better bolts, gems, javelins, a unique blunt weapon, a unique bladed weapon, and a unique trap component.
+
+Lesser ritual of wealth - takes 500 coins, can produce arrows, blowdarts, gems, or a unique weapon.
+Greater ritual of wealth - takes 1500 coins, can produce white gold bars and crafts in addition to the products of the lesser ritual at a greater frequency.
+
+Lesser ritual of knowledge - takes 3 cloth, can produce magma-safe barrels, buckets, and mechanisms.
+Greater ritual of knowledge - takes 10 cloth, can produce magma-safe barrels, bins, buckets, mechanisms, a recipe for cheese (very rarely), and precision tools (very rarely).
+
+Kogut's first sacrifice - takes 1 overgrown pedestal, 1 enormous gold goblet, and 1 silver candelabra of conquest, produces Kogut's magical fish food.
+
+--
+
+[B3] SHRINE OF PROSPERITY
+
+Requirements:
+4 enormous gold goblets
+
+Reactions:
+
+Prayer for celebration - no consumed reagent, fills an empty barrel or pot with high-value alcohol (rarely).
+Prayer for fortune - no reagent, produces bars of economic alloys (occasionally).
+Ritual of prosperity - takes 5 gold crafts, produces three flux stones (~ half of the time), can produce high-value gems rarely.
+
+---
+
+[B4] SHRINE OF VICTORY
+
+Requirements:
+4 studded silver candelabras of conquest
+
+Reactions:
+
+Prayer for fortitude - no reagent, produces iron bars (occasionally).
+Ritual of victory - takes 8 goblets, produces an anvil.
+
+---
+
+[B5] SHRINE OF NATURE
+
+Requirements:
+4 overgrown pedestals
+
+Reactions:
+
+Prayer for amnesty - no reagents, produces a unique type of soap (occasionally)
+Ritual of nature - takes 5 seeds, can produce wooden bolts, wooden javelins, potash, and shields.
+Consecrate materials for Temanat's sacred pool - takes a set of pool construction materials, produces a set of sacred pool construction materials.
+
+---
+
+[B6] TEMPLE OF FIRE*
+
+Requirements:
+4 torchbearer gargoyles (see shrine of victory), carved treatise on the effects of gasoline on fire*, advanced mechanisms*
+
+NOTE: Because this is a hybrid building, some of these components come from the mechanical tree.  It is listed here because it behaves like other ritual buildings.
+
+Reactions:
+
+Prayer for industry - no reagents, produces flux stones or coal (occasionally).
+Prayer of the weapons apprentice - requires ceremonial urn (preserved), trains weaponsmithing (occasionally).
+Prayer of the armor apprentice - requires ceremonial urn (preserved), trains armor smithing (occasionally).
+Clean up temple of fire - an automatic reaction involved in an easter egg.  Ignore this reaction, it will take care of itself when needed.
+Dedicate ceremonial pyre to Zalkor - takes 10 coal, 10 ash, 10 wood, 1 iron bucket (preserved), and 2 iron bars.  Can transform a dwarf into an emberlight warrior.
+
+
+---
+
+[B7] TEMPLE OF WATER
+
+Requirements:
+4 cobalt statues, 15 building materials, 2 sets of sacred pool construction materials.
+
+Reactions:
+
+Prayer for the quenching of thirst - no consumed reagent, requires an empty barrel or pot, fills with low-value alcohol (sometimes).
+Prepare ceremonial bath of Temanat - takes 5 stone, 3 silver bars, and 6 cobalt bars.  Produces a ceremonial bath of Temanat.
+Pathe in Temanat's ceremonial waters - takes a ceremonial bath of Temanat, turns a dwarf into a wavebreaker.
+
+---
+
+[B8] TEMPLE OF THE TWINS
+
+Requirements: 10 building materials, 4 altars of windswept earth
+
+Reactions:
+
+Prayer for wind's protection - no consumed reagent, requires an empty food container, can produce a unique alcohol that imbues permanent immunity to Xixar's gasp*.
+Prayer for earth's protection - no consumed reagent, requires an empty food container, can produce a different unique alcohol that imbues permanent immunity to cursed boils*.
+Prayer for ritual materials - no requirement, can (rarely) produce bars of cobalt, iron, aluminum, silver, or gold, or (rarely) rough mountain hearts, raw green glass, or abyssal eyes.
+Ceremonial procession of Kerox - takes a silver bar and a rough mountain heart, turns a dwarf into a stonekin.
+Ceremonial procession of Lemox - takes three raw green glass and one aluminum bar, turns a dwarf into a zephyr.
+
+
+*This feature has not yet been implemented.
+
+---
+
+UNITS
+
+[U1] EMBERLIGHT WARRIORS (ZALKOR)
+
+Servants of the fire god Zalkor, emberlight warriors are gifted with the power to both create and absorb flames at will.  Emberlight warriors are immune to fire, and can use fire-based 
+abilities against their enemies.  Care should be taken to isolate emberlight warriors from the rest of your army, as Zalkor's flames consume both friend and foe alike.
+
+Emberlight warriors can throw fireballs, invoke jets of Zalkor's flames, and cause intense pain to their enemies ("mind burn").
+
+
+[U3] WAVEBREAKERS
+
+Disciples of Temanat, the lady of the waters, wavebreakers are immune to fire, naturally gifted swimmers, and can breathe underwater.  As part of the transformation, wavebreakers grow side and 
+dorsal fins.  Wavebreakers have a variety of water and ice-based abilities.
+
+Wavebreakers can throw balls of ice at their enemies, invoke a multi-target ice ball barrage (hailstorm), rust away an opponent's strength, and purify allies of contaminants.  They can also 
+fade away into mist to protect themselves from harm.  Wavebreakers can be safely paired with Zalkor's emberlight warriors for a deadly combination.
+
+
+[U4] STONEKIN
+
+Pledged to serve the goddess of earth, the servants of Kerox recieve immunity to fire and a number of abilities to manipulate the earth to their own beneft or an enemy's disadvantage.  Stonekin 
+are tough as nails compared to normal dwarves, and all damage dealt to them with metal or stone weapons is reduced by 10%.
+
+Stonekin can slow enemies by manipulating the earth beneath their feet.  They can churn the earth beneath the feet of enemies in an area to slow them all down for a period of time, or can entomb 
+a single enemy for a short time, cutting their movement speed by a whopping 80%.  Stonekin can also boost the toughness of nearby allies with their stone skin ability, and can periodically reduce 
+all damage dealt to them by an additional 80% in addition to their natural damage reductio for a very short period of time.  Stonekin can also hurl rocks at their enemies, but this attack has a 
+significantly longer cooldown and shorter range than wavebreakers' ice spells.  Stonekin can be safely paired with emberlight warriors, and make excellent "tank" units on the battlefield, buying 
+time for their allies to destroy the enemy.
+
+
+[U5] ZEPHYRS
+
+Zephyrs are the sworn faithful of Lemox, the goddess of wind.  As part of their ascension, zephyrs grow a small pair of pixie wings on their backs.  While these wings do not allow for flight, they 
+imbue the zephyr with some control over the very air around them.  Zephyrs have extremely high natural dodge and ranged combat abilities, as well as agility.
+
+Zephyrs have a small aresenal of spells at their disposal.  They can cast the spells "headwind" and "tailwind" in rapid succession, basically meaning that anywhere a zephyr is present, nearby 
+dwarves will move faster and nearby enemies will move slower.  Zephyrs can also imbue allies with a "second wind," granting them immunity to dizziness and dramatically increased agility for a 
+short time.  Finally, zephyrs can cause disturbances in the air at will, and are capable of flinging these maelstroms at enemies from an unparalleled distance, even though the actual effect is 
+much weaker than other ritual units' projectile attacks.  Because of their range and natural skills, zephyrs make excellent scouts and sentries, and fearsome rangers if given the proper training 
+and equipment.  They are not, however, immune to fire, so it's a good idea not to let them anywhere near any emberlight warriors you might have on the battlefield.
+
+If a zephyr loses both of its wings, its powers are greatly reduced.
+
+
+
+--
+In case you're wondering why there isn't a U2, it's because it's classified.  ^_^
+----

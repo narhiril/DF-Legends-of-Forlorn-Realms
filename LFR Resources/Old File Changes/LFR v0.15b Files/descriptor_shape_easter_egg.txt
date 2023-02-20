@@ -1,0 +1,12 @@
+descriptor_shape_easter_egg
+
+[OBJECT:DESCRIPTOR_SHAPE]
+
+
+[SHAPE:NYAN_LFR]
+	[NAME:nyan cat:nyan cats]
+	[TILE:'*']
+
+[SHAPE:EASTER_EGG_LFR]
+	[NAME:easter egg:easter eggs]
+	[TILE:'o']
