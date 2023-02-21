@@ -1,6 +1,6 @@
 # Legends of Forlorn Realms (LFR)
 
-A large expansion mod for Dwarf Fortress, worked on from 2011-2013.
+A large expansion mod for Dwarf Fortress, worked on from 2010-2014.
 
 I am no longer actively maintaining this.
 
